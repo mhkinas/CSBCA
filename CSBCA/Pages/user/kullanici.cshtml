@@ -1,0 +1,421 @@
+﻿@**
+    csbca - v1.0 - 2020-10-12
+    https://www.hayatikinas.com
+    This code is part of the CSBCA project
+    And it can be used under license terms.
+    Copyright Mehmet Hayati KINAŞ
+*@
+@page
+@model CSBCA.Pages.user.userModel
+@using SDBCS.utility
+@using Microsoft.AspNetCore.Html
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>@Model.pageTitle</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/print.min.css" rel="stylesheet">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/print.min.js"></script>
+    <script src="/js/csbca.js"></script><script src="/js/exceljs.min.js"></script><script src="/js/FileSaver.js"></script>
+</head>
+
+<body>
+
+    @(new HtmlString(Model.menuString))
+
+    <div class="container-fluid">
+        <div class="row">
+
+            @(new HtmlString(Model.leftSideStr))
+
+            <div class="col-md-11 col-xl-10">
+                <a href="#yeniK" class="btn btn-outline-dark" data-toggle="collapse">Yeni @Model.pageTitle</a>
+                <form method="post" id="yeniK" class="form collapse" enctype="multipart/form-data">
+                    <datalist id="groups"></datalist>
+                    <datalist id="statuses"></datalist>
+                    <div class="form-group">
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <td><label for="y_1">@Model.labelNames[1]:</label></td>
+                                    <td>
+                                        <input type="@Model.inputTypes[1]" class="form-control form-control-sm"
+                                               name="@Model.fieldNames[1]" id="y_1" placeholder="@Model.labelNames[1] giriniz."
+                                               required>
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td><label for="y_2">@Model.labelNames[2]:</label></td>
+                                    <td>
+                                        <input type="@Model.inputTypes[2]" class="form-control form-control-sm"
+                                               name="@Model.fieldNames[2]" id="y_2" placeholder="@Model.labelNames[2] giriniz."
+                                               required>
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td><label for="y_3">@Model.labelNames[3]:</label></td>
+                                    <td>
+                                        <input type="@Model.inputTypes[3]" class="form-control form-control-sm"
+                                               name="@Model.fieldNames[3]" id="y_3" placeholder="@Model.labelNames[3] giriniz."
+                                               required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="y_4">@Model.labelNames[4]:</label></td>
+                                    <td>
+                                        <input type="@Model.inputTypes[4]" class="form-control form-control-sm"
+                                               name="@Model.fieldNames[4]" id="y_4" placeholder="@Model.labelNames[4] giriniz."
+                                               list="groups" required>
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td><label for="y_5">@Model.labelNames[5]:</label></td>
+                                    <td>
+                                        <input type="@Model.inputTypes[5]" class="form-control form-control-sm"
+                                               name="@Model.fieldNames[5]" id="y_5" placeholder="@Model.labelNames[5] giriniz."
+                                               required>
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td><label for="y_6">@Model.labelNames[6]:</label></td>
+                                    <td>
+                                        <input type="@Model.inputTypes[6]" class="form-control form-control-sm"
+                                               name="@Model.fieldNames[6]" id="y_6" placeholder="@Model.labelNames[6] giriniz."
+                                               list="statuses">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="y_7">@Model.labelNames[7]:</label></td>
+                                    <td>
+                                        <input type="@Model.inputTypes[7]" class="form-control form-control-sm"
+                                               name="@Model.fieldNames[7]" id="y_7" placeholder="@Model.labelNames[7] giriniz."
+                                               min="10" max="100">
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button type="button" class="btn btn-outline-info btn-sm"
+                                                onclick='sendInsert("@Model.pageName", "yeniK")'>
+                                            Kaydet
+                                        </button>
+                                    </td>
+                                    <td><button type="reset" class="btn btn-outline-secondary btn-sm">İptal</button></td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <a href="#araK" class="btn btn-outline-dark" data-toggle="collapse">@Model.pageTitle Ara</a>
+                <form method="post" id="araK" class="form collapse" enctype="multipart/form-data">
+                    <datalist id="codes"></datalist>
+                    <div class="form-group">
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <label for="s_1" class="col-form-label-sm">
+                                            @Model.selectLabels[0]:
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input type="@Model.selectITs[0]" class="form-control form-control-sm" id="s_1"
+                                               name="@Model.selectFields[0]" placeholder="@Model.selectLabels[0] giriniz.">
+                                    </td>
+                                    <td><label for="s_2" class="col-form-label-sm">@Model.selectLabels[1]:</label></td>
+                                    <td>
+                                        <input type="@Model.selectITs[1]" class="form-control form-control-sm" id="s_2"
+                                               name="@Model.selectFields[1]" placeholder="@Model.selectLabels[1] giriniz.">
+                                    </td>
+                                    <td><label for="s_3" class="col-form-label-sm">@Model.selectLabels[2]:</label></td>
+                                    <td>
+                                        <input type="@Model.selectITs[2]" class="form-control form-control-sm" id="s_3"
+                                               name="@Model.selectFields[2]" placeholder="@Model.selectLabels[2] giriniz."
+                                               list="groups">
+                                    </td>
+                                    <td><label for="s_4" class="col-form-label-sm">@Model.selectLabels[3]:</label></td>
+                                    <td>
+                                        <input type="@Model.selectITs[3]" class="form-control form-control-sm" id="s_4"
+                                               name="@Model.selectFields[3]" placeholder="@Model.selectLabels[3] giriniz.">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="s_5" class="col-form-label-sm">@Model.selectLabels[4]:</label></td>
+                                    <td>
+                                        <input type="@Model.selectITs[4]" class="form-control form-control-sm" id="s_5"
+                                               name="@Model.selectFields[4]" placeholder="@Model.selectLabels[4] giriniz."
+                                               list="codes">
+                                    </td>
+                                    <td><label for="s_6" class="col-form-label-sm">@Model.selectLabels[5]:</label></td>
+                                    <td>
+                                        <input type="@Model.selectITs[5]" class="form-control form-control-sm" id="s_6"
+                                               name="@Model.selectFields[5]" placeholder="@Model.selectLabels[5] giriniz.">
+                                    </td>
+                                    <td><label for="s_7" class="col-form-label-sm">@Model.selectLabels[6]:</label></td>
+                                    <td>
+                                        <input type="@Model.selectITs[6]" class="form-control form-control-sm" id="s_7"
+                                               name="@Model.selectFields[6]" placeholder="@Model.selectLabels[6] giriniz.">
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button type="button" class="btn btn-outline-info btn-sm"
+                                                onclick='sendSelect("@Model.pageName","araK")'>
+                                            Ara
+                                        </button>
+                                    </td>
+                                    <td><button type="reset" class="btn btn-outline-secondary btn-sm">İptal</button></td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row" id="ldTable">
+            <div class="col-md-12">
+                <h2 class="sub-header">@Model.pageTitle Listesi</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-condensed table-sm">
+                        <thead>
+                            <!-- style="display: table-header-group; page-break-after: avoid;"> -->
+                            <tr>
+                                <th>Sıra</th>
+                                <th onclick="sortById()">@Model.labelNames[0]</th>
+                                <th onclick="sortByProp('@Model.fieldNames[1]')">@Model.labelNames[1]</th>
+                                <th onclick="sortByProp('@Model.fieldNames[2]')">@Model.labelNames[2]</th>
+                                <th onclick="sortByProp('@Model.fieldNames[3]')" style="display:none;">@Model.labelNames[3]</th>
+                                <th onclick="sortByProp('@Model.fieldNames[4]')">@Model.labelNames[4]</th>
+                                <th onclick="sortByProp('@Model.fieldNames[5]')">@Model.labelNames[5]</th>
+                                <th onclick="sortByProp('@Model.fieldNames[6]')">@Model.labelNames[6]</th>
+                                <th onclick="sortByProp('@Model.fieldNames[7]')">@Model.labelNames[7]</th>
+                                <th onclick="sortByProp('@Model.fieldNames[8]')">@Model.labelNames[8]</th>
+                                <th onclick="sortByDate('@Model.fieldNames[9]', true)">@Model.labelNames[9]</th>
+                            </tr>
+                        </thead>
+                        <tbody id="listTb"></tbody>
+                    </table>
+                </div>
+
+                <div id="pgnId">
+                    <ul class="pagination">
+                        <li>
+                            <input id="p_size" type="text" class="form-control form-control-sm"
+                                   value=@Model.sessionBean.getLineCount() size=3 onchange="setPage()">
+                            <br />
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-outline-info btn-sm" id="pageO" onclick="getPage('O')" aria-label="Önceki">
+                                <span aria-hidden="true">
+                                    &laquo;
+                                </span>
+                            </button>
+                        </li>
+                        <li><button type="button" class="btn btn-outline-info btn-sm" id="page1" onclick="paging(1)" value="1">1</button></li>
+                        <li><button type="button" class="btn btn-outline-info btn-sm" id="page2" onclick="paging(2)" value="2">2</button></li>
+                        <li><button type="button" class="btn btn-outline-info btn-sm" id="page3" onclick="paging(3)" value="3">3</button></li>
+                        <li><button type="button" class="btn btn-outline-info btn-sm" id="page4" onclick="paging(4)" value="4">4</button></li>
+                        <li><button type="button" class="btn btn-outline-info btn-sm" id="page5" onclick="paging(5)" value="5">5</button></li>
+                        <li>
+                            <button type="button" class="btn btn-outline-info btn-sm" id="pageS" onclick="getPage('S')" aria-label="Sonraki">
+                                <span aria-hidden="true">
+                                    &raquo;
+                                </span>
+                            </button>
+                            <br />
+                        </li>
+                        <li><button type="button" class="btn btn-outline-info btn-sm" onclick="exportToExcel('@Model.pageTitle'+'List')">Excel</button></li>
+                        <li><button type="button" class="btn btn-outline-info btn-sm" onclick="exportToJson('@Model.pageTitle'+'List')">Json</button></li>
+                        <li><button type="button" class="btn btn-outline-info btn-sm" onclick="exportToCSV('@Model.pageTitle'+'List')">CSV</button></li>
+                        <li><button type="button" class="btn btn-outline-info btn-sm" onclick="exportToPDF('@Model.pageTitle'+'List')">PDF</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="alerts">
+
+            @if ((Model.tableData == null || Model.tableData.Length == 0) && Model.isDebug)
+            {
+                <div id="alertw" class="alert alert-warning">
+                    <strong>tableData</strong> is empty!
+                    <br />
+                    <strong>SQL0:</strong>
+                    @Model.qsql<br />
+                    <strong>SQL1:</strong>
+                    @Model.qsql2
+                </div>
+            }
+
+            @if ((Model.errorString != null && Model.errorString.Length > 0) && Model.isDebug)
+            {
+                <div id="alertd" class="alert alert-danger">
+                    <strong>errorString :</strong>
+                    @Model.errorString
+                </div>
+            }
+            @if ((Model.jsObjData != null && Model.jsObjData.Length > 0) && Model.isDebug)
+            {
+                <div id="alertd" class="alert alert-info">
+                    <strong>jsObjData :</strong>
+                    @Model.jsObjData
+                    <br />
+                    tableData[0][0] :
+                    @(Model.tableData != null ? Model.tableData[0][0] : "Boş!");
+                    <br />
+                    selLists[0][0] :
+                    @(Model.selLists != null ? Model.selLists[0][0] : "Boş!");
+                    <br />
+                    messageString :
+                    @(Model.messageString != null ? Model.messageString : "Boş!");
+                </div>
+            }
+
+            @if ((Model.messages != null && Model.messages.Length > 0) && Model.isDebug)
+            {
+                <br />
+                <div id="alertd" class="alert alert-info">
+                    <strong>messages[0] :</strong>
+                    @Model.messages[0]
+                </div>
+                <br />
+                <div id="alertd" class="alert alert-info">
+                    <strong>messages[1] :</strong>
+                    @Model.messages[1]
+                </div>
+                <br />
+                <div id="alertd" class="alert alert-info">
+                    <strong>messages[2] :</strong>
+                    @Model.messages[2]
+                </div>
+            }
+        </div>
+
+    </div>
+
+    <script>
+	    var jsObjData, dataList, selectLists, fieldNames, selectNames, labelNames, inputTypes, readOnlyFM, invisibleFM, requiredFM,
+            isModal, isWithRefs, selInpIds, listN4Page, listN4Modal, dateF, timeF, pageNo, totRow, lineCount, mCols, isLocale,
+            lastProp;
+
+	    document.addEventListener("DOMContentLoaded", function(event){
+
+            jsObjData = @(new HtmlString((Model.jsObjData != null && Model.jsObjData.Length > 0) ? Model.jsObjData : ""));
+            dataList = jsObjData.data;
+
+            selectLists = @(new HtmlString((Model.selectLists != null && Model.selectLists.Length > 0) ? Model.selectLists : "''"));
+
+            fieldNames = @(new HtmlString(ArrayToString.getStringWithComma(Model.fieldNames)));
+            selectNames = @(new HtmlString(ArrayToString.getStringWithComma(Model.selectFields)));
+            labelNames = @(new HtmlString(ArrayToString.getStringWithComma(Model.labelNames)));
+            inputTypes = @(new HtmlString(ArrayToString.getStringWithComma(Model.inputTypes)));
+            readOnlyFM = @(new HtmlString(ArrayToString.getStringWithComma(Model.readOnlyFM.Select(x=>x.ToString()).ToArray())));
+            invisibleFM = @(new HtmlString(ArrayToString.getStringWithComma(Model.invisibleFM.Select(x=>x.ToString()).ToArray())));
+            requiredFM = @(new HtmlString(ArrayToString.getStringWithComma(Model.requiredFM.Select(x=>x.ToString()).ToArray())));
+            isModal = @(Model.isModal ? "true" : "false");
+            isWithRefs = @(Model.isWithRefs ? "true" : "false");
+            isLocale = @(Model.isLocale ? "true" : "false");
+
+            excelCols = @(new HtmlString(Model.excelCols));
+            lastProp = "@Model.fieldNames[0]";
+            pageNo = 1;
+
+            selInpIds = {yeniK:[{id:"y_4", name:"user_group"},{id:"y_6", name:"rec_status"}],
+					    araK:[{id:"s_3", name:"user_group"}, {id:"s_5", name:"rec_user"}],
+					    guncelleK:[{id:"g_5", name:"user_group"},{id:"g_7", name:"rec_status"}]};
+
+            listN4Page = [{id:"groups", name:"user_group"}, {id:"statuses", name:"rec_status"}, {id:"codes", name:"rec_user"}];
+            listN4Modal = [{id:"groups", name:"user_group"}, {id:"statuses", name:"rec_status"}];
+
+            dateF = "@Model.dateFormatter.getStringDF()" ;
+            timeF = "@Model.dateFormatter.getStringTF()" ;
+
+            totRow = @(Model.tableData != null ? @Model.tableData.Length : 0);
+
+            lineCount = @Model.sessionBean.getLineCount();
+            mCols=2;
+
+            setList(listN4Page, selectLists);
+
+            setPage();
+        });
+    </script>
+
+    <div class="modal fade" id="guncM" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">@Model.pageTitle Güncelle</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <form method="post" id="guncelleK" class="form" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <div class="modal-body">
+                            <table class="table table-borderless">
+                                <tbody id="modalTb">
+                                    <!-- Modal form fields is here.-->
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+                            <table class="table table-borderless">
+                                <tbody id="modBt">
+                                    <tr>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-info btn-sm"
+                                                    onclick="sendUpdate('@Model.pageName','guncelleK')">
+                                                Kaydet
+                                            </button>
+                                            &nbsp;
+                                            <button type="button" class="btn btn-outline-danger btn-sm"
+                                                    onclick="sendDelete('@Model.pageName','guncelleK')">
+                                                Sil
+                                            </button>
+                                            &nbsp;
+                                            <button type="reset" class="btn btn-outline-secondary btn-sm">İptal</button>
+                                            &nbsp;
+                                            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Kapat</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

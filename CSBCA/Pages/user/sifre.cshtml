@@ -1,0 +1,153 @@
+﻿@**
+    csbca - v1.0 - 2020-10-12
+    https://www.hayatikinas.com
+    This code is part of the CSBCA project
+    And it can be used under license terms.
+    Copyright Mehmet Hayati KINAŞ
+*@
+@page
+@model CSBCA.Pages.user.passwordModel
+@using SDBCS.utility
+@using Microsoft.AspNetCore.Html
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>@Model.pageTitle</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/print.min.css" rel="stylesheet">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/print.min.js"></script>
+    <script src="/js/csbca.js"></script><script src="/js/exceljs.min.js"></script><script src="/js/FileSaver.js"></script>
+</head>
+
+<body>
+
+    @(new HtmlString(Model.menuString))
+
+    <div class="container-fluid">
+        <div class="row">
+
+            @(new HtmlString(Model.leftSideStr))
+
+            <div class="col-md-11 col-xl-10">
+                <h2 class="sub-header">@Model.pageTitle</h2>
+                <form id="updateR" class="form" enctype="multipart/form-data" method="post">
+                    <div class="form-group">
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <label for="g_1" style="margin-top: 7px;">@Model.labelNames[1]:</label>
+                                    </td>
+                                    <td>
+                                        <input type="@Model.inputTypes[1]" class="form-control form-control-sm"
+                                               name="@Model.fieldNames[1]" id="g_1" placeholder="@Model.labelNames[1] giriniz."
+                                               list="messages" required>
+                                    </td>
+                                    <td>
+                                        <label for="g_2" style="margin-top: 7px;">@Model.labelNames[2]:</label>
+                                    </td>
+                                    <td>
+                                        <input type="@Model.inputTypes[2]" class="form-control form-control-sm"
+                                               name="@Model.fieldNames[2]" id="g_2" placeholder="@Model.labelNames[2] giriniz."
+                                               required>
+                                    </td>
+                                    <td>
+                                        <label for="g_3" style="margin-top: 7px;">@Model.labelNames[3]:</label>
+                                    </td>
+                                    <td>
+                                        <input type="@Model.inputTypes[3]" class="form-control form-control-sm"
+                                               name="@Model.fieldNames[3]" id="g_3" placeholder="@Model.labelNames[3] giriniz."
+                                               required>
+                                    </td>
+                                    <td>&nbsp;&nbsp;&nbsp;</td>
+                                    <td>&nbsp;&nbsp;&nbsp;</td>
+                                </tr>
+                                <tr></tr>
+                                <tr>
+                                    <td>
+                                        <button type="button" class="btn btn-outline-info btn-sm"
+                                                onclick='sendUpdate("@Model.pageName", "updateR")'>
+                                            Kaydet
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button type="reset" class="btn btn-outline-secondary btn-sm">İptal</button>
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="alerts">
+
+            @if (Model.errorString != null && Model.errorString.Length > 0 && Model.isDebug)
+            {
+                <div id="alertd" class="alert alert-danger">
+                    <strong>errorString :</strong>
+                    @Model.errorString
+                </div>
+            }
+            @if (Model.messages != null && Model.messages.Length > 0 && Model.isDebug)
+            {
+                <br />
+                <div id="alertd" class="alert alert-info">
+                    <strong>messages[0] :</strong>
+                    @Model.messages[0]
+                </div>
+                <br />
+                <div id="alertd" class="alert alert-info">
+                    <strong>messages[1] :</strong>
+                    @Model.messages[1]
+                </div>
+                <br />
+                <div id="alertd" class="alert alert-info">
+                    <strong>messages[2] :</strong>
+                    @Model.messages[2]
+                </div>
+            }
+        </div>
+
+    </div>
+
+    <script>
+          var jsObjData, dataList, selectLists, fieldNames, selectNames, labelNames, inputTypes, readOnlyFM, invisibleFM, requiredFM,
+            isModal, isWithRefs, selInpIds, listN4Page, listN4Modal, dateF, timeF, pageNo, totRow, lineCount, mCols, isLocale;
+
+          document.addEventListener("DOMContentLoaded", function(event){
+
+            jsObjData = @(new HtmlString((Model.jsObjData != null && Model.jsObjData.Length > 0) ? Model.jsObjData : ""));
+            dataList = jsObjData.data;
+
+            fieldNames = @(new HtmlString(ArrayToString.getStringWithComma(Model.fieldNames)));
+            selectNames = @(new HtmlString(ArrayToString.getStringWithComma(Model.selectFields))) ;
+            labelNames = @(new HtmlString(ArrayToString.getStringWithComma(Model.labelNames))) ;
+            inputTypes = @(new HtmlString(ArrayToString.getStringWithComma(Model.inputTypes))) ;
+            readOnlyFM = @(new HtmlString(ArrayToString.getStringWithComma(Model.readOnlyFM.Select(x=>x.ToString()).ToArray()))) ;
+            invisibleFM = @(new HtmlString(ArrayToString.getStringWithComma(Model.invisibleFM.Select(x=>x.ToString()).ToArray()))) ;
+            requiredFM = @(new HtmlString(ArrayToString.getStringWithComma(Model.requiredFM.Select(x=>x.ToString()).ToArray()))) ;
+            isModal = @(Model.isModal ? "true" : "false");
+            isWithRefs = @(Model.isWithRefs ? "true" : "false");
+            isLocale = @(Model.isLocale ? "true" : "false");
+          });
+    </script>
+
+</body>
+</html>
+

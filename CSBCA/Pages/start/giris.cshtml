@@ -1,0 +1,46 @@
+﻿@page
+@model CSBCA.Pages.start.loginModel
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>CSBCA GİRİŞ</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/signin.css">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <form id="giris" class="form-signin" method="post">
+            <h2 class="form-signin-heading">CSBCA'ye Hoşgeldiniz!</h2>
+            <br />
+            <label for="login_name" class="sr-only"><b>Kullanıcı</b></label>
+            <input type="text" name="login_name" class="form-control" 
+                   placeholder="Kullanıcı giriniz..." required autofocus>
+            <br />
+            <label for="login_password" class="sr-only">Şifre</label>
+            <input type="password" name="login_password" class="form-control" 
+                   placeholder="Şifre giriniz..." >
+            <br />
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Gönder</button>
+            <input type="hidden" name="lang" value="tr">
+        </form>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br />
+    <footer class="container-fluid text-center">
+        <p>&copy; Mehmet Hayati KINAŞ</p>
+    </footer>
+
+</body>
+</html>
