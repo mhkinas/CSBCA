@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=YourComputerName\\SQLEXPRESS;Database=csbcdb;Trusted_Connection=True;"
+  }
+}

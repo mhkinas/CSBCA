@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "defaultProvider": "filesystem",
+  "libraries": [
+    {
+      "library": "wwwroot/css",
+      "destination": "wwwroot/css",
+      "files": [
+        "bootstrap.css",
+        "print.min.css",
+        "signin.css",
+        "site.css"
+      ]
+    },
+    {
+      "library": "wwwroot/js",
+      "destination": "wwwroot/js/",
+      "files": [
+        "bootstrap.js",
+        "csbca.js",
+        "jquery.min.js",
+        "popper.min.js",
+        "print.min.js",
+        "site.js"
+      ]
+    }
+  ]
+}
