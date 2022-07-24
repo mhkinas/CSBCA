@@ -1,0 +1,82 @@
+﻿@page
+@using WEBSITE.codes.bean
+@using Microsoft.AspNetCore.Html
+@{
+    Layout = null;
+    LinPageBean linPageBean = new LinPageBean();
+    bool isDebug = linPageBean.isDebug;
+
+    string centerPageStr = null, rightSiteStr = null, topPageStr = null, bottomPageStr = null, menuString = null, errorString = null;
+
+    try
+    {
+        centerPageStr = linPageBean.getLinPage("onyuz");
+
+        rightSiteStr = linPageBean.getThemePage("right");
+
+        topPageStr = linPageBean.getThemePage("top");
+
+        bottomPageStr = linPageBean.getThemePage("buttom");
+
+        menuString = linPageBean.getMenuStr();
+    }
+    catch (Exception ex)
+    {
+        if (!linPageBean.getErrorString().Equals("null errorString"))
+            errorString = linPageBean.getErrorString();
+        else
+            errorString = ex.Message;
+
+        Console.WriteLine(errorString);
+    }
+    finally
+    {
+        linPageBean.closeAll();
+    }
+}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>Önyüz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    @(new HtmlString(topPageStr))
+    @(new HtmlString(menuString))
+
+    <br><br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-9">
+
+                @(new HtmlString(centerPageStr))
+            </div>
+
+            @(new HtmlString(rightSiteStr))
+        </div>
+    </div>
+    <br><br><br><br><br>
+
+    @(new HtmlString(bottomPageStr))
+
+    <div id="alerts">
+        @if (isDebug && errorString != null && errorString.Length > 0)
+        {
+            <div id="alertd" class="alert alert-danger">
+                <strong>errorString :</strong>
+                @errorString
+            </div>
+        }
+    </div>
+
+
+</body>
+</html>
+@{linPageBean.closeAll();}

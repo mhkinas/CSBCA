@@ -1,0 +1,112 @@
+﻿@page
+@model WEBSITE.Pages.contact.contactModel
+@using Microsoft.AspNetCore.Html
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/action-part.js"></script>
+</head>
+
+<body>
+
+    @if (Model.topPageStr != null)@(new HtmlString(Model.topPageStr));
+
+    @if (Model.menuString != null)@(new HtmlString(Model.menuString));
+
+    <br><br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                @(new HtmlString(Model.centerPageStr))
+                <form id="newR" class="form" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <td><label for="y_1">@Model.labelNames[1]</label></td>
+                                    <td>
+                                        <input type="@Model.inputTypes[1]" class="form-control form-control-sm" name="@Model.fieldNames[1]" id="y_1"
+                                               placeholder="Enter @Model.labelNames[1]." required>
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td><label for="y_2">@Model.labelNames[2]</label></td>
+                                    <td>
+                                        <input type="@Model.inputTypes[2]" class="form-control form-control-sm" name="@Model.fieldNames[2]" id="y_2"
+                                               placeholder="Enter @Model.labelNames[2]." required>
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td><label for="y_3">@Model.labelNames[3]</label></td>
+                                    <td>
+                                        <input type="@Model.inputTypes[3]" class="form-control form-control-sm" name="@Model.fieldNames[3]" id="y_3"
+                                               placeholder="Enter @Model.labelNames[3].">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="y_4">@Model.labelNames[4]</label></td>
+                                    <td colspan="7">
+                                        <textarea class="form-control form-control-sm" name="@Model.fieldNames[4]" id="y_4"
+                                                  placeholder="Enter @Model.labelNames[4]." required rows="10" cols="100"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button type="button" class="btn btn-outline-info btn-sm"
+                                                onclick='sendInsert("@Model.pageName", "newR")'>
+                                            Save
+                                        </button>
+                                    </td>
+                                    <td><button type="reset" class="btn btn-outline-secondary btn-sm">Cancel</button></td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+
+    @if (Model.bottomPageStr != null) @(new HtmlString(Model.bottomPageStr));
+
+        <div id="alerts">
+            @if (Model.isDebug && Model.errorString != null && Model.errorString.Length > 0)
+            {
+
+                <div id="alertd" class="alert alert-danger">
+                    <strong>errorString :</strong>
+                    @Model.errorString
+                </div>
+            }
+
+        </div>
+
+        <script>
+		var jsObjData, isLocale;
+
+		document.addEventListener("DOMContentLoaded", function(event) {
+
+			isLocale = @Model.isLocale;
+		});
+        </script>
+
+
+    </body>
+</html>
+

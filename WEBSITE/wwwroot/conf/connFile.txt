@@ -1,0 +1,1 @@
+server=127.0.0.1;user=csbc_man;password=YourPassword;port=3306;database=csbcdb;
