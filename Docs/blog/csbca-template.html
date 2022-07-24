@@ -1,0 +1,982 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSBCA Template Software</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	<br><br><br><br><br>
+	<div class="container-fluid" style="margin-top:30px; margin-left:100px;">
+	  <div class="row">
+		<div class="col-9">
+			<h2>Java Basic Content Adviser Template Software</h2><br><br>
+			<p class="lead text-justify">
+			The creation of software architecture is a time consuming process for web-based applications and indeed for the preparation of special software in general. There is an advantage for those who have a ready-made software infrastructure. Of course, however, it is useful if it is a current infrastructure.
+			<br><br>
+			A java library that creates sqls in the background for form structures, page design with HTML5 bootstrap and jquery, front-end encoding with pure javascript, data transfer with ajax 2 and json, business logic with java servlet and jsp in the background, and many more If a ready template is meaningful for you, it is useful to read more.
+			<br><br>
+			Select, insert, update, delete As a SQL DML command, it is an important part of the encoding. So how does a library that prepares DML codes make our work easier? <a href="../../docs/sdbcsapi/api/toc.html" target="_blank">(sdbcsapi)</a>
+
+			<br><br>
+			<textarea class="form-control form-control-sm" name="code-csbca-01" rows="10" cols="100" readonly>
+                  // For executing database query operations
+                dbQuery = p.executeTable.tableAction(p.action, p.formData, p.prepareQuery);
+
+                if (dbQuery)
+                    // If query is true get table data from api
+                    p.tableData = (string[][])p.executeTable.selectData(p.dataType);
+                else
+                    errorString = p.executeTable.getErrorString();
+
+			</textarea>			
+			<br><br>
+			The piece of code that performs the select operation in a CSharp code appears above.
+			<br> <br>
+			Of course, in Razor code, our forms can be as follows in html page design.			<br><br>
+			<textarea class="form-control form-control-sm" name="code-csbca-01" rows="20" cols="100" readonly>
+   @(new HtmlString(Model.menuString))
+
+    <div class="container-fluid">
+        <div class="row">
+
+            @(new HtmlString(Model.leftSideStr))
+
+            <div class="col-md-11 col-xl-10">
+                <a href="#newR" class="btn btn-outline-dark" data-toggle="collapse">New @Model.pageTitle</a>
+                <form id="newR" class="form collapse" enctype="multipart/form-data" method="post">
+                    <datalist id="paths"></datalist>
+                    <datalist id="types"></datalist>
+                    <datalist id="codes"></datalist>
+                    <div class="form-group">
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <label for="y_1" style="margin-top: 7px;">@Model.labelNames[1]:</label>
+                                    </td>
+                                    <td>
+                                        <input type="@Model.inputTypes[1]" class="form-control form-control-sm" name="@Model.fieldNames[1]" 
+										id="y_1" placeholder="Enter @Model.labelNames[1]." required>
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        <label for="y_2" style="margin-top: 7px;">@Model.labelNames[2]:</label>
+                                    </td>
+                                    <td>
+                                        <input type="@Model.inputTypes[2]" class="form-control form-control-sm" name="@Model.fieldNames[2]" 
+										id="y_2" placeholder="Enter @Model.labelNames[2]." list="paths" required>
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        <label for="y_3" style="margin-top: 7px;">@Model.labelNames[3]:</label>
+                                    </td>
+                                    <td>
+                                        <input type="@Model.inputTypes[3]" class="form-control form-control-sm" name="@Model.fieldNames[3]" 
+										id="y_3" placeholder="Enter @Model.labelNames[3]." list="types" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="y_4" style="margin-top: 7px;">Code:</label>
+                                    </td>
+                                    <td>
+                                        <input type="file" class="form-control form-control-sm" name="@Model.fileField" id="y_4" required 
+										       onchange="fileNameInfo('y_4', 'y_1')">
+                                    </td>
+                                    <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td>
+                                </tr>
+                                <tr></tr>
+                                <tr>
+                                    <td>
+                                        <button type="button" class="btn btn-outline-info btn-sm" onclick='sendInsert("@Model.pageName", "newR")'>
+                                            Save
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button type="reset" class="btn btn-outline-secondary btn-sm">Cancel</button>
+                                    </td>
+                                    <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row"
+			</textarea>			
+			<br><br>
+			There will also be a table section on our page.
+			<br><br>
+			<textarea class="form-control form-control-sm" name="code-csbca-01" rows="10" cols="100" readonly>
+        <div class="row" id="ldTable">
+            <div class="col-md-12">
+                <h2 class="sub-header">@Model.pageTitle List</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-condensed table-sm">
+                        <thead>
+                            <!-- style="display: table-header-group; page-break-after: avoid;"> -->
+                            <tr>
+                                <th>Order</th>
+                                <th onclick="sortById()">@Model.labelNames[0]</th>
+                                <th onclick="sortByProp('@Model.fieldNames[1]')">@Model.labelNames[1]</th>
+                                <th onclick="sortByProp('@Model.fieldNames[2]')">@Model.labelNames[2]</th>
+                                <th onclick="sortByProp('@Model.fieldNames[3]')">@Model.labelNames[3]</th>
+                                <th onclick="sortByProp('@Model.fieldNames[4]')">@Model.labelNames[4]</th>
+                                <th onclick="sortByDate('@Model.fieldNames[5]', true)">@Model.labelNames[5]</th>
+                            </tr>
+                        </thead>
+                        <tbody id="listTb"></tbody>
+                    </table>
+                </div>
+			</textarea>			
+			<br><br>
+			We also have buttons for paging structure and printouts.
+			<br><br>
+			<textarea class="form-control form-control-sm" name="code-csbca-01" rows="20" cols="100" readonly>
+                <div id="pgnId">
+                    <ul class="pagination">
+                        <li>
+                            @{ var lineCount = Model.sessionBean.getLineCount();}
+                            <input id="p_size" type="text" class="form-control form-control-sm" value=@lineCount
+                                   size=3 onchange="setPage()">
+                            <br />
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-outline-info btn-sm" id="pageO" onclick="getPage('O')" aria-label="Önceki">
+                                <span aria-hidden="true">
+                                    &laquo;
+                                </span>
+                            </button>
+                        </li>
+                        <li><button type="button" class="btn btn-outline-info btn-sm" id="page1" onclick="paging(1)" value="1">1</button></li>
+                        <li><button type="button" class="btn btn-outline-info btn-sm" id="page2" onclick="paging(2)" value="2">2</button></li>
+                        <li><button type="button" class="btn btn-outline-info btn-sm" id="page3" onclick="paging(3)" value="3">3</button></li>
+                        <li><button type="button" class="btn btn-outline-info btn-sm" id="page4" onclick="paging(4)" value="4">4</button></li>
+                        <li><button type="button" class="btn btn-outline-info btn-sm" id="page5" onclick="paging(5)" value="5">5</button></li>
+                        <li>
+                            <button type="button" class="btn btn-outline-info btn-sm" id="pageS" onclick="getPage('S')" aria-label="Sonraki">
+                                <span aria-hidden="true">
+                                    &raquo;
+                                </span>
+                            </button>
+                            <br />
+                        </li>
+                        <li><button type="button" class="btn btn-outline-info btn-sm" onclick="exportToExcel('@Model.pageTitle'+'List')">Excel</button></li>
+                        <li><button type="button" class="btn btn-outline-info btn-sm" onclick="exportToJson('@Model.pageTitle'+'List')">Json</button></li>
+                        <li><button type="button" class="btn btn-outline-info btn-sm" onclick="exportToCSV('@Model.pageTitle'+'List')">CSV</button></li>
+                        <li><button type="button" class="btn btn-outline-info btn-sm" onclick="exportToPDF('@Model.pageTitle'+'List')">PDF</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+			</textarea>			
+			<br><br>
+			It is better not to skip the part about the alarms.
+			<br><br>
+			<textarea class="form-control form-control-sm" name="code-csbca-01" rows="20" cols="100" readonly>
+        <div id="alerts">
+
+            @if ((Model.tableData == null || Model.tableData.Length == 0) && Model.isDebug)
+            {
+                <div id="alertw" class="alert alert-warning">
+                    <strong>tableData</strong> is empty!
+                    <br />
+                    <strong>SQL0:</strong>
+                    @Model.qsql
+                    <br />
+                    <strong>SQL1:</strong>
+                    @Model.qsql2
+                </div>
+            }
+
+            @if (Model.errorString != null && Model.errorString.Length > 0 && Model.isDebug)
+            {
+                <div id="alertd" class="alert alert-danger">
+                    <strong>errorString :</strong>
+                    @Model.errorString
+                </div>
+            }
+            @if (Model.jsObjData != null && Model.jsObjData.Length > 0 && Model.isDebug)
+            {
+                <div id="alertd" class="alert alert-info">
+                    <strong>jsObjData :</strong>
+                    @Model.jsObjData
+                    <br />
+                    tableData[0][0] :
+                    @(Model.tableData != null ? Model.tableData[0][0] : "")
+                    <br />
+                    messageString :
+                    @(Model.messageString != null ? Model.messageString : "")
+                </div>
+            }
+
+            @if (Model.messages != null && Model.messages.Length > 0 && Model.isDebug)
+            {
+                <br />
+                <div id="alertd" class="alert alert-info">
+                    <strong>messages[0] :</strong>
+                    @Model.messages[0]
+                </div>
+                <br />
+                <div id="alertd" class="alert alert-info">
+                    <strong>messages[1] :</strong>
+                    @Model.messages[1]
+                </div>
+                <br />
+                <div id="alertd" class="alert alert-info">
+                    <strong>messages[2] :</strong>
+                    @Model.messages[2]
+                </div>
+            }
+        </div>
+			</textarea>			
+			<br><br>
+			javascript start variables and value assignment are also made on the Razor page.
+			<br><br>
+			<textarea class="form-control form-control-sm" name="code-csbca-01" rows="20" cols="100" readonly>
+    <script>
+          var jsObjData, dataList, selectLists, fieldNames, selectNames, labelNames, inputTypes, readOnlyFM, invisibleFM, requiredFM,
+            isModal, isWithRefs, selInpIds, listN4Page, listN4Modal, dateF, timeF, pageNo, totRow, lineCount, mCols, isLocale, lastProp;
+
+          document.addEventListener("DOMContentLoaded", function(event){
+
+            jsObjData = @(new HtmlString((Model.jsObjData != null && Model.jsObjData.Length > 0) ? Model.jsObjData : ""));
+            dataList = jsObjData.data;
+
+            selectLists = @(new HtmlString((Model.selectLists != null && Model.selectLists.Length > 0) ? Model.selectLists : "''"));
+
+            fieldNames = @(new HtmlString(ArrayToString.getStringWithComma(Model.fieldNames)));
+            selectNames = @(new HtmlString(ArrayToString.getStringWithComma(Model.selectFields))) ;
+            labelNames = @(new HtmlString(ArrayToString.getStringWithComma(Model.labelNames))) ;
+            inputTypes = @(new HtmlString(ArrayToString.getStringWithComma(Model.inputTypes))) ;
+            readOnlyFM = @(new HtmlString(ArrayToString.getStringWithComma(Model.readOnlyFM.Select(x=>x.ToString()).ToArray()))) ;
+            invisibleFM = @(new HtmlString(ArrayToString.getStringWithComma(Model.invisibleFM.Select(x=>x.ToString()).ToArray()))) ;
+            requiredFM = @(new HtmlString(ArrayToString.getStringWithComma(Model.requiredFM.Select(x=>x.ToString()).ToArray()))) ;
+            isModal = @(Model.isModal ? "true" : "false");
+            isWithRefs = @(Model.isWithRefs ? "true" : "false");
+            isLocale = @(Model.isLocale ? "true" : "false");
+			</textarea>			
+			<br><br>
+			Set the data for the HTML table.
+			<br><br>
+			<textarea class="form-control form-control-sm" name="code-csbca-01" rows="20" cols="100" readonly>
+            excelCols = @(new HtmlString(Model.excelCols));
+            lastProp = "@Model.fieldNames[0]";
+            pageNo = 1;
+
+            selInpIds = { newR: [{ id: "y_2", name: "adr_path" }, { id: "y_3", name: "code_type" }], searchR: [{id: "s_3",
+                  name: "adr_path"}, { id: "s_4", name: "code_type" }, { id: "s_5", name: "rec_user" }], updateR: [{id: "g_3",
+                  name: "adr_path"}, { id: "g_4", name: "code_type" }]};
+
+            listN4Page = [{ id: "paths", name: "adr_path" }, { id: "types", name: "code_type" }, { id: "codes", name: "rec_user" }];
+            listN4Modal = [{ id: "paths", name: "adr_path" }, { id: "types", name: "code_type" }];
+
+            totRow = @(Model.tableData != null ? Model.tableData.Length : 0);
+
+            dateF = "@Model.dateFormatter.getStringDF()" ;
+            timeF = "@Model.dateFormatter.getStringTF()" ;
+
+            lineCount =@Model.sessionBean.getLineCount();
+            mCols = 2;
+
+            setList(listN4Page, selectLists);
+
+            setPage();
+          });
+    </script>
+			</textarea>			
+			<br><br>
+			Modal form settings are made in html.
+			<br><br>
+			<textarea class="form-control form-control-sm" name="code-csbca-01" rows="20" cols="100" readonly>
+    <div class="modal fade" id="guncM" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">@Model.pageTitle Update</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <form id="updateR" class="form" enctype="multipart/form-data" method="post">
+                    <div class="form-group">
+                        <div class="modal-body">
+                            <table class="table table-borderless">
+                                <tbody id="modalTb">
+                                    <!-- Modal form fields is here.-->
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+                            <table class="table table-borderless">
+                                <tbody id="modBt">
+                                    <tr>
+                                        <td><label for="g_8">Code :</label></td>
+                                        <td>
+                                            <input type="file" class="form-control-file border form-control-sm"
+                                                   name="@Model.fileField" id="g_8">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-info btn-sm"
+                                                    onclick='sendUpdate("@Model.pageName","updateR")'>
+                                                Save
+                                            </button>
+                                            &nbsp;
+                                            <button type="button" class="btn btn-outline-info btn-sm"
+                                                    onclick='sendDownload("@Model.pageName","updateR","g_2",false)'>
+                                                File Download
+                                            </button> &nbsp;
+                                            <button type="button" class="btn btn-outline-danger btn-sm"
+                                                    onclick='sendDelete("@Model.pageName","updateR")'>
+                                                Delete
+                                            </button>
+                                            &nbsp;
+                                            <button type="reset" class="btn btn-outline-secondary btn-sm">Cancel</button>
+                                            &nbsp;
+                                            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+			</textarea>			
+			<br><br>
+			Functions in csbca.js javascript:
+			<br><br>
+			HTML table pagination settings
+			<br><br>
+			<textarea class="form-control form-control-sm" name="code-csbca-01" rows="20" cols="100" readonly>
+// For setting html table line size and calling getPage function
+function setPage()
+{
+	if(window.dataList !== "") 
+	{
+		window.lineCount = document.getElementById("p_size").value;
+
+		getPage(window.pageNo);
+	}
+}
+
+// For setting html table page value and calling getPage function
+function paging(pageB)
+{
+	let page = document.getElementById("page"+pageB).value;
+	
+	logStr("page: "+page);
+	
+	getPage(page); 
+}
+
+// For setting html table page lines 
+function getPage(page) 
+{
+	let i=0, j=0, order=0, elem, c;
+	let k = 0, n= 0;
+	let tableStr = "";
+	
+	if(page=="O")
+ 	{
+		if(window.pageNo > 1)
+			page = window.pageNo - 1;
+		else
+			page = 1;
+		
+		if(document.getElementById("page1").value > 1)
+		{
+			for(i=1; i<=5; i++)
+			{
+				elem = document.getElementById("page"+i);
+				c = elem.value -1;
+				elem.value = c;
+				elem.innerHTML = c;
+			}
+		}
+	}
+	else if(page=="S")
+	{
+		if(window.pageNo <= ((window.totRow/window.lineCount)-1)+2)
+			page = (window.pageNo - 1) + 2;
+
+		if(document.getElementById("page5").value <= ((window.totRow/window.lineCount)-1)+2)
+		{
+			for(i=1; i<=5; i++)
+			{
+				elem = document.getElementById("page"+i);
+				c = (elem.value -1)+2;
+				elem.value = c;
+				elem.innerHTML = c;
+			}
+		}
+	}
+	window.pageNo = page;
+			</textarea>			
+			<br><br>
+			Creating HTML table rows
+			<br><br>
+			<textarea class="form-control form-control-sm" name="code-csbca-01" rows="20" cols="100" readonly>
+	if(k > 0 && window.totRow > 0)
+	{
+		order = 1;
+		for(i = n; i < k; i++)
+		{
+			for(j = 0; j < window.fieldNames.length; j++)
+			{				
+				if(j == 0)
+				{
+					if(window.isModal)
+						tableStr += "<tr><td>"+order+"</td><td onclick = \"getModal("+window.dataList[i][fieldNames[j]]+
+									")\"";
+					else
+						tableStr += "<tr><td>"+order+"</td><td onclick = \"getUpdateForm("+window.dataList[i][fieldNames[j]]+
+									")\"";
+				}	
+				else
+					tableStr += "<td";
+				
+				if(j == window.invisibleFM[j])
+					tableStr += " style=\"display:none;\"";
+				
+				tableStr += ">"+window.dataList[i][window.fieldNames[j]]+"</td>";
+			}
+			tableStr += "</tr>";
+			order++;
+        }
+        //logStr(tableStr);
+
+		document.getElementById("listTb").innerHTML = tableStr;
+	}
+			</textarea>			
+			<br><br>
+			A section from modal form formation
+			<br><br>
+			<textarea class="form-control form-control-sm" name="code-csbca-01" rows="20" cols="100" readonly>
+				if((j % mCols) == 0) // is even 
+					tableStr += "<tr>";				
+				
+				 tableStr += "<td><label for=\"g_"+(j+1)+"\" class=\"col-form-label-sm\">"+window.labelNames[j]+":</label></td>"+
+							 "<td><input class=\"form-control form-control-sm\" id=\"g_"+(j+1)+"\"";
+				 
+				 if(window.inputTypes[j] == "datetime-local")
+				   tableStr += " value=\""+dateTimeFormat(window.dataList[i][window.fieldNames[j]], true)+"\" name=\""+window.fieldNames[j]+"\"";
+				 else 
+				 if(window.inputTypes[j] == "date")
+				   tableStr += " value=\""+dateTimeFormat(window.dataList[i][window.fieldNames[j]], false)+"\" name=\""+window.fieldNames[j]+"\"";
+				 else
+				   tableStr += " value=\""+window.dataList[i][window.fieldNames[j]]+"\" name=\""+window.fieldNames[j]+"\"";
+				 
+				 if(j == window.readOnlyFM[j])
+					 tableStr += " readonly";
+				 
+				 if(j == window.requiredFM[j])
+					 tableStr += " required";
+					
+				 tableStr += " type=\""+window.inputTypes[j]+"\"";
+				 
+				 isList = false;
+				 
+				 if(window.listN4Modal != undefined && window.listN4Modal)
+				 {
+					 for(h=0; h < n; h++)
+					 {
+						if(window.listN4Modal[h].name == window.fieldNames[j])
+						{
+							tableStr += " list=\""+window.listN4Modal[h].id+"\"></td><datalist id=\""+
+										window.listN4Modal[h].id+"\"></datalist>";
+							isList = true;
+						}
+					 }
+				 }
+				 if(!isList)
+					tableStr += "></td>";
+								
+				 if(j > 0 && ((j % mCols) == (mCols-1) || j == k-1 || window.inputTypes[j] == "textarea")) // is odd or last
+					tableStr += "</tr>";
+			</textarea>			
+			<br><br>
+			Update form to an alternative solution to the modal page
+			<br><br>
+			<textarea class="form-control form-control-sm" name="code-csbca-01" rows="20" cols="100" readonly>
+// For getting update form instead modal
+function getUpdateForm(id)
+{
+	let k = window.fieldNames.length;
+	let m = 0;
+	let n = 0;
+	let tableStr = "";
+	
+	let h=0, p=0;
+	let isList = false, isDate = false;
+	
+	if(window.dataList != undefined && window.dataList && window.dataList.length > 0)
+		m = window.dataList.length;
+	
+	for(let i=0; i<m; i++)
+	{
+		if(window.dataList[i][window.fieldNames[0]] == id)
+		{
+		  for(let j=0; j<k; j++)
+		  {
+			 if(window.inputTypes[j] == "datetime-local")
+			   document.getElementById("g_"+(j+1)).value = dateTimeFormat(window.dataList[i][window.fieldNames[j]], true);
+			 else 
+			 if(window.inputTypes[j] == "date")
+			   document.getElementById("g_"+(j+1)).value = dateTimeFormat(window.dataList[i][window.fieldNames[j]], false);
+			 else
+			   document.getElementById("g_"+(j+1)).value = window.dataList[i][window.fieldNames[j]];
+			 
+		  }
+		}
+	}
+	
+}
+			</textarea>			
+			<br><br>
+			Section from the section where the search parameters are sent to PageModel with ajax, the json data is parsed and the table is created.			
+			<br><br>
+			<textarea class="form-control form-control-sm" name="code-csbca-01" rows="20" cols="100" readonly>
+// For sending selection form data with ajax
+function sendSelect(url, formId)
+{
+	let formElement = document.getElementById(formId);
+	
+	let formData = new FormData(formElement);
+
+	if(window.isWithRefs)
+		setSelectData(formData, formId);
+	
+	formData.append("action","select");
+	
+    formData.append("isLocale", window.isLocale);
+
+    //formData.append("RequestVerificationToken", );
+	
+	logFD(formData);
+	
+	sendForm(url, selectResponse, formData);
+}
+
+// For setting selection response data
+function selectResponse(xhr) 
+{
+  if(xhr.responseText)  
+  {
+	logStr(xhr.responseText);
+	
+	window.jsObjData = JSON.parse(xhr.responseText);
+	
+	window.dataList = window.jsObjData.data; 
+      window.pageNo = 1;
+
+    logJD(window.jsObjData);
+	
+	if(window.dataList)
+		window.totRow = window.dataList.length;
+			
+	putMessages();
+  }
+			</textarea>			
+			<br><br>
+			Similar ajax scripts are also available for adding, updating and deleting records.
+			<br><br>
+			For file download, we can see a script section like below.
+			<br><br>
+			<textarea class="form-control form-control-sm" name="code-csbca-01" rows="20" cols="100" readonly>
+// For sending download form data to url with ajax
+function sendDownload(url, formId, fileId, isPage) 
+{
+	let formElement = document.getElementById(formId);
+	
+	let formData = new FormData(formElement);
+	
+	var fileName = document.getElementById(fileId).value;
+	
+	if(isPage === true) fileName += ".html";
+	
+	logStr(fileName);
+	
+	if(isWithRefs)
+		setSelectData(formData, formId);
+	
+	formData.append("action","download");
+	
+	formData.append("isLocale", window.isLocale);
+	
+	logFD(formData);
+	
+	let xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+
+	xhr.open("POST", url, true);
+	xhr.responseType = "blob"; 
+
+	xhr.onload = function() 
+	{
+		if (xhr.readyState == 4 && xhr.status == 200) 
+		{
+			var bclob = xhr.response;
+			
+			downloadResponse(fileName, bclob);
+		}
+	};
+	xhr.send(formData);
+}
+
+			</textarea>			
+			<br><br>
+			It is possible to import the data in the HTML table as excel, csv, json and pdf. To do this, let's look at a cross-section of the preparation of the lists.
+			<br><br>
+			<textarea class="form-control form-control-sm" name="code-csbca-01" rows="20" cols="100" readonly>
+// For getting data array as string
+function getList()
+{
+	let dataStr = "";
+	
+	for(let n=0; n < labelNames.length; n++)
+		dataStr += labelNames[n]+ ",";
+	
+	dataStr += "\n";
+	
+	for(let i=0; i < dataList.length; i++)
+	{
+		for(let j=0; j < fieldNames.length; j++)
+		{
+			dataStr += dataList[i][fieldNames[j]]+ ",";
+			
+			if(j == (fieldNames.length-1))
+				dataStr += "\n";
+		}
+	}
+	return dataStr;
+}
+
+// For getting data array as json
+function getJSList()
+{
+	let jsonStr = "[";
+	
+	for(let i=0; i < dataList.length; i++)
+	{
+		jsonStr += "{";
+		for(let j=0; j < fieldNames.length; j++)
+		{
+			jsonStr += "\""+labelNames[j]+"\":\""+dataList[i][fieldNames[j]]+"\""; 
+			
+			if(j < (fieldNames.length-1))
+				jsonStr += ",";
+		}
+		jsonStr += "}";
+		
+		if(i < (dataList.length-1))
+			jsonStr += ",";
+	}
+	jsonStr += "]";
+	
+	return jsonStr;
+}
+			</textarea>			
+			<br><br>
+			And file transfers
+			<br><br>
+			<textarea class="form-control form-control-sm" name="code-csbca-01" rows="20" cols="100" readonly>
+// For exporting to excel file
+function exportToExcel(file = "") {
+	file = file ? file + ".xlsx" : "excel_list.xlsx";
+
+	var workbook = new ExcelJS.Workbook();
+	var worksheet = workbook.addWorksheet('excel_list');
+
+	worksheet.columns = excelCols;
+	worksheet.addRows(dataList);
+
+	var buff = workbook.xlsx.writeBuffer().then(function (data) {
+		var blob = new Blob([data], { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" });
+		saveAs(blob, file);
+	});
+}
+
+// For exporting to json file
+function exportToJson(file = "")
+{
+	let jsonList = getJSList(); 
+	
+    file = file?file+".json":"json_list.json";
+ 
+	let data  = "application/json;charset=utf-8," + jsonList; 
+ 
+	exportData(data, file);
+}
+
+// For exporting to csv text file
+function exportToCSV(file = "")
+{
+	let csvList = getList();
+	
+    file = file?file+".csv":"csv_list.csv";
+ 
+	let data  = "text/csv;charset=utf-8," + encodeURIComponent(csvList); 
+	
+	exportData(data, file);
+}			</textarea>			
+			<br><br>
+			Setting the initial data and authorization control on the PageModel side, transferring the HttpContext to the process code
+			<br><br>
+			<textarea class="form-control form-control-sm" name="code-csbca-01" rows="10" cols="100" readonly>
+                if (process == null) process = new AdminProcess();
+
+                HttpContext.Request.Headers["Content-Type"] = "charset=utf-8";
+
+                if (httpContextA == null)
+                {
+                    httpContextA = new HttpContextAccessor();
+                }
+                httpContextA.HttpContext = HttpContext; // For transferring HttpContext to process
+
+                initModel(); // Model initialization
+
+                process.initProcess(httpContextA, p); // Process initialization
+                process.isDebug = p.isDebug;
+
+                process.checkSession(); // Session control
+                process.checkAuthorized(); // User authorization control
+
+                procData = process.doPost(); // To call the page process for sending actions to api
+			</textarea>			
+			<br><br>
+			Getting HttpContext data on the process side
+			<br><br>
+			<textarea class="form-control form-control-sm" name="code-csbca-01" rows="10" cols="100" readonly>
+        public void initProcess(IHttpContextAccessor httpContextA, BaseParameters p)
+        {
+            initContext(httpContextA); 
+            initParameters(p); 
+        }
+        // For initializing HttpContext, Request, Response and Session
+        public void initContext(IHttpContextAccessor httpContextA)
+        { 
+            this.httpContextA = httpContextA;
+            request = httpContextA.HttpContext.Request;
+            response = httpContextA.HttpContext.Response;
+            session = httpContextA.HttpContext.Session;
+        }
+			</textarea>			
+			<br><br>
+			Searching and transferring json data to PageModel for sending over ajax
+			<br><br>
+			<textarea class="form-control form-control-sm" name="code-csbca-01" rows="20" cols="100" readonly>
+                if (p.action.Equals("select"))
+                {
+                    formSize = p.selectFields.Length;
+                    p.formData = new string[formSize];
+                    p.dateFormatter.setIsForm(true);
+                    p.dateFormatter.setTimeFormat(BaseParameters.NO);
+
+                    for (int i = 0; i < formSize; i++)
+                    {
+                        p.formData[i] = request.Form[p.selectFields[i]].ToString();
+                    }
+                    dbQuery = p.execTableWR.tableAction(p.action, p.formData, p.prepQueryWR);
+
+                    if (dbQuery)
+                        p.tableData = (string[][])p.execTableWR.selectData(p.dataType);
+                    else
+                        p.tableData = null;
+
+                    if (p.tableData != null)
+                    {
+                        p.jsonConverter = new JsonConverter(p.fieldNames, p.tableData, p.execTableWR);
+                        jsonData = p.jsonConverter.convert2Json();
+                        tableData = p.tableData;
+                    }
+                    messages = p.execTableWR.getMessages();
+
+                    return jsonData;
+                }
+			</textarea>			
+			<br><br>
+			Sending json data after recording, updating and deleting operations
+			<br><br>
+			<textarea class="form-control form-control-sm" name="code-csbca-01" rows="20" cols="100" readonly>
+                    formSize = p.fieldNames.Length;
+                    p.formData = new string[formSize];
+                    p.dateFormatter.setIsForm(true);
+
+                    if (isInsert) { p.formData[0] = "0"; n = 1; }
+
+                    for (int i = n; i < formSize - 2; i++)
+                    {
+                        p.formData[i] = request.Form[p.fieldNames[i]].ToString();
+                    }
+
+                    p.formData[formSize - 2] = p.sessionBean.getCode();
+                    p.formData[formSize - 1] = now.ToString(dateTF);
+
+                    dbQuery = p.execTableWR.tableActionWR(p.action, p.formData, p.prepQueryWR);
+
+                    if (dbQuery)
+                    {
+                        if (!isInsert) p.logBean.setLog(p, formSize);
+
+                        p.tableData = new string[1][]; 
+
+                        if (isInsert)
+                        {
+                            int k = 0;
+                            p.unqFieldData = new string[p.unqFields.Length];
+
+                            for (int i = 0; i < formSize; i++)
+                            {
+                                if (i == p.unqMatchs[i])
+                                {
+                                    p.unqFieldData[k] = p.formData[i];
+                                    k++;
+                                }
+                            }
+                            p.tableData[0] = p.execTableWR.getNewRecord(p.unqFields, p.unqFieldData, p.unqFieldTypes,
+                                                                         p.prepQueryWR);
+                            p.formData[0] = p.tableData[0][0];
+
+                            p.logBean.setLog(p, formSize);
+                        }
+                        else
+                        {
+                            p.tableData[0] = p.formData;
+                        }
+
+                        if (!isInsert)
+                        {
+                            if (p.tableData[0] != null && p.tableData[0][5] != null)
+                                p.tableData[0][5] = p.dateFormatter.changeDateFormat(p.tableData[0][5]);
+                            else
+                                msgStr += ", Attention: p.tableData[0][5] is null";
+                        }
+                        tableData = p.tableData;
+                    }
+                    else
+                    {
+                        p.tableData = null;
+                        messageString = "p.tableData is null!";
+                        errorString = p.execTableWR.getErrorString();
+                        Console.WriteLine(messageString + "\n" + errorString);
+                    }
+                    messages = p.execTableWR.getMessages();
+
+                    msgStr += formSize.ToString();
+                    if (messages[1].Equals(p.execTableWR.getDefMsgScr()))
+                        messages[1] = "";
+                    messages[1] += msgStr + ", sqlString: " + p.execTableWR.getQueryString();
+
+                    if (isDebug) Console.WriteLine(p.execTableWR.getQueryString());
+
+                    p.execTableWR.setMessages(messages);
+
+                    p.jsonConverter = new JsonConverter(p.fieldNames, p.tableData, p.execTableWR);
+                    jsonData = p.jsonConverter.convert2Json();
+
+                    return jsonData;
+			</textarea>			
+			<br><br>
+			A section of the application menus
+			<br><br>
+			<img src="../images/csbca-path/pict_csbca_01_en.jpg" class="img-thumbnail" alt="Code" width="800" height="600">
+			<br><br>
+			An image from the operation of the mandatory field control HTML5 property at the new data entry
+			<br><br>
+			<img src="../images/csbca-path/pict_csbca_02_en.jpg" class="img-thumbnail" alt="Code" width="1000" height="200">
+			<br><br>
+			HTML5 date selection feature to search for information
+			<br><br>
+			<img src="../images/csbca-path/pict_csbca_03_en.jpg" class="img-thumbnail" alt="Code" width="1000" height="250">
+			<br><br>
+			Bulk representation of the code form
+			<br><br>
+			<img src="../images/csbca-path/pict_csbca_04.jpg" class="img-thumbnail" alt="Code" width="1000" height="550">
+			<br><br>
+			Modal image of the code form
+			<br><br>
+			<img src="../images/csbca-path/pict_csbca_05.jpg" class="img-thumbnail" alt="Code" width="1000" height="450">
+			<br><br>
+			First of all, the parameters for the form must be determined.
+			<br><br>
+			<textarea class="form-control form-control-sm" name="code-csbca-01" rows="20" cols="100" readonly>
+       // For initializing admin parameters
+        public new void initParams()
+        {
+            base.initParams();
+
+            isDebug = false;
+            tableNames = new string[] { "csbc_user", "vt_csbc_user" }; // Array for table names
+            fieldNames = new string[] {"id","user_name","user_code","user_psw","user_group","e_mail","rec_status","page_size",
+                                        "rec_user","rec_date"}; // Array for field names
+            inputTypes = new string[] { "number", "text", "text", "password", "text", "email", "text", "number", "text",
+                                        "datetime-local" }; // Array for html input types
+            selectFields = new string[] { "id", "user_name", "user_group", "e_mail", "rec_user", "rec_date1", "rec_date2" }; // Array for search field names
+            selectITs = new string[] { "number", "text", "text", "email", "text", "date", "date" }; // Array for search html input types
+            setLabels(); // For setting labale names
+            // Matching check is like : if(myArray[i] == i)
+            colWidths = new int[] { 10, 30, 10, 10, 10, 30, 10, 10, 10, 15 }; // For excel
+            readOnlyFM = new int[] { 0, -1, -1, -1, -1, -1, -1, -1, 8, 9 }; // Read only fields map on HTML5 form
+            invisibleFM = new int[] { -1, -1, -1, 3, -1, -1, -1, -1, -1, -1 }; // Integer array for matching invisible fields. 
+            requiredFM = new int[] { -1, 1, 2, 3, 4, 5, -1, -1, -1, -1 }; // Integer array for matching required fields.
+            equalityInt = new int[] { EQ, LK, EQ, LK, EQ, BGE, SME }; // Integer array for equality fields.
+            unqFields = new string[] { "user_code" }; // String array for unique fields. 
+            unqFieldTypes = new int[] { STRING }; // Integer array for unique field types.
+            unqMatchs = new int[] { -1, -1, 2, -1, -1, -1, -1, -1, -1, -1 }; // Integer array for matching unique fields.
+            fieldTypes = new int[] { INTEGER, STRING, STRING, STRING, STRING, STRING, STRING, INTEGER, STRING, DATE };// Integer array for field types.
+            selectFTs = new int[] { INTEGER, STRING, STRING, STRING, STRING, DATE, DATE }; // Integer array for search field types.
+            dataType = STRING; // Integer for data type
+            setExcelCols(); // For setting excel columns
+            orderBy = "id"; // Field name for ordering
+            refTableNames = new string[] { "csbc_group", "csbc_status", "csbc_user" }; // String array for reference table names.
+            refFieldNames = new string[] { "group_name", "status_name", "user_code" }; // String array for reference field names.
+            refFieldMatchs = new int[] { -1, -1, -1, -1, 4, -1, 6, -1, 8, -1 }; // Integer array for matching reference fields.
+            dateFormatter = new DateFormatter(); // For setting DateFormatter.
+            dateFormatter.setTimeFormat(HM); 
+            prepQueryWR = new PrepQueryWithRef(); // The constructor for PrepQueryWithRef
+            prepQueryWR.convert2EQLs(equalityInt); // For converting to sql comparison operators
+            // The constructor for ExecTableWithRef
+            execTableWR = new ExecTableWithRef(runDB, tableNames, fieldNames, fieldTypes, orderBy, selectFields, selectFTs,
+                                                    dateFormatter, refTableNames, refFieldNames, refFieldMatchs, messageBean);
+            // The constructor for PasswordBean
+            passwordBean = new PasswordBean(runDB, tableNames[0], fieldNames[0], fieldNames[3]);
+            // The constructor for ManagePassword
+            managePassword = new ManagePassword(defPasw, passwordBean, defMask);
+            // The constructor for ManageSelList
+            manageSelList = new ManageSelList(runDB, refTableNames, refFieldNames);
+            
+            execTableWR.isAfterCommit = false;
+            execTableWR.isDebug = isDebug;
+            authorized = new string[] { "Admin" }; // String array for authorized groups
+            isModal = true; // For setting modal or not
+            isWithRefs = true; // With reference or without reference
+        }
+			</textarea>			
+			<br><br>
+			After a good analysis and relational database design, the use of a powerful architecture can save you 30-40% of your time in your enterprise software projects.
+
+			</p>
+		</div>
+		<div class="col-3">
+			<ul>
+				Left Side Link<br>
+			</ul>
+		</div>
+	  </div>
+	</div>
+	<br><br><br><br><br>
+
+</body>
+</html>

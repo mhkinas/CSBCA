@@ -1,0 +1,513 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CodeBean
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CodeBean
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="SDBCS.bean.CodeBean">
+  
+  
+  <h1 id="SDBCS_bean_CodeBean" data-uid="SDBCS.bean.CodeBean" class="text-break">Class CodeBean
+  </h1>
+  <div class="markdown level0 summary"><p>This class is useful for retrieving and recording html, javascript, stylesheet codes from DB.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CodeBean</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="SDBCS.bean.html">SDBCS.bean</a></h6>
+  <h6><strong>Assembly</strong>: SDBCS.dll</h6>
+  <h5 id="SDBCS_bean_CodeBean_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CodeBean</code></pre>
+  </div>
+  <h5 id="SDBCS_bean_CodeBean_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>
+Author Mehmet Hayati KINAŞ
+</p>
+<p>
+Version 1.0
+</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="SDBCS_bean_CodeBean__ctor_" data-uid="SDBCS.bean.CodeBean.#ctor*"></a>
+  <h4 id="SDBCS_bean_CodeBean__ctor_SDBCS_dbwork_RunDB_System_String___System_String_System_String___System_String_" data-uid="SDBCS.bean.CodeBean.#ctor(SDBCS.dbwork.RunDB,System.String[],System.String,System.String[],System.String)">CodeBean(RunDB, String[], String, String[], String)</h4>
+  <div class="markdown level1 summary"><p>The constructor use runDB, tableName, keyField, unqField, codeField parameters for recording and
+retrieving code data from DB.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CodeBean(RunDB runDB, string[] tableNames, string keyField, string[] unqField, string codeField)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SDBCS.dbwork.RunDB.html">RunDB</a></td>
+        <td><span class="parametername">runDB</span></td>
+        <td><p>RunDB instance for DB processes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">tableNames</span></td>
+        <td><p>Table names string array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">keyField</span></td>
+        <td><p>Key field string value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">unqField</span></td>
+        <td><p>Unique fields string array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">codeField</span></td>
+        <td><p>Code field string value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="SDBCS_bean_CodeBean_isDebug" data-uid="SDBCS.bean.CodeBean.isDebug">isDebug</h4>
+  <div class="markdown level1 summary"><p>If this class open for debugging usage or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isDebug</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="SDBCS_bean_CodeBean_closeAll_" data-uid="SDBCS.bean.CodeBean.closeAll*"></a>
+  <h4 id="SDBCS_bean_CodeBean_closeAll" data-uid="SDBCS.bean.CodeBean.closeAll">closeAll()</h4>
+  <div class="markdown level1 summary"><p>Firstly close local dataReader if it is open, then call runDB closeAll method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void closeAll()</code></pre>
+  </div>
+  
+  
+  <a id="SDBCS_bean_CodeBean_getCode_" data-uid="SDBCS.bean.CodeBean.getCode*"></a>
+  <h4 id="SDBCS_bean_CodeBean_getCode_System_String_System_Boolean_System_String___" data-uid="SDBCS.bean.CodeBean.getCode(System.String,System.Boolean,System.String[])">getCode(String, Boolean, String[])</h4>
+  <div class="markdown level1 summary"><p>This method is for retrieving code data from DB.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getCode(string keyData, bool isKey, string[] unqData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">keyData</span></td>
+        <td><p>Key data string value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isKey</span></td>
+        <td><p>If is key value present then set true, else set false.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">unqData</span></td>
+        <td><p>Unique data string array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Code data string value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_CodeBean_getErrorString_" data-uid="SDBCS.bean.CodeBean.getErrorString*"></a>
+  <h4 id="SDBCS_bean_CodeBean_getErrorString" data-uid="SDBCS.bean.CodeBean.getErrorString">getErrorString()</h4>
+  <div class="markdown level1 summary"><p>For getting error string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getErrorString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>errorString</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_CodeBean_getKeyData_" data-uid="SDBCS.bean.CodeBean.getKeyData*"></a>
+  <h4 id="SDBCS_bean_CodeBean_getKeyData_System_String___" data-uid="SDBCS.bean.CodeBean.getKeyData(System.String[])">getKeyData(String[])</h4>
+  <div class="markdown level1 summary"><p>If key data don't present unique data can be use for retrieving key data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void getKeyData(string[] unqData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">unqData</span></td>
+        <td><p>Unique data string array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_CodeBean_getMulti_" data-uid="SDBCS.bean.CodeBean.getMulti*"></a>
+  <h4 id="SDBCS_bean_CodeBean_getMulti" data-uid="SDBCS.bean.CodeBean.getMulti">getMulti()</h4>
+  <div class="markdown level1 summary"><p>For getting isMulti.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool getMulti()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>isMulti</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_CodeBean_setCode_" data-uid="SDBCS.bean.CodeBean.setCode*"></a>
+  <h4 id="SDBCS_bean_CodeBean_setCode_System_String_System_Boolean_System_String___System_String_" data-uid="SDBCS.bean.CodeBean.setCode(System.String,System.Boolean,System.String[],System.String)">setCode(String, Boolean, String[], String)</h4>
+  <div class="markdown level1 summary"><p>This method is for recording code data to DB.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool setCode(string keyData, bool isKey, string[] unqData, string codeData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">keyData</span></td>
+        <td><p>Key data string value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isKey</span></td>
+        <td><p>If is key value present then set true, else set false.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">unqData</span></td>
+        <td><p>Unique data string array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">codeData</span></td>
+        <td><p>Code data string value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>If recording is successful return true, else false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_CodeBean_setMulti_" data-uid="SDBCS.bean.CodeBean.setMulti*"></a>
+  <h4 id="SDBCS_bean_CodeBean_setMulti_System_Boolean_" data-uid="SDBCS.bean.CodeBean.setMulti(System.Boolean)">setMulti(Boolean)</h4>
+  <div class="markdown level1 summary"><p>If ther is multiple unique key then set true. Default is false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setMulti(bool isMulti)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isMulti</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_CodeBean_setNameField_" data-uid="SDBCS.bean.CodeBean.setNameField*"></a>
+  <h4 id="SDBCS_bean_CodeBean_setNameField_System_String_" data-uid="SDBCS.bean.CodeBean.setNameField(System.String)">setNameField(String)</h4>
+  <div class="markdown level1 summary"><p>For setting unique field name when there is only one unique key field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setNameField(string nameField)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">nameField</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

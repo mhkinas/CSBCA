@@ -1,0 +1,474 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/CSharp/WS/Doc/SDBCS/SDBCS",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SDBCS.bean.CodeBean.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SDBCS.bean.CodeBean.html",
+          "hash": "0LhLzWV3dQmkS66uQNi+Fg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SDBCS.bean.KeyDataBean.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SDBCS.bean.KeyDataBean.html",
+          "hash": "AUBo+EbHQTCHlgQeYzEvSA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SDBCS.bean.MenuBean.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SDBCS.bean.MenuBean.html",
+          "hash": "XJeI5yyeGM+2S5R6pGddGA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SDBCS.bean.MessageBean.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SDBCS.bean.MessageBean.html",
+          "hash": "sM6CyqDOf3wM5YgwEppznQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SDBCS.bean.PageBean.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SDBCS.bean.PageBean.html",
+          "hash": "KOcD/GygJPdF7ueMaUV/4g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SDBCS.bean.PasswordBean.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SDBCS.bean.PasswordBean.html",
+          "hash": "DYvwgKScXL1HgkkJVMr3Uw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SDBCS.bean.SessionBean.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SDBCS.bean.SessionBean.html",
+          "hash": "Z4plY1hKwcDm+7TyLK7xgg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SDBCS.bean.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SDBCS.bean.html",
+          "hash": "JSraTs3NOl+9+cNr4r/ktA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SDBCS.dbwork.ExecTableWithRef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SDBCS.dbwork.ExecTableWithRef.html",
+          "hash": "y1zoDCc9s7sjn9jyWws7wQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SDBCS.dbwork.ExecuteTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SDBCS.dbwork.ExecuteTable.html",
+          "hash": "ePjd5MYqUqTGs60XHQNptg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SDBCS.dbwork.PrepQueryWithRef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SDBCS.dbwork.PrepQueryWithRef.html",
+          "hash": "KF0VNtW354v2FtTdqbby4g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SDBCS.dbwork.PrepareQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SDBCS.dbwork.PrepareQuery.html",
+          "hash": "XpnIsqH7M9yJtYCl2RZ+Ng=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SDBCS.dbwork.RunDB.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SDBCS.dbwork.RunDB.html",
+          "hash": "lEiEdaBZ55sCKhnuVKHZKg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SDBCS.dbwork.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SDBCS.dbwork.html",
+          "hash": "4WPx0DsG5fTOtYPQW2MdCQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SDBCS.filework.ExecuteFileData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SDBCS.filework.ExecuteFileData.html",
+          "hash": "vxU6JC/aPXQymLfsIRkTiw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SDBCS.filework.RecordFileToDB.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SDBCS.filework.RecordFileToDB.html",
+          "hash": "LB6x1kQ65HS1oydScC+47A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SDBCS.filework.RecordFileToDisk.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SDBCS.filework.RecordFileToDisk.html",
+          "hash": "XSLLc38A/3/3tkDHYfg++Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SDBCS.filework.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SDBCS.filework.html",
+          "hash": "ozGXvm2hJZfnRgwvuaNlWg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SDBCS.management.DefValSetter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SDBCS.management.DefValSetter.html",
+          "hash": "DkOqYhcQZX0Gjznv4GWdsw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SDBCS.management.ManagePassword.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SDBCS.management.ManagePassword.html",
+          "hash": "FCpnFZAOOlqkGxLRSsn6og=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SDBCS.management.ManageSelList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SDBCS.management.ManageSelList.html",
+          "hash": "B5LndjCtSGhB3E4UXDouZQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SDBCS.management.StyleManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SDBCS.management.StyleManager.html",
+          "hash": "fqwOsNDQ1Ya9Sin4HT0PZA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SDBCS.management.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SDBCS.management.html",
+          "hash": "o9DUtlMtisTN4gQfh5PcHw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SDBCS.utility.ArrayToString.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SDBCS.utility.ArrayToString.html",
+          "hash": "p5vjyBu6PXTTWE/hTbfAAg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SDBCS.utility.DateFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SDBCS.utility.DateFormatter.html",
+          "hash": "7pNyAVHE55/Gn1LiJgvFQQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SDBCS.utility.JsonConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SDBCS.utility.JsonConverter.html",
+          "hash": "WYLlSuTWRCZ2wl4iafC6hg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SDBCS.utility.SHAConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SDBCS.utility.SHAConverter.html",
+          "hash": "ZQizqHWygw5mOxxeJQlu9w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SDBCS.utility.ValueChecker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SDBCS.utility.ValueChecker.html",
+          "hash": "p1XhJl1aR9GmpobOLoZdVA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SDBCS.utility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SDBCS.utility.html",
+          "hash": "dImIjVrMFhtl8kd7YK/rGQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "+BQW6fP4bHZSQ2ai1lh8cA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "J0OwANvtw8Emj/Ur7vrvOw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "sWS4eE5mk3fu/62mm7XLug=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "gB8AESyvNru97tzIZofEEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "kHG4DGNZhWbPavNwC4eNNQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "+rHUkRZHZRi5gd1aTU6lJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 29,
+          "skipped_file_count": 29
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

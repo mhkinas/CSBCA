@@ -1,0 +1,1992 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DateFormatter
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DateFormatter
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="SDBCS.utility.DateFormatter">
+  
+  
+  <h1 id="SDBCS_utility_DateFormatter" data-uid="SDBCS.utility.DateFormatter" class="text-break">Class DateFormatter
+  </h1>
+  <div class="markdown level0 summary"><p>This class convert date time formats and return as a string.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DateFormatter</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="SDBCS.utility.html">SDBCS.utility</a></h6>
+  <h6><strong>Assembly</strong>: SDBCS.dll</h6>
+  <h5 id="SDBCS_utility_DateFormatter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DateFormatter</code></pre>
+  </div>
+  <h5 id="SDBCS_utility_DateFormatter_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>
+Author Mehmet Hayati KINAŞ
+</p>
+<p>
+Version 1.0
+</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="SDBCS_utility_DateFormatter__ctor_" data-uid="SDBCS.utility.DateFormatter.#ctor*"></a>
+  <h4 id="SDBCS_utility_DateFormatter__ctor" data-uid="SDBCS.utility.DateFormatter.#ctor">DateFormatter()</h4>
+  <div class="markdown level1 summary"><p>The constructor call initialize method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateFormatter()</code></pre>
+  </div>
+  
+  
+  <a id="SDBCS_utility_DateFormatter__ctor_" data-uid="SDBCS.utility.DateFormatter.#ctor*"></a>
+  <h4 id="SDBCS_utility_DateFormatter__ctor_System_Int32_" data-uid="SDBCS.utility.DateFormatter.#ctor(System.Int32)">DateFormatter(Int32)</h4>
+  <div class="markdown level1 summary"><p>The constructor call initialize method, set dbSystem.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateFormatter(int dbSystem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">dbSystem</span></td>
+        <td><p>DB system selector as integer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter__ctor_" data-uid="SDBCS.utility.DateFormatter.#ctor*"></a>
+  <h4 id="SDBCS_utility_DateFormatter__ctor_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_System_Boolean_" data-uid="SDBCS.utility.DateFormatter.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean)">DateFormatter(Int32, Int32, Int32, Int32, Int32, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>The constructor sets dbSystem, brackets, dateFormat, hourFormat, sqlDF, isSimple, isForm for formatting date time
+and call initDF method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateFormatter(int dbSystem, int brackets, int dateFormat, int hourFormat, int sqlDF, bool isSimple, bool isForm)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">dbSystem</span></td>
+        <td><p>DB system selector as integer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">brackets</span></td>
+        <td><p>Brackets selector as integer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">dateFormat</span></td>
+        <td><p>Date format selector as integer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">hourFormat</span></td>
+        <td><p>Hour format selector as integer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sqlDF</span></td>
+        <td><p>SQL server date time format selector as integer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isSimple</span></td>
+        <td><p>If it is simple format type set true, else set false.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isForm</span></td>
+        <td><p>If it is form type set true, else set false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="SDBCS_utility_DateFormatter_ANSI_DATE" data-uid="SDBCS.utility.DateFormatter.ANSI_DATE">ANSI_DATE</h4>
+  <div class="markdown level1 summary"><p>ANSI format 102</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int ANSI_DATE = 102</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_utility_DateFormatter_BF_DATE" data-uid="SDBCS.utility.DateFormatter.BF_DATE">BF_DATE</h4>
+  <div class="markdown level1 summary"><p>Biritish French 103</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int BF_DATE = 103</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_utility_DateFormatter_DASH" data-uid="SDBCS.utility.DateFormatter.DASH">DASH</h4>
+  <div class="markdown level1 summary"><p>DASH  = 2</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DASH = 2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_utility_DateFormatter_DB2" data-uid="SDBCS.utility.DateFormatter.DB2">DB2</h4>
+  <div class="markdown level1 summary"><p>DB2 RDBMS</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DB2 = 4</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_utility_DateFormatter_DEF_PMS" data-uid="SDBCS.utility.DateFormatter.DEF_PMS">DEF_PMS</h4>
+  <div class="markdown level1 summary"><p>Default 109</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DEF_PMS = 109</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_utility_DateFormatter_DMY" data-uid="SDBCS.utility.DateFormatter.DMY">DMY</h4>
+  <div class="markdown level1 summary"><p>DayMonthYear DMY = 0</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DMY = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_utility_DateFormatter_HHMMSS" data-uid="SDBCS.utility.DateFormatter.HHMMSS">HHMMSS</h4>
+  <div class="markdown level1 summary"><p>HHMMSS 108</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int HHMMSS = 108</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_utility_DateFormatter_HM" data-uid="SDBCS.utility.DateFormatter.HM">HM</h4>
+  <div class="markdown level1 summary"><p>HourMinute HM = 1</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int HM = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_utility_DateFormatter_HMSM" data-uid="SDBCS.utility.DateFormatter.HMSM">HMSM</h4>
+  <div class="markdown level1 summary"><p>HMSM 114</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int HMSM = 114</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_utility_DateFormatter_MDY" data-uid="SDBCS.utility.DateFormatter.MDY">MDY</h4>
+  <div class="markdown level1 summary"><p>MonthDayYear MDY = 1</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MDY = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_utility_DateFormatter_MYSQL" data-uid="SDBCS.utility.DateFormatter.MYSQL">MYSQL</h4>
+  <div class="markdown level1 summary"><p>MySQL RDBMS</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MYSQL = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_utility_DateFormatter_NO" data-uid="SDBCS.utility.DateFormatter.NO">NO</h4>
+  <div class="markdown level1 summary"><p>NO = 0</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int NO = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_utility_DateFormatter_ORACLE" data-uid="SDBCS.utility.DateFormatter.ORACLE">ORACLE</h4>
+  <div class="markdown level1 summary"><p>Oracle RDBMS</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int ORACLE = 2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_utility_DateFormatter_POINT" data-uid="SDBCS.utility.DateFormatter.POINT">POINT</h4>
+  <div class="markdown level1 summary"><p>POINT = 0</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int POINT = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_utility_DateFormatter_POSTGRESQL" data-uid="SDBCS.utility.DateFormatter.POSTGRESQL">POSTGRESQL</h4>
+  <div class="markdown level1 summary"><p>Postgresql RDBMS</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int POSTGRESQL = 3</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_utility_DateFormatter_SLASH" data-uid="SDBCS.utility.DateFormatter.SLASH">SLASH</h4>
+  <div class="markdown level1 summary"><p>SLASH = 1</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SLASH = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_utility_DateFormatter_SPACE" data-uid="SDBCS.utility.DateFormatter.SPACE">SPACE</h4>
+  <div class="markdown level1 summary"><p>SPACE = 3</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SPACE = 3</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_utility_DateFormatter_SQLSERVER" data-uid="SDBCS.utility.DateFormatter.SQLSERVER">SQLSERVER</h4>
+  <div class="markdown level1 summary"><p>SQL Server RDBMS</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SQLSERVER = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_utility_DateFormatter_SQV1" data-uid="SDBCS.utility.DateFormatter.SQV1">SQV1</h4>
+  <div class="markdown level1 summary"><p>SQV1 = 0</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SQV1 = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_utility_DateFormatter_SQV2" data-uid="SDBCS.utility.DateFormatter.SQV2">SQV2</h4>
+  <div class="markdown level1 summary"><p>SQV2 = 1</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SQV2 = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_utility_DateFormatter_T" data-uid="SDBCS.utility.DateFormatter.T">T</h4>
+  <div class="markdown level1 summary"><p>HourMinuteSecond T  = 2</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int T = 2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_utility_DateFormatter_TMSTMP" data-uid="SDBCS.utility.DateFormatter.TMSTMP">TMSTMP</h4>
+  <div class="markdown level1 summary"><p>TimeStamp 120</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int TMSTMP = 120</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_utility_DateFormatter_TURK_DATE" data-uid="SDBCS.utility.DateFormatter.TURK_DATE">TURK_DATE</h4>
+  <div class="markdown level1 summary"><p>Turkish (German) format 104</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int TURK_DATE = 104</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_utility_DateFormatter_US_DATE" data-uid="SDBCS.utility.DateFormatter.US_DATE">US_DATE</h4>
+  <div class="markdown level1 summary"><p>U.S. format 101</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int US_DATE = 101</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_utility_DateFormatter_YMD" data-uid="SDBCS.utility.DateFormatter.YMD">YMD</h4>
+  <div class="markdown level1 summary"><p>YearMonthDay YMD = 2</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int YMD = 2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_cultureInfo_" data-uid="SDBCS.utility.DateFormatter.cultureInfo*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_cultureInfo" data-uid="SDBCS.utility.DateFormatter.cultureInfo">cultureInfo</h4>
+  <div class="markdown level1 summary"><p>For localizing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CultureInfo cultureInfo { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Globalization.CultureInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_changeDateFormat_" data-uid="SDBCS.utility.DateFormatter.changeDateFormat*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_changeDateFormat_System_String_" data-uid="SDBCS.utility.DateFormatter.changeDateFormat(System.String)">changeDateFormat(String)</h4>
+  <div class="markdown level1 summary"><p>For changing date string format from source to target format and return date string value.
+Use default source and target formats.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string changeDateFormat(string dateStr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">dateStr</span></td>
+        <td><p>Date as a string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Date string value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_changeDateFormat_" data-uid="SDBCS.utility.DateFormatter.changeDateFormat*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_changeDateFormat_System_String_System_String_System_String_" data-uid="SDBCS.utility.DateFormatter.changeDateFormat(System.String,System.String,System.String)">changeDateFormat(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>For changing date string format from source to target format and return date string value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string changeDateFormat(string dateStr, string sourceDF, string targetDF)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">dateStr</span></td>
+        <td><p>Date as a string</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceDF</span></td>
+        <td><p>DatehourFormatter instance for source format</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">targetDF</span></td>
+        <td><p>DatehourFormatter instance for target format</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Date string value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_changeDateFrmtforForm_" data-uid="SDBCS.utility.DateFormatter.changeDateFrmtforForm*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_changeDateFrmtforForm_System_Boolean_" data-uid="SDBCS.utility.DateFormatter.changeDateFrmtforForm(System.Boolean)">changeDateFrmtforForm(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Firstly save default date time format and set form date time format as default.
+If it is not first set saved format to default.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void changeDateFrmtforForm(bool isFirst)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isFirst</span></td>
+        <td><p>If it is first time usage set true, else set false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_getBrackets_" data-uid="SDBCS.utility.DateFormatter.getBrackets*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_getBrackets" data-uid="SDBCS.utility.DateFormatter.getBrackets">getBrackets()</h4>
+  <div class="markdown level1 summary"><p>For getting brackets</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int getBrackets()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>brackets</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_getDateFormat_" data-uid="SDBCS.utility.DateFormatter.getDateFormat*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_getDateFormat" data-uid="SDBCS.utility.DateFormatter.getDateFormat">getDateFormat()</h4>
+  <div class="markdown level1 summary"><p>For getting dateFormat</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int getDateFormat()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>dateFormat</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_getDbSystem_" data-uid="SDBCS.utility.DateFormatter.getDbSystem*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_getDbSystem" data-uid="SDBCS.utility.DateFormatter.getDbSystem">getDbSystem()</h4>
+  <div class="markdown level1 summary"><p>For getting dbSystem</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int getDbSystem()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>dbSystem</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_getFormBrk_" data-uid="SDBCS.utility.DateFormatter.getFormBrk*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_getFormBrk" data-uid="SDBCS.utility.DateFormatter.getFormBrk">getFormBrk()</h4>
+  <div class="markdown level1 summary"><p>For getting formBrk</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int getFormBrk()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>formBrk</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_getFormDF_" data-uid="SDBCS.utility.DateFormatter.getFormDF*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_getFormDF" data-uid="SDBCS.utility.DateFormatter.getFormDF">getFormDF()</h4>
+  <div class="markdown level1 summary"><p>For getting string form date format</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getFormDF()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>If hourFormat is MDY return &quot;MDY&quot; or if is what else.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_getFormHF_" data-uid="SDBCS.utility.DateFormatter.getFormHF*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_getFormHF" data-uid="SDBCS.utility.DateFormatter.getFormHF">getFormHF()</h4>
+  <div class="markdown level1 summary"><p>For getting string form hour format</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getFormHF()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>If hourFormat is  HM return &quot;HM&quot; or if is what else.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_getHourFormat_" data-uid="SDBCS.utility.DateFormatter.getHourFormat*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_getHourFormat" data-uid="SDBCS.utility.DateFormatter.getHourFormat">getHourFormat()</h4>
+  <div class="markdown level1 summary"><p>For getting hourFormat</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int getHourFormat()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>hourFormat</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_getIsCast_" data-uid="SDBCS.utility.DateFormatter.getIsCast*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_getIsCast" data-uid="SDBCS.utility.DateFormatter.getIsCast">getIsCast()</h4>
+  <div class="markdown level1 summary"><p>For getting isCast</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool getIsCast()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>isCast</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_getIsForm_" data-uid="SDBCS.utility.DateFormatter.getIsForm*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_getIsForm" data-uid="SDBCS.utility.DateFormatter.getIsForm">getIsForm()</h4>
+  <div class="markdown level1 summary"><p>For setting isForm</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool getIsForm()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>isForm</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_getIsSimple_" data-uid="SDBCS.utility.DateFormatter.getIsSimple*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_getIsSimple" data-uid="SDBCS.utility.DateFormatter.getIsSimple">getIsSimple()</h4>
+  <div class="markdown level1 summary"><p>For getting isSimple</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool getIsSimple()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>isSimple</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_getSourceDF_" data-uid="SDBCS.utility.DateFormatter.getSourceDF*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_getSourceDF" data-uid="SDBCS.utility.DateFormatter.getSourceDF">getSourceDF()</h4>
+  <div class="markdown level1 summary"><p>For getting sourceDF</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getSourceDF()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>sourceDF</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_getSqlDF_" data-uid="SDBCS.utility.DateFormatter.getSqlDF*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_getSqlDF" data-uid="SDBCS.utility.DateFormatter.getSqlDF">getSqlDF()</h4>
+  <div class="markdown level1 summary"><p>For getting sqlDF</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int getSqlDF()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>sqlDF</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_getSqlDTV_" data-uid="SDBCS.utility.DateFormatter.getSqlDTV*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_getSqlDTV" data-uid="SDBCS.utility.DateFormatter.getSqlDTV">getSqlDTV()</h4>
+  <div class="markdown level1 summary"><p>For getting sqlDTV</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int getSqlDTV()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>sqlDTV</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_getStrBrackets_" data-uid="SDBCS.utility.DateFormatter.getStrBrackets*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_getStrBrackets" data-uid="SDBCS.utility.DateFormatter.getStrBrackets">getStrBrackets()</h4>
+  <div class="markdown level1 summary"><p>For getting strBrackets</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getStrBrackets()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>strBrackets</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_getStringDF_" data-uid="SDBCS.utility.DateFormatter.getStringDF*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_getStringDF" data-uid="SDBCS.utility.DateFormatter.getStringDF">getStringDF()</h4>
+  <div class="markdown level1 summary"><p>For getting string date format</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getStringDF()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>If dateFormat is DMY return &quot;DMY&quot; or if is what else.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_getStringHF_" data-uid="SDBCS.utility.DateFormatter.getStringHF*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_getStringHF" data-uid="SDBCS.utility.DateFormatter.getStringHF">getStringHF()</h4>
+  <div class="markdown level1 summary"><p>For getting string hour format</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getStringHF()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>If hourFormat is  HM return &quot;HM&quot; or if is what else.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_getStringToDate_" data-uid="SDBCS.utility.DateFormatter.getStringToDate*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_getStringToDate_System_String_" data-uid="SDBCS.utility.DateFormatter.getStringToDate(System.String)">getStringToDate(String)</h4>
+  <div class="markdown level1 summary"><p>This method sets SQL date format function as a string depend on RDBMS systems ( MYSQL,SQLSERVER,ORACLE,POSTGRESQL,DB2 )
+and return string value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getStringToDate(string date)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">date</span></td>
+        <td><p>Date time string value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>String date time with SQL date formatter form.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_getTargetDF_" data-uid="SDBCS.utility.DateFormatter.getTargetDF*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_getTargetDF" data-uid="SDBCS.utility.DateFormatter.getTargetDF">getTargetDF()</h4>
+  <div class="markdown level1 summary"><p>For getting targetDF</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getTargetDF()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>targetDF</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_selectStrBrackets_" data-uid="SDBCS.utility.DateFormatter.selectStrBrackets*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_selectStrBrackets" data-uid="SDBCS.utility.DateFormatter.selectStrBrackets">selectStrBrackets()</h4>
+  <div class="markdown level1 summary"><p>For setting brackets as a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void selectStrBrackets()</code></pre>
+  </div>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_setBrackets_" data-uid="SDBCS.utility.DateFormatter.setBrackets*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_setBrackets_System_Int32_" data-uid="SDBCS.utility.DateFormatter.setBrackets(System.Int32)">setBrackets(Int32)</h4>
+  <div class="markdown level1 summary"><p>For getting brackets</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setBrackets(int brackets)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">brackets</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_setDateFormat_" data-uid="SDBCS.utility.DateFormatter.setDateFormat*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_setDateFormat_System_Int32_" data-uid="SDBCS.utility.DateFormatter.setDateFormat(System.Int32)">setDateFormat(Int32)</h4>
+  <div class="markdown level1 summary"><p>For setting dateFormat</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setDateFormat(int dateFormat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">dateFormat</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_setDbSystem_" data-uid="SDBCS.utility.DateFormatter.setDbSystem*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_setDbSystem_System_Int32_" data-uid="SDBCS.utility.DateFormatter.setDbSystem(System.Int32)">setDbSystem(Int32)</h4>
+  <div class="markdown level1 summary"><p>For setting dbSystem</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setDbSystem(int dbSystem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">dbSystem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_setFormBrk_" data-uid="SDBCS.utility.DateFormatter.setFormBrk*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_setFormBrk_System_Int32_" data-uid="SDBCS.utility.DateFormatter.setFormBrk(System.Int32)">setFormBrk(Int32)</h4>
+  <div class="markdown level1 summary"><p>For setting formBrk</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setFormBrk(int formBrk)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">formBrk</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_setFormDF_" data-uid="SDBCS.utility.DateFormatter.setFormDF*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_setFormDF_System_Int32_" data-uid="SDBCS.utility.DateFormatter.setFormDF(System.Int32)">setFormDF(Int32)</h4>
+  <div class="markdown level1 summary"><p>For setting formDF</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setFormDF(int formDF)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">formDF</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_setFormHF_" data-uid="SDBCS.utility.DateFormatter.setFormHF*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_setFormHF_System_Int32_" data-uid="SDBCS.utility.DateFormatter.setFormHF(System.Int32)">setFormHF(Int32)</h4>
+  <div class="markdown level1 summary"><p>For setting formHF</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setFormHF(int formHF)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">formHF</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_setHourFormat_" data-uid="SDBCS.utility.DateFormatter.setHourFormat*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_setHourFormat_System_Int32_" data-uid="SDBCS.utility.DateFormatter.setHourFormat(System.Int32)">setHourFormat(Int32)</h4>
+  <div class="markdown level1 summary"><p>For setting hourFormat</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setHourFormat(int hourFormat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">hourFormat</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_setIsCast_" data-uid="SDBCS.utility.DateFormatter.setIsCast*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_setIsCast_System_Boolean_" data-uid="SDBCS.utility.DateFormatter.setIsCast(System.Boolean)">setIsCast(Boolean)</h4>
+  <div class="markdown level1 summary"><p>For setting isCast</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setIsCast(bool isCast)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isCast</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_setIsForm_" data-uid="SDBCS.utility.DateFormatter.setIsForm*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_setIsForm_System_Boolean_" data-uid="SDBCS.utility.DateFormatter.setIsForm(System.Boolean)">setIsForm(Boolean)</h4>
+  <div class="markdown level1 summary"><p>For getting isForm</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setIsForm(bool isForm)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isForm</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_setIsSimple_" data-uid="SDBCS.utility.DateFormatter.setIsSimple*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_setIsSimple_System_Boolean_" data-uid="SDBCS.utility.DateFormatter.setIsSimple(System.Boolean)">setIsSimple(Boolean)</h4>
+  <div class="markdown level1 summary"><p>For  setting isSimple</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setIsSimple(bool isSimple)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isSimple</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_setSourceDF_" data-uid="SDBCS.utility.DateFormatter.setSourceDF*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_setSourceDF_System_String_" data-uid="SDBCS.utility.DateFormatter.setSourceDF(System.String)">setSourceDF(String)</h4>
+  <div class="markdown level1 summary"><p>For setting sourceDF</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setSourceDF(string sourceDF)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceDF</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_setSqlDF_" data-uid="SDBCS.utility.DateFormatter.setSqlDF*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_setSqlDF_System_Int32_" data-uid="SDBCS.utility.DateFormatter.setSqlDF(System.Int32)">setSqlDF(Int32)</h4>
+  <div class="markdown level1 summary"><p>For setting sqlDF</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setSqlDF(int sqlDF)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sqlDF</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_setSqlDTV_" data-uid="SDBCS.utility.DateFormatter.setSqlDTV*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_setSqlDTV_System_Int32_" data-uid="SDBCS.utility.DateFormatter.setSqlDTV(System.Int32)">setSqlDTV(Int32)</h4>
+  <div class="markdown level1 summary"><p>For setting sqlDTV</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setSqlDTV(int sqlDTV)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sqlDTV</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_setStrBrackets_" data-uid="SDBCS.utility.DateFormatter.setStrBrackets*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_setStrBrackets_System_String_" data-uid="SDBCS.utility.DateFormatter.setStrBrackets(System.String)">setStrBrackets(String)</h4>
+  <div class="markdown level1 summary"><p>For getting strBrackets</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setStrBrackets(string strBrackets)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">strBrackets</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_utility_DateFormatter_setTargetDF_" data-uid="SDBCS.utility.DateFormatter.setTargetDF*"></a>
+  <h4 id="SDBCS_utility_DateFormatter_setTargetDF_System_String_" data-uid="SDBCS.utility.DateFormatter.setTargetDF(System.String)">setTargetDF(String)</h4>
+  <div class="markdown level1 summary"><p>For setting targetDF</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setTargetDF(string targetDF)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">targetDF</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

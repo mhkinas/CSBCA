@@ -1,0 +1,518 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PrepQueryWithRef
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PrepQueryWithRef
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="SDBCS.dbwork.PrepQueryWithRef">
+  
+  
+  <h1 id="SDBCS_dbwork_PrepQueryWithRef" data-uid="SDBCS.dbwork.PrepQueryWithRef" class="text-break">Class PrepQueryWithRef
+  </h1>
+  <div class="markdown level0 summary"><p>PrepQueryWithRef is the class that creates advanced database phrases with references.
+<br>
+Use of a sample;
+<br>
+<code>String[] insertQuery = PrepareQuery.setInsert(tableName, fieldNames, formData, fieldTypes, refFieldMatchs, refData, dateFormatter);</code></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="SDBCS.dbwork.PrepareQuery.html">PrepareQuery</a></div>
+    <div class="level2"><span class="xref">PrepQueryWithRef</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.PrepareQuery.html#SDBCS_dbwork_PrepareQuery_STRING">PrepareQuery.STRING</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.PrepareQuery.html#SDBCS_dbwork_PrepareQuery_INTEGER">PrepareQuery.INTEGER</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.PrepareQuery.html#SDBCS_dbwork_PrepareQuery_DATE">PrepareQuery.DATE</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.PrepareQuery.html#SDBCS_dbwork_PrepareQuery_NUMBER">PrepareQuery.NUMBER</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.PrepareQuery.html#SDBCS_dbwork_PrepareQuery_EQ">PrepareQuery.EQ</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.PrepareQuery.html#SDBCS_dbwork_PrepareQuery_SM">PrepareQuery.SM</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.PrepareQuery.html#SDBCS_dbwork_PrepareQuery_BG">PrepareQuery.BG</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.PrepareQuery.html#SDBCS_dbwork_PrepareQuery_SME">PrepareQuery.SME</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.PrepareQuery.html#SDBCS_dbwork_PrepareQuery_BGE">PrepareQuery.BGE</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.PrepareQuery.html#SDBCS_dbwork_PrepareQuery_NEQ">PrepareQuery.NEQ</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.PrepareQuery.html#SDBCS_dbwork_PrepareQuery_LK">PrepareQuery.LK</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.PrepareQuery.html#SDBCS_dbwork_PrepareQuery_equalityStr">PrepareQuery.equalityStr</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.PrepareQuery.html#SDBCS_dbwork_PrepareQuery_queryString">PrepareQuery.queryString</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.PrepareQuery.html#SDBCS_dbwork_PrepareQuery_errorString">PrepareQuery.errorString</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.PrepareQuery.html#SDBCS_dbwork_PrepareQuery_queryStr">PrepareQuery.queryStr</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.PrepareQuery.html#SDBCS_dbwork_PrepareQuery_isLocale">PrepareQuery.isLocale</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.PrepareQuery.html#SDBCS_dbwork_PrepareQuery_convert2EQLs_System_Int32___">PrepareQuery.convert2EQLs(Int32[])</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.PrepareQuery.html#SDBCS_dbwork_PrepareQuery_setSelect_System_String_System_String___System_String___System_Int32___System_String_SDBCS_utility_DateFormatter_System_String___">PrepareQuery.setSelect(String, String[], String[], Int32[], String, DateFormatter, String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.PrepareQuery.html#SDBCS_dbwork_PrepareQuery_setInsert_System_String_System_String___System_String___System_Int32___SDBCS_utility_DateFormatter_">PrepareQuery.setInsert(String, String[], String[], Int32[], DateFormatter)</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.PrepareQuery.html#SDBCS_dbwork_PrepareQuery_setUpdate_System_String_System_String___System_String___System_Int32___SDBCS_utility_DateFormatter_">PrepareQuery.setUpdate(String, String[], String[], Int32[], DateFormatter)</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.PrepareQuery.html#SDBCS_dbwork_PrepareQuery_setDelete_System_String_System_String_System_String_">PrepareQuery.setDelete(String, String, String)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="SDBCS.dbwork.html">SDBCS.dbwork</a></h6>
+  <h6><strong>Assembly</strong>: SDBCS.dll</h6>
+  <h5 id="SDBCS_dbwork_PrepQueryWithRef_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PrepQueryWithRef : PrepareQuery</code></pre>
+  </div>
+  <h5 id="SDBCS_dbwork_PrepQueryWithRef_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>
+Author Mehmet Hayati KINAŞ
+</p>
+<p>
+Version 1.0
+</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="SDBCS_dbwork_PrepQueryWithRef_setInsert_" data-uid="SDBCS.dbwork.PrepQueryWithRef.setInsert*"></a>
+  <h4 id="SDBCS_dbwork_PrepQueryWithRef_setInsert_System_String_System_String___System_String___System_Int32___System_Int32___System_String___SDBCS_utility_DateFormatter_" data-uid="SDBCS.dbwork.PrepQueryWithRef.setInsert(System.String,System.String[],System.String[],System.Int32[],System.Int32[],System.String[],SDBCS.utility.DateFormatter)">setInsert(String, String[], String[], Int32[], Int32[], String[], DateFormatter)</h4>
+  <div class="markdown level1 summary"><p>Creates a sql insert sentence and returns it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] setInsert(string tableName, string[] fieldNames, string[] formData, int[] fieldTypes, int[] refFieldMatchs, string[] refData, DateFormatter dateFormatter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tableName</span></td>
+        <td><p>The table name to be accessed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">fieldNames</span></td>
+        <td><p>Names of fields of the table to access.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">formData</span></td>
+        <td><p>An array of data from the HTML form to be used in the SQL statement.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">fieldTypes</span></td>
+        <td><p>The data types of the fields of the table to access.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">refFieldMatchs</span></td>
+        <td><p>Sequence of the reference fields to be accessed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">refData</span></td>
+        <td><p>A set of reference data from the reference table to be used in the SQL statement.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SDBCS.utility.DateFormatter.html">DateFormatter</a></td>
+        <td><span class="parametername">dateFormatter</span></td>
+        <td><p>DateFormatter instance for formatting for dates.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p>Returns a new recordset sequence in the String[] format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_PrepQueryWithRef_setKeyField_" data-uid="SDBCS.dbwork.PrepQueryWithRef.setKeyField*"></a>
+  <h4 id="SDBCS_dbwork_PrepQueryWithRef_setKeyField_System_String_" data-uid="SDBCS.dbwork.PrepQueryWithRef.setKeyField(System.String)">setKeyField(String)</h4>
+  <div class="markdown level1 summary"><p>If you want key field name different from id, you can set it.
+I must be same at other reference tables. Or ....</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setKeyField(string keyField)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">keyField</span></td>
+        <td><p>The key field name of the table to access.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_PrepQueryWithRef_setKeyFields_" data-uid="SDBCS.dbwork.PrepQueryWithRef.setKeyFields*"></a>
+  <h4 id="SDBCS_dbwork_PrepQueryWithRef_setKeyFields_System_String___" data-uid="SDBCS.dbwork.PrepQueryWithRef.setKeyFields(System.String[])">setKeyFields(String[])</h4>
+  <div class="markdown level1 summary"><p>If you want key field names different each other, you can set them.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setKeyFields(string[] keyFields)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">keyFields</span></td>
+        <td><p>Key field names of the table to access.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_PrepQueryWithRef_setRefSelect_" data-uid="SDBCS.dbwork.PrepQueryWithRef.setRefSelect*"></a>
+  <h4 id="SDBCS_dbwork_PrepQueryWithRef_setRefSelect_System_Int32___System_String___System_String___System_String___System_Int32___" data-uid="SDBCS.dbwork.PrepQueryWithRef.setRefSelect(System.Int32[],System.String[],System.String[],System.String[],System.Int32[])">setRefSelect(Int32[], String[], String[], String[], Int32[])</h4>
+  <div class="markdown level1 summary"><p>Creates and returns the database query statement for the reference table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] setRefSelect(int[] fieldTypes, string[] formData, string[] refTableNames, string[] refFieldNames, int[] refFieldMatchs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">fieldTypes</span></td>
+        <td><p>The data types of the fields of the table to access.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">formData</span></td>
+        <td><p>An array of data from the HTML form to be used in the SQL statement.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">refTableNames</span></td>
+        <td><p>The desired reference table name to be accessed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">refFieldNames</span></td>
+        <td><p>The string of names of the fields of reference tables to be accessed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">refFieldMatchs</span></td>
+        <td><p>Sequence of the reference fields to be accessed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p>Returns an array of query statements.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_PrepQueryWithRef_setUpdate_" data-uid="SDBCS.dbwork.PrepQueryWithRef.setUpdate*"></a>
+  <h4 id="SDBCS_dbwork_PrepQueryWithRef_setUpdate_System_String_System_String___System_String___System_Int32___System_Int32___System_String___SDBCS_utility_DateFormatter_" data-uid="SDBCS.dbwork.PrepQueryWithRef.setUpdate(System.String,System.String[],System.String[],System.Int32[],System.Int32[],System.String[],SDBCS.utility.DateFormatter)">setUpdate(String, String[], String[], Int32[], Int32[], String[], DateFormatter)</h4>
+  <div class="markdown level1 summary"><p>Creates and returns a database update statement.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] setUpdate(string tableName, string[] fieldNames, string[] formData, int[] fieldTypes, int[] refFieldMatchs, string[] refData, DateFormatter dateFormatter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tableName</span></td>
+        <td><p>The table name to be accessed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">fieldNames</span></td>
+        <td><p>Names of fields of the table to access.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">formData</span></td>
+        <td><p>An array of data from the HTML form to be used in the SQL statement.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">fieldTypes</span></td>
+        <td><p>The data types of the fields of the table to access.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">refFieldMatchs</span></td>
+        <td><p>Sequence of the reference fields to be accessed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">refData</span></td>
+        <td><p>A set of reference data from the reference table to be used in the SQL statement.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SDBCS.utility.DateFormatter.html">DateFormatter</a></td>
+        <td><span class="parametername">dateFormatter</span></td>
+        <td><p>DateFormatter instance for formatting for dates.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p>Returns an String array of substitution statements.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

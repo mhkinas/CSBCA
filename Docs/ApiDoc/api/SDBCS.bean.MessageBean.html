@@ -1,0 +1,2243 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MessageBean
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MessageBean
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="SDBCS.bean.MessageBean">
+  
+  
+  <h1 id="SDBCS_bean_MessageBean" data-uid="SDBCS.bean.MessageBean" class="text-break">Class MessageBean
+  </h1>
+  <div class="markdown level0 summary"><p>MessageBean class is for getting and setting general purpose messages.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">MessageBean</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="SDBCS.bean.html">SDBCS.bean</a></h6>
+  <h6><strong>Assembly</strong>: SDBCS.dll</h6>
+  <h5 id="SDBCS_bean_MessageBean_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MessageBean</code></pre>
+  </div>
+  <h5 id="SDBCS_bean_MessageBean_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>
+Author Mehmet Hayati KINAŞ
+</p>
+<p>
+Version 1.0
+</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="SDBCS_bean_MessageBean__ctor_" data-uid="SDBCS.bean.MessageBean.#ctor*"></a>
+  <h4 id="SDBCS_bean_MessageBean__ctor_System_Boolean_" data-uid="SDBCS.bean.MessageBean.#ctor(System.Boolean)">MessageBean(Boolean)</h4>
+  <div class="markdown level1 summary"><p>The constructor use isLocale for selecting language local or English and set default messages with this language.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MessageBean(bool isLocale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isLocale</span></td>
+        <td><p>If local language preferred true, else it is English and false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="SDBCS_bean_MessageBean_getActionError_" data-uid="SDBCS.bean.MessageBean.getActionError*"></a>
+  <h4 id="SDBCS_bean_MessageBean_getActionError" data-uid="SDBCS.bean.MessageBean.getActionError">getActionError()</h4>
+  <div class="markdown level1 summary"><p>For getting actionError</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getActionError()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_getDataDeleteSuccess_" data-uid="SDBCS.bean.MessageBean.getDataDeleteSuccess*"></a>
+  <h4 id="SDBCS_bean_MessageBean_getDataDeleteSuccess" data-uid="SDBCS.bean.MessageBean.getDataDeleteSuccess">getDataDeleteSuccess()</h4>
+  <div class="markdown level1 summary"><p>For getting dataDeleteSuccess</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getDataDeleteSuccess()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_getDataEnterSuccess_" data-uid="SDBCS.bean.MessageBean.getDataEnterSuccess*"></a>
+  <h4 id="SDBCS_bean_MessageBean_getDataEnterSuccess" data-uid="SDBCS.bean.MessageBean.getDataEnterSuccess">getDataEnterSuccess()</h4>
+  <div class="markdown level1 summary"><p>For getting dataEnterSuccess</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getDataEnterSuccess()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_getDataUpdateSuccess_" data-uid="SDBCS.bean.MessageBean.getDataUpdateSuccess*"></a>
+  <h4 id="SDBCS_bean_MessageBean_getDataUpdateSuccess" data-uid="SDBCS.bean.MessageBean.getDataUpdateSuccess">getDataUpdateSuccess()</h4>
+  <div class="markdown level1 summary"><p>For getting dataUpdateSuccess</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getDataUpdateSuccess()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_getDeleteUnsuccess_" data-uid="SDBCS.bean.MessageBean.getDeleteUnsuccess*"></a>
+  <h4 id="SDBCS_bean_MessageBean_getDeleteUnsuccess" data-uid="SDBCS.bean.MessageBean.getDeleteUnsuccess">getDeleteUnsuccess()</h4>
+  <div class="markdown level1 summary"><p>For getting deleteUnsuccess</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getDeleteUnsuccess()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_getEmptyMessage_" data-uid="SDBCS.bean.MessageBean.getEmptyMessage*"></a>
+  <h4 id="SDBCS_bean_MessageBean_getEmptyMessage" data-uid="SDBCS.bean.MessageBean.getEmptyMessage">getEmptyMessage()</h4>
+  <div class="markdown level1 summary"><p>For getting emptyMessage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getEmptyMessage()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_getEmptyQuery_" data-uid="SDBCS.bean.MessageBean.getEmptyQuery*"></a>
+  <h4 id="SDBCS_bean_MessageBean_getEmptyQuery" data-uid="SDBCS.bean.MessageBean.getEmptyQuery">getEmptyQuery()</h4>
+  <div class="markdown level1 summary"><p>For getting emptyQuery</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getEmptyQuery()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_getExceedMaxRec_" data-uid="SDBCS.bean.MessageBean.getExceedMaxRec*"></a>
+  <h4 id="SDBCS_bean_MessageBean_getExceedMaxRec" data-uid="SDBCS.bean.MessageBean.getExceedMaxRec">getExceedMaxRec()</h4>
+  <div class="markdown level1 summary"><p>For getting exceedMaxRec</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getExceedMaxRec()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_getFileUpdateSuccess_" data-uid="SDBCS.bean.MessageBean.getFileUpdateSuccess*"></a>
+  <h4 id="SDBCS_bean_MessageBean_getFileUpdateSuccess" data-uid="SDBCS.bean.MessageBean.getFileUpdateSuccess">getFileUpdateSuccess()</h4>
+  <div class="markdown level1 summary"><p>For getting fileUpdateSuccess</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getFileUpdateSuccess()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_getFileUpdateUnsuccess_" data-uid="SDBCS.bean.MessageBean.getFileUpdateUnsuccess*"></a>
+  <h4 id="SDBCS_bean_MessageBean_getFileUpdateUnsuccess" data-uid="SDBCS.bean.MessageBean.getFileUpdateUnsuccess">getFileUpdateUnsuccess()</h4>
+  <div class="markdown level1 summary"><p>For getting fileUpdateUnsuccess</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getFileUpdateUnsuccess()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_getInsertUnsuccess_" data-uid="SDBCS.bean.MessageBean.getInsertUnsuccess*"></a>
+  <h4 id="SDBCS_bean_MessageBean_getInsertUnsuccess" data-uid="SDBCS.bean.MessageBean.getInsertUnsuccess">getInsertUnsuccess()</h4>
+  <div class="markdown level1 summary"><p>For getting insertUnsuccess</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getInsertUnsuccess()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_getInvalidEmail_" data-uid="SDBCS.bean.MessageBean.getInvalidEmail*"></a>
+  <h4 id="SDBCS_bean_MessageBean_getInvalidEmail" data-uid="SDBCS.bean.MessageBean.getInvalidEmail">getInvalidEmail()</h4>
+  <div class="markdown level1 summary"><p>For getting invalidEmail</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getInvalidEmail()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>invalidEmail</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_getInvalidPassword_" data-uid="SDBCS.bean.MessageBean.getInvalidPassword*"></a>
+  <h4 id="SDBCS_bean_MessageBean_getInvalidPassword" data-uid="SDBCS.bean.MessageBean.getInvalidPassword">getInvalidPassword()</h4>
+  <div class="markdown level1 summary"><p>For getting invalidPassword</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getInvalidPassword()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_getInvQueryType_" data-uid="SDBCS.bean.MessageBean.getInvQueryType*"></a>
+  <h4 id="SDBCS_bean_MessageBean_getInvQueryType" data-uid="SDBCS.bean.MessageBean.getInvQueryType">getInvQueryType()</h4>
+  <div class="markdown level1 summary"><p>For getting invQueryType</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getInvQueryType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>invQueryType</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_getPasswordIsChanged_" data-uid="SDBCS.bean.MessageBean.getPasswordIsChanged*"></a>
+  <h4 id="SDBCS_bean_MessageBean_getPasswordIsChanged" data-uid="SDBCS.bean.MessageBean.getPasswordIsChanged">getPasswordIsChanged()</h4>
+  <div class="markdown level1 summary"><p>For getting passwordIsChanged</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getPasswordIsChanged()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_getPasswordNotEqual_" data-uid="SDBCS.bean.MessageBean.getPasswordNotEqual*"></a>
+  <h4 id="SDBCS_bean_MessageBean_getPasswordNotEqual" data-uid="SDBCS.bean.MessageBean.getPasswordNotEqual">getPasswordNotEqual()</h4>
+  <div class="markdown level1 summary"><p>For getting passwordNotEqual</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getPasswordNotEqual()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_getPswdCantBeEqual_" data-uid="SDBCS.bean.MessageBean.getPswdCantBeEqual*"></a>
+  <h4 id="SDBCS_bean_MessageBean_getPswdCantBeEqual" data-uid="SDBCS.bean.MessageBean.getPswdCantBeEqual">getPswdCantBeEqual()</h4>
+  <div class="markdown level1 summary"><p>For getting pswdCantBeEqual</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getPswdCantBeEqual()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_getQuerySuccess_" data-uid="SDBCS.bean.MessageBean.getQuerySuccess*"></a>
+  <h4 id="SDBCS_bean_MessageBean_getQuerySuccess" data-uid="SDBCS.bean.MessageBean.getQuerySuccess">getQuerySuccess()</h4>
+  <div class="markdown level1 summary"><p>For getting querySuccess</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getQuerySuccess()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_getQueryType_" data-uid="SDBCS.bean.MessageBean.getQueryType*"></a>
+  <h4 id="SDBCS_bean_MessageBean_getQueryType" data-uid="SDBCS.bean.MessageBean.getQueryType">getQueryType()</h4>
+  <div class="markdown level1 summary"><p>For getting invalid Query Type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getQueryType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_getSelectExecErr_" data-uid="SDBCS.bean.MessageBean.getSelectExecErr*"></a>
+  <h4 id="SDBCS_bean_MessageBean_getSelectExecErr" data-uid="SDBCS.bean.MessageBean.getSelectExecErr">getSelectExecErr()</h4>
+  <div class="markdown level1 summary"><p>For getting selectExecErr</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getSelectExecErr()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_getSqlstringError_" data-uid="SDBCS.bean.MessageBean.getSqlstringError*"></a>
+  <h4 id="SDBCS_bean_MessageBean_getSqlstringError" data-uid="SDBCS.bean.MessageBean.getSqlstringError">getSqlstringError()</h4>
+  <div class="markdown level1 summary"><p>For getting sqlstringError</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getSqlstringError()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_getUpdateUnsuccess_" data-uid="SDBCS.bean.MessageBean.getUpdateUnsuccess*"></a>
+  <h4 id="SDBCS_bean_MessageBean_getUpdateUnsuccess" data-uid="SDBCS.bean.MessageBean.getUpdateUnsuccess">getUpdateUnsuccess()</h4>
+  <div class="markdown level1 summary"><p>For getting updateUnsuccess</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getUpdateUnsuccess()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setActionErrorEN_" data-uid="SDBCS.bean.MessageBean.setActionErrorEN*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setActionErrorEN_System_String_" data-uid="SDBCS.bean.MessageBean.setActionErrorEN(System.String)">setActionErrorEN(String)</h4>
+  <div class="markdown level1 summary"><p>For setting actionErrorEN</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setActionErrorEN(string actionErrorEN)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">actionErrorEN</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setactionErrorLoc_" data-uid="SDBCS.bean.MessageBean.setactionErrorLoc*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setactionErrorLoc_System_String_" data-uid="SDBCS.bean.MessageBean.setactionErrorLoc(System.String)">setactionErrorLoc(String)</h4>
+  <div class="markdown level1 summary"><p>For setting actionErrorLoc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setactionErrorLoc(string actionErrorLoc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">actionErrorLoc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setActionErrorLoc_" data-uid="SDBCS.bean.MessageBean.setActionErrorLoc*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setActionErrorLoc_System_String_" data-uid="SDBCS.bean.MessageBean.setActionErrorLoc(System.String)">setActionErrorLoc(String)</h4>
+  <div class="markdown level1 summary"><p>For setting actionErrorLoc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setActionErrorLoc(string actionErrorLoc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">actionErrorLoc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setDataDeleteSuccessEN_" data-uid="SDBCS.bean.MessageBean.setDataDeleteSuccessEN*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setDataDeleteSuccessEN_System_String_" data-uid="SDBCS.bean.MessageBean.setDataDeleteSuccessEN(System.String)">setDataDeleteSuccessEN(String)</h4>
+  <div class="markdown level1 summary"><p>For setting dataDeleteSuccessEN</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setDataDeleteSuccessEN(string dataDeleteSuccessEN)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">dataDeleteSuccessEN</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setdataDeleteSuccessLoc_" data-uid="SDBCS.bean.MessageBean.setdataDeleteSuccessLoc*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setdataDeleteSuccessLoc_System_String_" data-uid="SDBCS.bean.MessageBean.setdataDeleteSuccessLoc(System.String)">setdataDeleteSuccessLoc(String)</h4>
+  <div class="markdown level1 summary"><p>For setting dataDeleteSuccessLoc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setdataDeleteSuccessLoc(string dataDeleteSuccessLoc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">dataDeleteSuccessLoc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setDataDeleteSuccessLoc_" data-uid="SDBCS.bean.MessageBean.setDataDeleteSuccessLoc*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setDataDeleteSuccessLoc_System_String_" data-uid="SDBCS.bean.MessageBean.setDataDeleteSuccessLoc(System.String)">setDataDeleteSuccessLoc(String)</h4>
+  <div class="markdown level1 summary"><p>For setting dataDeleteSuccessLoc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setDataDeleteSuccessLoc(string dataDeleteSuccessLoc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">dataDeleteSuccessLoc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setDataEnterSuccessEN_" data-uid="SDBCS.bean.MessageBean.setDataEnterSuccessEN*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setDataEnterSuccessEN_System_String_" data-uid="SDBCS.bean.MessageBean.setDataEnterSuccessEN(System.String)">setDataEnterSuccessEN(String)</h4>
+  <div class="markdown level1 summary"><p>For setting dataEnterSuccessEN</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setDataEnterSuccessEN(string dataEnterSuccessEN)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">dataEnterSuccessEN</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setdataEnterSuccessLoc_" data-uid="SDBCS.bean.MessageBean.setdataEnterSuccessLoc*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setdataEnterSuccessLoc_System_String_" data-uid="SDBCS.bean.MessageBean.setdataEnterSuccessLoc(System.String)">setdataEnterSuccessLoc(String)</h4>
+  <div class="markdown level1 summary"><p>For setting dataEnterSuccessLoc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setdataEnterSuccessLoc(string dataEnterSuccessLoc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">dataEnterSuccessLoc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setDataEnterSuccessLoc_" data-uid="SDBCS.bean.MessageBean.setDataEnterSuccessLoc*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setDataEnterSuccessLoc_System_String_" data-uid="SDBCS.bean.MessageBean.setDataEnterSuccessLoc(System.String)">setDataEnterSuccessLoc(String)</h4>
+  <div class="markdown level1 summary"><p>For setting dataEnterSuccessLoc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setDataEnterSuccessLoc(string dataEnterSuccessLoc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">dataEnterSuccessLoc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setDataUpdateSuccessEN_" data-uid="SDBCS.bean.MessageBean.setDataUpdateSuccessEN*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setDataUpdateSuccessEN_System_String_" data-uid="SDBCS.bean.MessageBean.setDataUpdateSuccessEN(System.String)">setDataUpdateSuccessEN(String)</h4>
+  <div class="markdown level1 summary"><p>For setting dataUpdateSuccessEN</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setDataUpdateSuccessEN(string dataUpdateSuccessEN)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">dataUpdateSuccessEN</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setdataUpdateSuccessLoc_" data-uid="SDBCS.bean.MessageBean.setdataUpdateSuccessLoc*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setdataUpdateSuccessLoc_System_String_" data-uid="SDBCS.bean.MessageBean.setdataUpdateSuccessLoc(System.String)">setdataUpdateSuccessLoc(String)</h4>
+  <div class="markdown level1 summary"><p>For setting dataUpdateSuccessLoc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setdataUpdateSuccessLoc(string dataUpdateSuccessLoc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">dataUpdateSuccessLoc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setDataUpdateSuccessLoc_" data-uid="SDBCS.bean.MessageBean.setDataUpdateSuccessLoc*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setDataUpdateSuccessLoc_System_String_" data-uid="SDBCS.bean.MessageBean.setDataUpdateSuccessLoc(System.String)">setDataUpdateSuccessLoc(String)</h4>
+  <div class="markdown level1 summary"><p>For setting dataUpdateSuccessLoc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setDataUpdateSuccessLoc(string dataUpdateSuccessLoc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">dataUpdateSuccessLoc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setDeleteUnsuccessEN_" data-uid="SDBCS.bean.MessageBean.setDeleteUnsuccessEN*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setDeleteUnsuccessEN_System_String_" data-uid="SDBCS.bean.MessageBean.setDeleteUnsuccessEN(System.String)">setDeleteUnsuccessEN(String)</h4>
+  <div class="markdown level1 summary"><p>For setting deleteUnsuccessEN</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setDeleteUnsuccessEN(string deleteUnsuccessEN)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deleteUnsuccessEN</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setDeleteUnsuccessLoc_" data-uid="SDBCS.bean.MessageBean.setDeleteUnsuccessLoc*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setDeleteUnsuccessLoc_System_String_" data-uid="SDBCS.bean.MessageBean.setDeleteUnsuccessLoc(System.String)">setDeleteUnsuccessLoc(String)</h4>
+  <div class="markdown level1 summary"><p>For setting deleteUnsuccessLoc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setDeleteUnsuccessLoc(string deleteUnsuccessLoc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deleteUnsuccessLoc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setEmptyMessageEN_" data-uid="SDBCS.bean.MessageBean.setEmptyMessageEN*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setEmptyMessageEN_System_String_" data-uid="SDBCS.bean.MessageBean.setEmptyMessageEN(System.String)">setEmptyMessageEN(String)</h4>
+  <div class="markdown level1 summary"><p>For setting emptyMessageEN</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setEmptyMessageEN(string emptyMessageEN)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">emptyMessageEN</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setemptyMessageLoc_" data-uid="SDBCS.bean.MessageBean.setemptyMessageLoc*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setemptyMessageLoc_System_String_" data-uid="SDBCS.bean.MessageBean.setemptyMessageLoc(System.String)">setemptyMessageLoc(String)</h4>
+  <div class="markdown level1 summary"><p>For setting emptyMessageLoc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setemptyMessageLoc(string emptyMessageLoc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">emptyMessageLoc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setEmptyMessageLoc_" data-uid="SDBCS.bean.MessageBean.setEmptyMessageLoc*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setEmptyMessageLoc_System_String_" data-uid="SDBCS.bean.MessageBean.setEmptyMessageLoc(System.String)">setEmptyMessageLoc(String)</h4>
+  <div class="markdown level1 summary"><p>For setting emptyMessageLoc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setEmptyMessageLoc(string emptyMessageLoc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">emptyMessageLoc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setEmptyQueryEN_" data-uid="SDBCS.bean.MessageBean.setEmptyQueryEN*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setEmptyQueryEN_System_String_" data-uid="SDBCS.bean.MessageBean.setEmptyQueryEN(System.String)">setEmptyQueryEN(String)</h4>
+  <div class="markdown level1 summary"><p>For setting emptyQueryEN</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setEmptyQueryEN(string emptyQueryEN)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">emptyQueryEN</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setemptyQueryLoc_" data-uid="SDBCS.bean.MessageBean.setemptyQueryLoc*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setemptyQueryLoc_System_String_" data-uid="SDBCS.bean.MessageBean.setemptyQueryLoc(System.String)">setemptyQueryLoc(String)</h4>
+  <div class="markdown level1 summary"><p>For setting emptyQueryLoc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setemptyQueryLoc(string emptyQueryLoc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">emptyQueryLoc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setEmptyQueryLoc_" data-uid="SDBCS.bean.MessageBean.setEmptyQueryLoc*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setEmptyQueryLoc_System_String_" data-uid="SDBCS.bean.MessageBean.setEmptyQueryLoc(System.String)">setEmptyQueryLoc(String)</h4>
+  <div class="markdown level1 summary"><p>For setting emptyQueryLoc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setEmptyQueryLoc(string emptyQueryLoc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">emptyQueryLoc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setEnglishMessages_" data-uid="SDBCS.bean.MessageBean.setEnglishMessages*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setEnglishMessages" data-uid="SDBCS.bean.MessageBean.setEnglishMessages">setEnglishMessages()</h4>
+  <div class="markdown level1 summary"><p>For setting English messages as default.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setEnglishMessages()</code></pre>
+  </div>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setExceedMaxRecEN_" data-uid="SDBCS.bean.MessageBean.setExceedMaxRecEN*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setExceedMaxRecEN_System_String_" data-uid="SDBCS.bean.MessageBean.setExceedMaxRecEN(System.String)">setExceedMaxRecEN(String)</h4>
+  <div class="markdown level1 summary"><p>For setting exceedMaxRecEN</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setExceedMaxRecEN(string exceedMaxRecEN)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">exceedMaxRecEN</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setExceedMaxRecLoc_" data-uid="SDBCS.bean.MessageBean.setExceedMaxRecLoc*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setExceedMaxRecLoc_System_String_" data-uid="SDBCS.bean.MessageBean.setExceedMaxRecLoc(System.String)">setExceedMaxRecLoc(String)</h4>
+  <div class="markdown level1 summary"><p>For setting exceedMaxRecLoc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setExceedMaxRecLoc(string exceedMaxRecLoc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">exceedMaxRecLoc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setFileUpdateSuccessEN_" data-uid="SDBCS.bean.MessageBean.setFileUpdateSuccessEN*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setFileUpdateSuccessEN_System_String_" data-uid="SDBCS.bean.MessageBean.setFileUpdateSuccessEN(System.String)">setFileUpdateSuccessEN(String)</h4>
+  <div class="markdown level1 summary"><p>For setting fileUpdateSuccessEN</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setFileUpdateSuccessEN(string fileUpdateSuccessEN)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileUpdateSuccessEN</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setFileUpdateSuccessLoc_" data-uid="SDBCS.bean.MessageBean.setFileUpdateSuccessLoc*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setFileUpdateSuccessLoc_System_String_" data-uid="SDBCS.bean.MessageBean.setFileUpdateSuccessLoc(System.String)">setFileUpdateSuccessLoc(String)</h4>
+  <div class="markdown level1 summary"><p>For setting fileUpdateSuccessLoc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setFileUpdateSuccessLoc(string fileUpdateSuccessLoc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileUpdateSuccessLoc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setFileUpdateUnsuccessEN_" data-uid="SDBCS.bean.MessageBean.setFileUpdateUnsuccessEN*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setFileUpdateUnsuccessEN_System_String_" data-uid="SDBCS.bean.MessageBean.setFileUpdateUnsuccessEN(System.String)">setFileUpdateUnsuccessEN(String)</h4>
+  <div class="markdown level1 summary"><p>For setting fileUpdateUnsuccessEN</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setFileUpdateUnsuccessEN(string fileUpdateUnsuccessEN)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileUpdateUnsuccessEN</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setFileUpdateUnsuccessLoc_" data-uid="SDBCS.bean.MessageBean.setFileUpdateUnsuccessLoc*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setFileUpdateUnsuccessLoc_System_String_" data-uid="SDBCS.bean.MessageBean.setFileUpdateUnsuccessLoc(System.String)">setFileUpdateUnsuccessLoc(String)</h4>
+  <div class="markdown level1 summary"><p>For setting fileUpdateUnsuccessLoc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setFileUpdateUnsuccessLoc(string fileUpdateUnsuccessLoc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileUpdateUnsuccessLoc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setInsertUnsuccessEN_" data-uid="SDBCS.bean.MessageBean.setInsertUnsuccessEN*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setInsertUnsuccessEN_System_String_" data-uid="SDBCS.bean.MessageBean.setInsertUnsuccessEN(System.String)">setInsertUnsuccessEN(String)</h4>
+  <div class="markdown level1 summary"><p>For setting insertUnsuccessEN</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setInsertUnsuccessEN(string insertUnsuccessEN)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">insertUnsuccessEN</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setInsertUnsuccessLoc_" data-uid="SDBCS.bean.MessageBean.setInsertUnsuccessLoc*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setInsertUnsuccessLoc_System_String_" data-uid="SDBCS.bean.MessageBean.setInsertUnsuccessLoc(System.String)">setInsertUnsuccessLoc(String)</h4>
+  <div class="markdown level1 summary"><p>For setting insertUnsuccessLoc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setInsertUnsuccessLoc(string insertUnsuccessLoc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">insertUnsuccessLoc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setInvalidEmail_" data-uid="SDBCS.bean.MessageBean.setInvalidEmail*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setInvalidEmail_System_String_" data-uid="SDBCS.bean.MessageBean.setInvalidEmail(System.String)">setInvalidEmail(String)</h4>
+  <div class="markdown level1 summary"><p>For setting invalidEmail</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setInvalidEmail(string invalidEmail)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">invalidEmail</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setInvalidEmailLoc_" data-uid="SDBCS.bean.MessageBean.setInvalidEmailLoc*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setInvalidEmailLoc_System_String_" data-uid="SDBCS.bean.MessageBean.setInvalidEmailLoc(System.String)">setInvalidEmailLoc(String)</h4>
+  <div class="markdown level1 summary"><p>For setting invalidEmailLoc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setInvalidEmailLoc(string invalidEmailLoc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">invalidEmailLoc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setInvalidPassword_" data-uid="SDBCS.bean.MessageBean.setInvalidPassword*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setInvalidPassword_System_String_" data-uid="SDBCS.bean.MessageBean.setInvalidPassword(System.String)">setInvalidPassword(String)</h4>
+  <div class="markdown level1 summary"><p>For setting invalidPassword</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setInvalidPassword(string invalidPassword)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">invalidPassword</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setInvalidPasswordEN_" data-uid="SDBCS.bean.MessageBean.setInvalidPasswordEN*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setInvalidPasswordEN_System_String_" data-uid="SDBCS.bean.MessageBean.setInvalidPasswordEN(System.String)">setInvalidPasswordEN(String)</h4>
+  <div class="markdown level1 summary"><p>For setting invalidPasswordEN</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setInvalidPasswordEN(string invalidPasswordEN)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">invalidPasswordEN</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setInvalidPasswordLoc_" data-uid="SDBCS.bean.MessageBean.setInvalidPasswordLoc*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setInvalidPasswordLoc_System_String_" data-uid="SDBCS.bean.MessageBean.setInvalidPasswordLoc(System.String)">setInvalidPasswordLoc(String)</h4>
+  <div class="markdown level1 summary"><p>For setting invalidPasswordLoc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setInvalidPasswordLoc(string invalidPasswordLoc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">invalidPasswordLoc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setInvQueryTypeEN_" data-uid="SDBCS.bean.MessageBean.setInvQueryTypeEN*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setInvQueryTypeEN_System_String_" data-uid="SDBCS.bean.MessageBean.setInvQueryTypeEN(System.String)">setInvQueryTypeEN(String)</h4>
+  <div class="markdown level1 summary"><p>For setting invQueryTypeEN</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setInvQueryTypeEN(string invQueryTypeEN)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">invQueryTypeEN</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setInvQueryTypeLoc_" data-uid="SDBCS.bean.MessageBean.setInvQueryTypeLoc*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setInvQueryTypeLoc_System_String_" data-uid="SDBCS.bean.MessageBean.setInvQueryTypeLoc(System.String)">setInvQueryTypeLoc(String)</h4>
+  <div class="markdown level1 summary"><p>For setting invQueryTypeLoc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setInvQueryTypeLoc(string invQueryTypeLoc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">invQueryTypeLoc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setinvQueryTypeLoc_" data-uid="SDBCS.bean.MessageBean.setinvQueryTypeLoc*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setinvQueryTypeLoc_System_String_" data-uid="SDBCS.bean.MessageBean.setinvQueryTypeLoc(System.String)">setinvQueryTypeLoc(String)</h4>
+  <div class="markdown level1 summary"><p>For setting invQueryTypeLoc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setinvQueryTypeLoc(string invQueryTypeLoc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">invQueryTypeLoc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setLocaleMessages_" data-uid="SDBCS.bean.MessageBean.setLocaleMessages*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setLocaleMessages" data-uid="SDBCS.bean.MessageBean.setLocaleMessages">setLocaleMessages()</h4>
+  <div class="markdown level1 summary"><p>For setting local messages as default.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setLocaleMessages()</code></pre>
+  </div>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setPasswordIsChangedEN_" data-uid="SDBCS.bean.MessageBean.setPasswordIsChangedEN*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setPasswordIsChangedEN_System_String_" data-uid="SDBCS.bean.MessageBean.setPasswordIsChangedEN(System.String)">setPasswordIsChangedEN(String)</h4>
+  <div class="markdown level1 summary"><p>For setting passwordIsChangedEN</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setPasswordIsChangedEN(string passwordIsChangedEN)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">passwordIsChangedEN</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setPasswordIsChangedLoc_" data-uid="SDBCS.bean.MessageBean.setPasswordIsChangedLoc*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setPasswordIsChangedLoc_System_String_" data-uid="SDBCS.bean.MessageBean.setPasswordIsChangedLoc(System.String)">setPasswordIsChangedLoc(String)</h4>
+  <div class="markdown level1 summary"><p>For setting passwordIsChangedLoc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setPasswordIsChangedLoc(string passwordIsChangedLoc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">passwordIsChangedLoc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setPasswordNotEqualEN_" data-uid="SDBCS.bean.MessageBean.setPasswordNotEqualEN*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setPasswordNotEqualEN_System_String_" data-uid="SDBCS.bean.MessageBean.setPasswordNotEqualEN(System.String)">setPasswordNotEqualEN(String)</h4>
+  <div class="markdown level1 summary"><p>For setting passwordNotEqualEN</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setPasswordNotEqualEN(string passwordNotEqualEN)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">passwordNotEqualEN</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setPasswordNotEqualLoc_" data-uid="SDBCS.bean.MessageBean.setPasswordNotEqualLoc*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setPasswordNotEqualLoc_System_String_" data-uid="SDBCS.bean.MessageBean.setPasswordNotEqualLoc(System.String)">setPasswordNotEqualLoc(String)</h4>
+  <div class="markdown level1 summary"><p>For setting passwordNotEqualLoc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setPasswordNotEqualLoc(string passwordNotEqualLoc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">passwordNotEqualLoc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setPswdCantBeEqualEN_" data-uid="SDBCS.bean.MessageBean.setPswdCantBeEqualEN*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setPswdCantBeEqualEN_System_String_" data-uid="SDBCS.bean.MessageBean.setPswdCantBeEqualEN(System.String)">setPswdCantBeEqualEN(String)</h4>
+  <div class="markdown level1 summary"><p>For setting pswdCantBeEqualEN</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setPswdCantBeEqualEN(string pswdCantBeEqualEN)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">pswdCantBeEqualEN</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setPswdCantBeEqualLoc_" data-uid="SDBCS.bean.MessageBean.setPswdCantBeEqualLoc*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setPswdCantBeEqualLoc_System_String_" data-uid="SDBCS.bean.MessageBean.setPswdCantBeEqualLoc(System.String)">setPswdCantBeEqualLoc(String)</h4>
+  <div class="markdown level1 summary"><p>For setting pswdCantBeEqualLoc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setPswdCantBeEqualLoc(string pswdCantBeEqualLoc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">pswdCantBeEqualLoc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setQuerySuccessEN_" data-uid="SDBCS.bean.MessageBean.setQuerySuccessEN*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setQuerySuccessEN_System_String_" data-uid="SDBCS.bean.MessageBean.setQuerySuccessEN(System.String)">setQuerySuccessEN(String)</h4>
+  <div class="markdown level1 summary"><p>For setting querySuccessEN</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setQuerySuccessEN(string querySuccessEN)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">querySuccessEN</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setquerySuccessLoc_" data-uid="SDBCS.bean.MessageBean.setquerySuccessLoc*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setquerySuccessLoc_System_String_" data-uid="SDBCS.bean.MessageBean.setquerySuccessLoc(System.String)">setquerySuccessLoc(String)</h4>
+  <div class="markdown level1 summary"><p>For setting querySuccessLoc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setquerySuccessLoc(string querySuccessLoc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">querySuccessLoc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setQuerySuccessLoc_" data-uid="SDBCS.bean.MessageBean.setQuerySuccessLoc*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setQuerySuccessLoc_System_String_" data-uid="SDBCS.bean.MessageBean.setQuerySuccessLoc(System.String)">setQuerySuccessLoc(String)</h4>
+  <div class="markdown level1 summary"><p>For setting querySuccessLoc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setQuerySuccessLoc(string querySuccessLoc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">querySuccessLoc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setSelectExecErrEN_" data-uid="SDBCS.bean.MessageBean.setSelectExecErrEN*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setSelectExecErrEN_System_String_" data-uid="SDBCS.bean.MessageBean.setSelectExecErrEN(System.String)">setSelectExecErrEN(String)</h4>
+  <div class="markdown level1 summary"><p>For setting selectExecErrEN</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setSelectExecErrEN(string selectExecErrEN)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">selectExecErrEN</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setselectExecErrLoc_" data-uid="SDBCS.bean.MessageBean.setselectExecErrLoc*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setselectExecErrLoc_System_String_" data-uid="SDBCS.bean.MessageBean.setselectExecErrLoc(System.String)">setselectExecErrLoc(String)</h4>
+  <div class="markdown level1 summary"><p>For setting selectExecErrLoc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setselectExecErrLoc(string selectExecErrLoc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">selectExecErrLoc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setSelectExecErrLoc_" data-uid="SDBCS.bean.MessageBean.setSelectExecErrLoc*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setSelectExecErrLoc_System_String_" data-uid="SDBCS.bean.MessageBean.setSelectExecErrLoc(System.String)">setSelectExecErrLoc(String)</h4>
+  <div class="markdown level1 summary"><p>For setting selectExecErrLoc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setSelectExecErrLoc(string selectExecErrLoc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">selectExecErrLoc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setSqlstringErrorEN_" data-uid="SDBCS.bean.MessageBean.setSqlstringErrorEN*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setSqlstringErrorEN_System_String_" data-uid="SDBCS.bean.MessageBean.setSqlstringErrorEN(System.String)">setSqlstringErrorEN(String)</h4>
+  <div class="markdown level1 summary"><p>For setting sqlstringErrorEN</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setSqlstringErrorEN(string sqlstringErrorEN)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sqlstringErrorEN</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setSqlstringErrorLoc_" data-uid="SDBCS.bean.MessageBean.setSqlstringErrorLoc*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setSqlstringErrorLoc_System_String_" data-uid="SDBCS.bean.MessageBean.setSqlstringErrorLoc(System.String)">setSqlstringErrorLoc(String)</h4>
+  <div class="markdown level1 summary"><p>For setting sqlstringErrorLoc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setSqlstringErrorLoc(string sqlstringErrorLoc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sqlstringErrorLoc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setUpdateUnsuccessEN_" data-uid="SDBCS.bean.MessageBean.setUpdateUnsuccessEN*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setUpdateUnsuccessEN_System_String_" data-uid="SDBCS.bean.MessageBean.setUpdateUnsuccessEN(System.String)">setUpdateUnsuccessEN(String)</h4>
+  <div class="markdown level1 summary"><p>For setting updateUnsuccessEN</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setUpdateUnsuccessEN(string updateUnsuccessEN)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">updateUnsuccessEN</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_bean_MessageBean_setUpdateUnsuccessLoc_" data-uid="SDBCS.bean.MessageBean.setUpdateUnsuccessLoc*"></a>
+  <h4 id="SDBCS_bean_MessageBean_setUpdateUnsuccessLoc_System_String_" data-uid="SDBCS.bean.MessageBean.setUpdateUnsuccessLoc(System.String)">setUpdateUnsuccessLoc(String)</h4>
+  <div class="markdown level1 summary"><p>For setting updateUnsuccessLoc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setUpdateUnsuccessLoc(string updateUnsuccessLoc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">updateUnsuccessLoc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

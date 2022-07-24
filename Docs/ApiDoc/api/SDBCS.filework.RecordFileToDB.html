@@ -1,0 +1,848 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RecordFileToDB
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RecordFileToDB
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="SDBCS.filework.RecordFileToDB">
+  
+  
+  <h1 id="SDBCS_filework_RecordFileToDB" data-uid="SDBCS.filework.RecordFileToDB" class="text-break">Class RecordFileToDB
+  </h1>
+  <div class="markdown level0 summary"><p>This class is useful for retrieving and recording blob and clob data from DB.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">RecordFileToDB</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="SDBCS.filework.html">SDBCS.filework</a></h6>
+  <h6><strong>Assembly</strong>: SDBCS.dll</h6>
+  <h5 id="SDBCS_filework_RecordFileToDB_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RecordFileToDB</code></pre>
+  </div>
+  <h5 id="SDBCS_filework_RecordFileToDB_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>
+Author Mehmet Hayati KINAŞ
+</p>
+<p>
+Version 1.0
+</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="SDBCS_filework_RecordFileToDB__ctor_" data-uid="SDBCS.filework.RecordFileToDB.#ctor*"></a>
+  <h4 id="SDBCS_filework_RecordFileToDB__ctor_SDBCS_dbwork_RunDB_System_String___System_String_System_String_System_String_" data-uid="SDBCS.filework.RecordFileToDB.#ctor(SDBCS.dbwork.RunDB,System.String[],System.String,System.String,System.String)">RecordFileToDB(RunDB, String[], String, String, String)</h4>
+  <div class="markdown level1 summary"><p>The basic variables of the constructor include database, table and file information.
+<br>In this way, the connection between the database and file is established and transactions are automated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RecordFileToDB(RunDB runDB, string[] tableNames, string fileField, string keyField, string keyData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SDBCS.dbwork.RunDB.html">RunDB</a></td>
+        <td><span class="parametername">runDB</span></td>
+        <td><p>For connecting the database and executing processes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">tableNames</span></td>
+        <td><p>The table names to be accessed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileField</span></td>
+        <td><p>The name of file field of the table to access.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">keyField</span></td>
+        <td><p>The key field name of the table to access.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">keyData</span></td>
+        <td><p>Key field data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_filework_RecordFileToDB__ctor_" data-uid="SDBCS.filework.RecordFileToDB.#ctor*"></a>
+  <h4 id="SDBCS_filework_RecordFileToDB__ctor_SDBCS_dbwork_RunDB_System_String___System_String_System_String___System_String___System_Int32___" data-uid="SDBCS.filework.RecordFileToDB.#ctor(SDBCS.dbwork.RunDB,System.String[],System.String,System.String[],System.String[],System.Int32[])">RecordFileToDB(RunDB, String[], String, String[], String[], Int32[])</h4>
+  <div class="markdown level1 summary"><p>The basic variables of the constructor include database, table and file information.
+<br>In this way, the connection between the database and file is established and transactions are automated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RecordFileToDB(RunDB runDB, string[] tableNames, string fileField, string[] unqFields, string[] unqFieldData, int[] unqFieldTypes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SDBCS.dbwork.RunDB.html">RunDB</a></td>
+        <td><span class="parametername">runDB</span></td>
+        <td><p>For connecting the database and executing processes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">tableNames</span></td>
+        <td><p>The table names to be accessed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileField</span></td>
+        <td><p>The name of file field of the table to access.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">unqFields</span></td>
+        <td><p>Unique fields string array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">unqFieldData</span></td>
+        <td><p>Unique data string array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">unqFieldTypes</span></td>
+        <td><p>Unique field types string array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="SDBCS_filework_RecordFileToDB_CONNECTIONSTRING" data-uid="SDBCS.filework.RecordFileToDB.CONNECTIONSTRING">CONNECTIONSTRING</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int CONNECTIONSTRING = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_filework_RecordFileToDB_DATAFILEPATH" data-uid="SDBCS.filework.RecordFileToDB.DATAFILEPATH">DATAFILEPATH</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DATAFILEPATH = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_filework_RecordFileToDB_DB2" data-uid="SDBCS.filework.RecordFileToDB.DB2">DB2</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DB2 = 4</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_filework_RecordFileToDB_fileSF" data-uid="SDBCS.filework.RecordFileToDB.fileSF">fileSF</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string fileSF</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_filework_RecordFileToDB_INTEGER" data-uid="SDBCS.filework.RecordFileToDB.INTEGER">INTEGER</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int INTEGER = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_filework_RecordFileToDB_isDebug" data-uid="SDBCS.filework.RecordFileToDB.isDebug">isDebug</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isDebug</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_filework_RecordFileToDB_MYSQL" data-uid="SDBCS.filework.RecordFileToDB.MYSQL">MYSQL</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MYSQL = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_filework_RecordFileToDB_ORACLE" data-uid="SDBCS.filework.RecordFileToDB.ORACLE">ORACLE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int ORACLE = 2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_filework_RecordFileToDB_POSTGRESQL" data-uid="SDBCS.filework.RecordFileToDB.POSTGRESQL">POSTGRESQL</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int POSTGRESQL = 3</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_filework_RecordFileToDB_SQLSERVER" data-uid="SDBCS.filework.RecordFileToDB.SQLSERVER">SQLSERVER</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SQLSERVER = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_filework_RecordFileToDB_STRING" data-uid="SDBCS.filework.RecordFileToDB.STRING">STRING</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int STRING = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="SDBCS_filework_RecordFileToDB_dbSystem_" data-uid="SDBCS.filework.RecordFileToDB.dbSystem*"></a>
+  <h4 id="SDBCS_filework_RecordFileToDB_dbSystem" data-uid="SDBCS.filework.RecordFileToDB.dbSystem">dbSystem</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int dbSystem { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="SDBCS_filework_RecordFileToDB_clearBCData_" data-uid="SDBCS.filework.RecordFileToDB.clearBCData*"></a>
+  <h4 id="SDBCS_filework_RecordFileToDB_clearBCData" data-uid="SDBCS.filework.RecordFileToDB.clearBCData">clearBCData()</h4>
+  <div class="markdown level1 summary"><p>For deleting blob and clob data from DB.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool clearBCData()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>If process is ok it will return true, else return false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_filework_RecordFileToDB_getBlobData_" data-uid="SDBCS.filework.RecordFileToDB.getBlobData*"></a>
+  <h4 id="SDBCS_filework_RecordFileToDB_getBlobData" data-uid="SDBCS.filework.RecordFileToDB.getBlobData">getBlobData()</h4>
+  <div class="markdown level1 summary"><p>For retrieving blob data from DB.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] getBlobData()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><p>Byte array for blob data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_filework_RecordFileToDB_getClobData_" data-uid="SDBCS.filework.RecordFileToDB.getClobData*"></a>
+  <h4 id="SDBCS_filework_RecordFileToDB_getClobData" data-uid="SDBCS.filework.RecordFileToDB.getClobData">getClobData()</h4>
+  <div class="markdown level1 summary"><p>For retrieving clob data from DB.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] getClobData()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><p>Byte array for clob data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_filework_RecordFileToDB_getErrorString_" data-uid="SDBCS.filework.RecordFileToDB.getErrorString*"></a>
+  <h4 id="SDBCS_filework_RecordFileToDB_getErrorString" data-uid="SDBCS.filework.RecordFileToDB.getErrorString">getErrorString()</h4>
+  <div class="markdown level1 summary"><p>For getting errorString</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getErrorString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>errorString</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_filework_RecordFileToDB_getMessageScript_" data-uid="SDBCS.filework.RecordFileToDB.getMessageScript*"></a>
+  <h4 id="SDBCS_filework_RecordFileToDB_getMessageScript" data-uid="SDBCS.filework.RecordFileToDB.getMessageScript">getMessageScript()</h4>
+  <div class="markdown level1 summary"><p>For getting messageScript</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getMessageScript()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>messageScript</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_filework_RecordFileToDB_getResultMessage_" data-uid="SDBCS.filework.RecordFileToDB.getResultMessage*"></a>
+  <h4 id="SDBCS_filework_RecordFileToDB_getResultMessage" data-uid="SDBCS.filework.RecordFileToDB.getResultMessage">getResultMessage()</h4>
+  <div class="markdown level1 summary"><p>For getting resultMessage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getResultMessage()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>resultMessage</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_filework_RecordFileToDB_recordBlobData_" data-uid="SDBCS.filework.RecordFileToDB.recordBlobData*"></a>
+  <h4 id="SDBCS_filework_RecordFileToDB_recordBlobData_System_Byte___" data-uid="SDBCS.filework.RecordFileToDB.recordBlobData(System.Byte[])">recordBlobData(Byte[])</h4>
+  <div class="markdown level1 summary"><p>For recording blob data to DB</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool recordBlobData(byte[] data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Byte array from blob data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>If process is ok it will return true, else return false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_filework_RecordFileToDB_recordClobData_" data-uid="SDBCS.filework.RecordFileToDB.recordClobData*"></a>
+  <h4 id="SDBCS_filework_RecordFileToDB_recordClobData_System_Byte___" data-uid="SDBCS.filework.RecordFileToDB.recordClobData(System.Byte[])">recordClobData(Byte[])</h4>
+  <div class="markdown level1 summary"><p>For recording clob data to DB</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool recordClobData(byte[] buffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>Byte array from clob data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>If process is ok it will return true, else return false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_filework_RecordFileToDB_setKeyData_" data-uid="SDBCS.filework.RecordFileToDB.setKeyData*"></a>
+  <h4 id="SDBCS_filework_RecordFileToDB_setKeyData" data-uid="SDBCS.filework.RecordFileToDB.setKeyData">setKeyData()</h4>
+  <div class="markdown level1 summary"><p>If the record is inserted DB, we don't have id yet. We can get id from DB with using unique data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool setKeyData()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>If process is ok it will return true, else return false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

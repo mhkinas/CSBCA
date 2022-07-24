@@ -1,0 +1,1748 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ExecuteTable
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ExecuteTable
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="SDBCS.dbwork.ExecuteTable">
+  
+  
+  <h1 id="SDBCS_dbwork_ExecuteTable" data-uid="SDBCS.dbwork.ExecuteTable" class="text-break">Class ExecuteTable
+  </h1>
+  <div class="markdown level0 summary"><p>ExecuteTable is the class that automates database operations.
+With this class, database queries are automatically generated and the process is completed by executing queries.
+For the creation of a sample;
+<br>
+<code>
+executeTable = new ExecuteTable(dbName, tableName, fieldNames, fieldTypes, orderBy, dateFormatter, selectFields, selectFTs, messageBean);</code>
+<br> It is enough to write a code like this.
+<br>
+Next action;
+<br>
+<code> tableData = (String[][])executeTable.tableAction(action, formData, prepareQuery);</code>
+<br>to run the method.
+<br>The important thing to consider here is to determine the variables in both the constructor and the method correctly.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ExecuteTable</span></div>
+      <div class="level2"><a class="xref" href="SDBCS.dbwork.ExecTableWithRef.html">ExecTableWithRef</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="SDBCS.dbwork.html">SDBCS.dbwork</a></h6>
+  <h6><strong>Assembly</strong>: SDBCS.dll</h6>
+  <h5 id="SDBCS_dbwork_ExecuteTable_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ExecuteTable</code></pre>
+  </div>
+  <h5 id="SDBCS_dbwork_ExecuteTable_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>
+Author Mehmet Hayati KINAŞ
+</p>
+<p>
+Version 1.0
+</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="SDBCS_dbwork_ExecuteTable__ctor_" data-uid="SDBCS.dbwork.ExecuteTable.#ctor*"></a>
+  <h4 id="SDBCS_dbwork_ExecuteTable__ctor_SDBCS_dbwork_RunDB_System_String___System_String___System_Int32___System_String_SDBCS_utility_DateFormatter_System_String___System_Int32___SDBCS_bean_MessageBean_" data-uid="SDBCS.dbwork.ExecuteTable.#ctor(SDBCS.dbwork.RunDB,System.String[],System.String[],System.Int32[],System.String,SDBCS.utility.DateFormatter,System.String[],System.Int32[],SDBCS.bean.MessageBean)">ExecuteTable(RunDB, String[], String[], Int32[], String, DateFormatter, String[], Int32[], MessageBean)</h4>
+  <div class="markdown level1 summary"><p>The basic variables of the constructor include database, table, form, and field information.
+In this way, the connection between the database and form is established and transactions are automated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExecuteTable(RunDB runDB, string[] tableNames, string[] fieldNames, int[] fieldTypes, string orderBy, DateFormatter dateFormatter, string[] selectFields, int[] selectFTs, MessageBean messageBean)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SDBCS.dbwork.RunDB.html">RunDB</a></td>
+        <td><span class="parametername">runDB</span></td>
+        <td><p>For connecting the database and executing processes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">tableNames</span></td>
+        <td><p>The table names to be accessed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">fieldNames</span></td>
+        <td><p>Names of fields of the table to access.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">fieldTypes</span></td>
+        <td><p>The data types of the fields of the table to access.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">orderBy</span></td>
+        <td><p>The field names to sort in the query statement to be generated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SDBCS.utility.DateFormatter.html">DateFormatter</a></td>
+        <td><span class="parametername">dateFormatter</span></td>
+        <td><p>The DateFormatter instance to format dates.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">selectFields</span></td>
+        <td><p>List of selected fields from view.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">selectFTs</span></td>
+        <td><p>The data types of the selection fields of the table to access.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SDBCS.bean.MessageBean.html">MessageBean</a></td>
+        <td><span class="parametername">messageBean</span></td>
+        <td><p>The MessageBean instance for getting general messages.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_BEGINEXECUTENONQUERY" data-uid="SDBCS.dbwork.ExecuteTable.BEGINEXECUTENONQUERY">BEGINEXECUTENONQUERY</h4>
+  <div class="markdown level1 summary"><p>This integer represent of begin non query execution type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int BEGINEXECUTENONQUERY = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_BEGINEXECUTEREADER" data-uid="SDBCS.dbwork.ExecuteTable.BEGINEXECUTEREADER">BEGINEXECUTEREADER</h4>
+  <div class="markdown level1 summary"><p>This integer represent of begin query execution type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int BEGINEXECUTEREADER = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_CONNECTIONSTRING" data-uid="SDBCS.dbwork.ExecuteTable.CONNECTIONSTRING">CONNECTIONSTRING</h4>
+  <div class="markdown level1 summary"><p>This integer represent of DB connection type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int CONNECTIONSTRING = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_DATAFILEPATH" data-uid="SDBCS.dbwork.ExecuteTable.DATAFILEPATH">DATAFILEPATH</h4>
+  <div class="markdown level1 summary"><p>This integer represent of DB  connection file path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DATAFILEPATH = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_DATE" data-uid="SDBCS.dbwork.ExecuteTable.DATE">DATE</h4>
+  <div class="markdown level1 summary"><p>This integer represent of data type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DATE = 2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_dateData" data-uid="SDBCS.dbwork.ExecuteTable.dateData">dateData</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DateTime[][] dateData</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span>[][]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_dateFormatter" data-uid="SDBCS.dbwork.ExecuteTable.dateFormatter">dateFormatter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DateFormatter dateFormatter</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SDBCS.utility.DateFormatter.html">DateFormatter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_dbQuery" data-uid="SDBCS.dbwork.ExecuteTable.dbQuery">dbQuery</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool dbQuery</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_doubleData" data-uid="SDBCS.dbwork.ExecuteTable.doubleData">doubleData</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected double[][] doubleData</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span>[][]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_errorString" data-uid="SDBCS.dbwork.ExecuteTable.errorString">errorString</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string errorString</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_EXECUTENONQUERY" data-uid="SDBCS.dbwork.ExecuteTable.EXECUTENONQUERY">EXECUTENONQUERY</h4>
+  <div class="markdown level1 summary"><p>This integer represent of execute non query execution type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int EXECUTENONQUERY = 2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_EXECUTEREADER" data-uid="SDBCS.dbwork.ExecuteTable.EXECUTEREADER">EXECUTEREADER</h4>
+  <div class="markdown level1 summary"><p>This integer represent of execute query execution type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int EXECUTEREADER = 3</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_EXECUTESCALAR" data-uid="SDBCS.dbwork.ExecuteTable.EXECUTESCALAR">EXECUTESCALAR</h4>
+  <div class="markdown level1 summary"><p>This integer represent of execute scalar execution type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int EXECUTESCALAR = 4</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_fieldCount" data-uid="SDBCS.dbwork.ExecuteTable.fieldCount">fieldCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int fieldCount</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_fieldNames" data-uid="SDBCS.dbwork.ExecuteTable.fieldNames">fieldNames</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string[] fieldNames</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_fieldTypes" data-uid="SDBCS.dbwork.ExecuteTable.fieldTypes">fieldTypes</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int[] fieldTypes</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_INTEGER" data-uid="SDBCS.dbwork.ExecuteTable.INTEGER">INTEGER</h4>
+  <div class="markdown level1 summary"><p>This integer represent of data type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int INTEGER = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_integerData" data-uid="SDBCS.dbwork.ExecuteTable.integerData">integerData</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int[][] integerData</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[][]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_keyField" data-uid="SDBCS.dbwork.ExecuteTable.keyField">keyField</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string keyField</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_messageBean" data-uid="SDBCS.dbwork.ExecuteTable.messageBean">messageBean</h4>
+  <div class="markdown level1 summary"><p>MessageBean instance for getting default messages.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected MessageBean messageBean</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SDBCS.bean.MessageBean.html">MessageBean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_messages" data-uid="SDBCS.dbwork.ExecuteTable.messages">messages</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string[] messages</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_messageScript" data-uid="SDBCS.dbwork.ExecuteTable.messageScript">messageScript</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string messageScript</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_NUMBER" data-uid="SDBCS.dbwork.ExecuteTable.NUMBER">NUMBER</h4>
+  <div class="markdown level1 summary"><p>This integer represent of data type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int NUMBER = 3</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_orderBy" data-uid="SDBCS.dbwork.ExecuteTable.orderBy">orderBy</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string orderBy</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_queryString" data-uid="SDBCS.dbwork.ExecuteTable.queryString">queryString</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string queryString</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_resultMessage" data-uid="SDBCS.dbwork.ExecuteTable.resultMessage">resultMessage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string resultMessage</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_rowCount" data-uid="SDBCS.dbwork.ExecuteTable.rowCount">rowCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int rowCount</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_runDB" data-uid="SDBCS.dbwork.ExecuteTable.runDB">runDB</h4>
+  <div class="markdown level1 summary"><p>RunDB instance for executing DB processes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RunDB runDB</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SDBCS.dbwork.RunDB.html">RunDB</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_selectFields" data-uid="SDBCS.dbwork.ExecuteTable.selectFields">selectFields</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string[] selectFields</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_selectFTs" data-uid="SDBCS.dbwork.ExecuteTable.selectFTs">selectFTs</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int[] selectFTs</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_selectQuery" data-uid="SDBCS.dbwork.ExecuteTable.selectQuery">selectQuery</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] selectQuery</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_STRING" data-uid="SDBCS.dbwork.ExecuteTable.STRING">STRING</h4>
+  <div class="markdown level1 summary"><p>This integer represent of data type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int STRING = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_stringData" data-uid="SDBCS.dbwork.ExecuteTable.stringData">stringData</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string[][] stringData</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[][]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_ExecuteTable_tableNames" data-uid="SDBCS.dbwork.ExecuteTable.tableNames">tableNames</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string[] tableNames</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="SDBCS_dbwork_ExecuteTable_isAfterCommit_" data-uid="SDBCS.dbwork.ExecuteTable.isAfterCommit*"></a>
+  <h4 id="SDBCS_dbwork_ExecuteTable_isAfterCommit" data-uid="SDBCS.dbwork.ExecuteTable.isAfterCommit">isAfterCommit</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isAfterCommit { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_ExecuteTable_isDebug_" data-uid="SDBCS.dbwork.ExecuteTable.isDebug*"></a>
+  <h4 id="SDBCS_dbwork_ExecuteTable_isDebug" data-uid="SDBCS.dbwork.ExecuteTable.isDebug">isDebug</h4>
+  <div class="markdown level1 summary"><p>If this class open for debugging usage or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isDebug { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="SDBCS_dbwork_ExecuteTable_closeAll_" data-uid="SDBCS.dbwork.ExecuteTable.closeAll*"></a>
+  <h4 id="SDBCS_dbwork_ExecuteTable_closeAll" data-uid="SDBCS.dbwork.ExecuteTable.closeAll">closeAll()</h4>
+  <div class="markdown level1 summary"><p>For calling RunDB class closeAll() method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void closeAll()</code></pre>
+  </div>
+  
+  
+  <a id="SDBCS_dbwork_ExecuteTable_getDefErrStr_" data-uid="SDBCS.dbwork.ExecuteTable.getDefErrStr*"></a>
+  <h4 id="SDBCS_dbwork_ExecuteTable_getDefErrStr" data-uid="SDBCS.dbwork.ExecuteTable.getDefErrStr">getDefErrStr()</h4>
+  <div class="markdown level1 summary"><p>For getting default error string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getDefErrStr()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>defErrStr</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_ExecuteTable_getDefMsgScr_" data-uid="SDBCS.dbwork.ExecuteTable.getDefMsgScr*"></a>
+  <h4 id="SDBCS_dbwork_ExecuteTable_getDefMsgScr" data-uid="SDBCS.dbwork.ExecuteTable.getDefMsgScr">getDefMsgScr()</h4>
+  <div class="markdown level1 summary"><p>For getting default message string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getDefMsgScr()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>defMsgScr</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_ExecuteTable_getDefResMsg_" data-uid="SDBCS.dbwork.ExecuteTable.getDefResMsg*"></a>
+  <h4 id="SDBCS_dbwork_ExecuteTable_getDefResMsg" data-uid="SDBCS.dbwork.ExecuteTable.getDefResMsg">getDefResMsg()</h4>
+  <div class="markdown level1 summary"><p>For getting default result message</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getDefResMsg()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>defResMsg</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_ExecuteTable_getErrorString_" data-uid="SDBCS.dbwork.ExecuteTable.getErrorString*"></a>
+  <h4 id="SDBCS_dbwork_ExecuteTable_getErrorString" data-uid="SDBCS.dbwork.ExecuteTable.getErrorString">getErrorString()</h4>
+  <div class="markdown level1 summary"><p>For getting errorString.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getErrorString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>errorString</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_ExecuteTable_getMessageBean_" data-uid="SDBCS.dbwork.ExecuteTable.getMessageBean*"></a>
+  <h4 id="SDBCS_dbwork_ExecuteTable_getMessageBean" data-uid="SDBCS.dbwork.ExecuteTable.getMessageBean">getMessageBean()</h4>
+  <div class="markdown level1 summary"><p>For getting messageBean</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MessageBean getMessageBean()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SDBCS.bean.MessageBean.html">MessageBean</a></td>
+        <td><p>messageBean</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_ExecuteTable_getMessages_" data-uid="SDBCS.dbwork.ExecuteTable.getMessages*"></a>
+  <h4 id="SDBCS_dbwork_ExecuteTable_getMessages" data-uid="SDBCS.dbwork.ExecuteTable.getMessages">getMessages()</h4>
+  <div class="markdown level1 summary"><p>For getting messages array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] getMessages()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p>messages</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_ExecuteTable_getMessageScript_" data-uid="SDBCS.dbwork.ExecuteTable.getMessageScript*"></a>
+  <h4 id="SDBCS_dbwork_ExecuteTable_getMessageScript" data-uid="SDBCS.dbwork.ExecuteTable.getMessageScript">getMessageScript()</h4>
+  <div class="markdown level1 summary"><p>For getting messageScript;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getMessageScript()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>messageScript</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_ExecuteTable_getNewRecord_" data-uid="SDBCS.dbwork.ExecuteTable.getNewRecord*"></a>
+  <h4 id="SDBCS_dbwork_ExecuteTable_getNewRecord_System_String___System_String___System_Int32___SDBCS_dbwork_PrepareQuery_" data-uid="SDBCS.dbwork.ExecuteTable.getNewRecord(System.String[],System.String[],System.Int32[],SDBCS.dbwork.PrepareQuery)">getNewRecord(String[], String[], Int32[], PrepareQuery)</h4>
+  <div class="markdown level1 summary"><p>When new record is recorded to DB, probably you don't know id of new record.
+At this point this method send unique field data and retrieve this record with id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] getNewRecord(string[] unqFields, string[] unqFieldData, int[] unqFieldTypes, PrepareQuery prepareQuery)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">unqFields</span></td>
+        <td><p>Unique fields names in string array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">unqFieldData</span></td>
+        <td><p>Unique fields data in string array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">unqFieldTypes</span></td>
+        <td><p>Unique fields types in integer array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SDBCS.dbwork.PrepareQuery.html">PrepareQuery</a></td>
+        <td><span class="parametername">prepareQuery</span></td>
+        <td><p>PrepareQuery instance for setting select query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p>String array for retrieving new record with id.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_ExecuteTable_getQueryString_" data-uid="SDBCS.dbwork.ExecuteTable.getQueryString*"></a>
+  <h4 id="SDBCS_dbwork_ExecuteTable_getQueryString" data-uid="SDBCS.dbwork.ExecuteTable.getQueryString">getQueryString()</h4>
+  <div class="markdown level1 summary"><p>For getting queryString.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getQueryString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>queryString</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_ExecuteTable_getResultMessage_" data-uid="SDBCS.dbwork.ExecuteTable.getResultMessage*"></a>
+  <h4 id="SDBCS_dbwork_ExecuteTable_getResultMessage" data-uid="SDBCS.dbwork.ExecuteTable.getResultMessage">getResultMessage()</h4>
+  <div class="markdown level1 summary"><p>For getting resultMessage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getResultMessage()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>resultMessage</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_ExecuteTable_initMessages_" data-uid="SDBCS.dbwork.ExecuteTable.initMessages*"></a>
+  <h4 id="SDBCS_dbwork_ExecuteTable_initMessages" data-uid="SDBCS.dbwork.ExecuteTable.initMessages">initMessages()</h4>
+  <div class="markdown level1 summary"><p>For initializing default messages.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void initMessages()</code></pre>
+  </div>
+  
+  
+  <a id="SDBCS_dbwork_ExecuteTable_selectData_" data-uid="SDBCS.dbwork.ExecuteTable.selectData*"></a>
+  <h4 id="SDBCS_dbwork_ExecuteTable_selectData_System_Int32_" data-uid="SDBCS.dbwork.ExecuteTable.selectData(System.Int32)">selectData(Int32)</h4>
+  <div class="markdown level1 summary"><p>The base object type array returns the selected data of the return database.
+An error message(errorString) will occur if there is no data return.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object[][] selectData(int dataType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">dataType</span></td>
+        <td><p>The type of data you want to retrieve.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span>[][]</td>
+        <td><p>Returns the array according to data type and data object in [number of records][field count] format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_ExecuteTable_setDefErrStr_" data-uid="SDBCS.dbwork.ExecuteTable.setDefErrStr*"></a>
+  <h4 id="SDBCS_dbwork_ExecuteTable_setDefErrStr_System_String_" data-uid="SDBCS.dbwork.ExecuteTable.setDefErrStr(System.String)">setDefErrStr(String)</h4>
+  <div class="markdown level1 summary"><p>For setting default error string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setDefErrStr(string defErrStr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">defErrStr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_ExecuteTable_setDefMsgScr_" data-uid="SDBCS.dbwork.ExecuteTable.setDefMsgScr*"></a>
+  <h4 id="SDBCS_dbwork_ExecuteTable_setDefMsgScr_System_String_" data-uid="SDBCS.dbwork.ExecuteTable.setDefMsgScr(System.String)">setDefMsgScr(String)</h4>
+  <div class="markdown level1 summary"><p>For setting default message string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setDefMsgScr(string defMsgScr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">defMsgScr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_ExecuteTable_setDefResMsg_" data-uid="SDBCS.dbwork.ExecuteTable.setDefResMsg*"></a>
+  <h4 id="SDBCS_dbwork_ExecuteTable_setDefResMsg_System_String_" data-uid="SDBCS.dbwork.ExecuteTable.setDefResMsg(System.String)">setDefResMsg(String)</h4>
+  <div class="markdown level1 summary"><p>For setting default result message</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setDefResMsg(string defResMsg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">defResMsg</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_ExecuteTable_setEmptyMessage_" data-uid="SDBCS.dbwork.ExecuteTable.setEmptyMessage*"></a>
+  <h4 id="SDBCS_dbwork_ExecuteTable_setEmptyMessage" data-uid="SDBCS.dbwork.ExecuteTable.setEmptyMessage">setEmptyMessage()</h4>
+  <div class="markdown level1 summary"><p>For setting empty messages.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setEmptyMessage()</code></pre>
+  </div>
+  
+  
+  <a id="SDBCS_dbwork_ExecuteTable_setMessageBean_" data-uid="SDBCS.dbwork.ExecuteTable.setMessageBean*"></a>
+  <h4 id="SDBCS_dbwork_ExecuteTable_setMessageBean_SDBCS_bean_MessageBean_" data-uid="SDBCS.dbwork.ExecuteTable.setMessageBean(SDBCS.bean.MessageBean)">setMessageBean(MessageBean)</h4>
+  <div class="markdown level1 summary"><p>For setting messageBean</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setMessageBean(MessageBean messageBean)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SDBCS.bean.MessageBean.html">MessageBean</a></td>
+        <td><span class="parametername">messageBean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_ExecuteTable_setMessages_" data-uid="SDBCS.dbwork.ExecuteTable.setMessages*"></a>
+  <h4 id="SDBCS_dbwork_ExecuteTable_setMessages_System_String___" data-uid="SDBCS.dbwork.ExecuteTable.setMessages(System.String[])">setMessages(String[])</h4>
+  <div class="markdown level1 summary"><p>For setting messages array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setMessages(string[] messages)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">messages</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_ExecuteTable_setQueryString_" data-uid="SDBCS.dbwork.ExecuteTable.setQueryString*"></a>
+  <h4 id="SDBCS_dbwork_ExecuteTable_setQueryString_System_String_" data-uid="SDBCS.dbwork.ExecuteTable.setQueryString(System.String)">setQueryString(String)</h4>
+  <div class="markdown level1 summary"><p>For setting sqlString.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setQueryString(string sqlstring)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sqlstring</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_ExecuteTable_tableAction_" data-uid="SDBCS.dbwork.ExecuteTable.tableAction*"></a>
+  <h4 id="SDBCS_dbwork_ExecuteTable_tableAction_System_String_System_String___SDBCS_dbwork_PrepareQuery_" data-uid="SDBCS.dbwork.ExecuteTable.tableAction(System.String,System.String[],SDBCS.dbwork.PrepareQuery)">tableAction(String, String[], PrepareQuery)</h4>
+  <div class="markdown level1 summary"><p>Perform table movements (select, insert, update, or delete) and return data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool tableAction(string action, string[] formData, PrepareQuery prepareQuery)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">action</span></td>
+        <td><p>The action variable determines which action will take.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">formData</span></td>
+        <td><p>Taken data from the form in String array</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SDBCS.dbwork.PrepareQuery.html">PrepareQuery</a></td>
+        <td><span class="parametername">prepareQuery</span></td>
+        <td><p>Represent of The PrepareQuery instance for setting queries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>If the DB action succeeds, it returns true, otherwise returns false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1943 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RunDB
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RunDB
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="SDBCS.dbwork.RunDB">
+  
+  
+  <h1 id="SDBCS_dbwork_RunDB" data-uid="SDBCS.dbwork.RunDB" class="text-break">Class RunDB
+  </h1>
+  <div class="markdown level0 summary"><p>RunDB is the class that performs basic database operations. It is prepared
+for direct use or used by ExecuteTable. <br>
+Example; <br>
+runDB = new RunDB(connType); <br>
+runDB.setDB(jndiName); <br>
+queryString[0] = &quot;select linked_page, theme from vt_jbc_page_link where
+link_name = '&quot;+linkName+&quot;'&quot;; <br>
+if(!runDB.runQuery(queryString, 0, RunDB.QUERY)) errorString =
+runDB.errorString; <br>
+else resultSet = runDB.getResultSet();</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">RunDB</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="SDBCS.dbwork.html">SDBCS.dbwork</a></h6>
+  <h6><strong>Assembly</strong>: SDBCS.dll</h6>
+  <h5 id="SDBCS_dbwork_RunDB_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RunDB</code></pre>
+  </div>
+  <h5 id="SDBCS_dbwork_RunDB_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>
+Author Mehmet Hayati KINAŞ
+</p>
+<p>
+Version 1.0
+</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="SDBCS_dbwork_RunDB__ctor_" data-uid="SDBCS.dbwork.RunDB.#ctor*"></a>
+  <h4 id="SDBCS_dbwork_RunDB__ctor_System_Int32_" data-uid="SDBCS.dbwork.RunDB.#ctor(System.Int32)">RunDB(Int32)</h4>
+  <div class="markdown level1 summary"><p>The constructor retrieves database connection type.
+By default, DB system is MySQL, isJson is true, isLocale is true, connDB is &quot;DefaultConnection&quot;.
+If you want different config, you must set them.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RunDB(int connType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">connType</span></td>
+        <td><p>The database connection type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="SDBCS_dbwork_RunDB_batchBegan" data-uid="SDBCS.dbwork.RunDB.batchBegan">batchBegan</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int batchBegan</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_RunDB_BEGINEXECUTENONQUERY" data-uid="SDBCS.dbwork.RunDB.BEGINEXECUTENONQUERY">BEGINEXECUTENONQUERY</h4>
+  <div class="markdown level1 summary"><p>This integer represent of begin non query execution type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int BEGINEXECUTENONQUERY = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_RunDB_BEGINEXECUTEREADER" data-uid="SDBCS.dbwork.RunDB.BEGINEXECUTEREADER">BEGINEXECUTEREADER</h4>
+  <div class="markdown level1 summary"><p>This integer represent of begin query execution type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int BEGINEXECUTEREADER = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_RunDB_CONNECTIONSTRING" data-uid="SDBCS.dbwork.RunDB.CONNECTIONSTRING">CONNECTIONSTRING</h4>
+  <div class="markdown level1 summary"><p>This integer represent of DB connection type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int CONNECTIONSTRING = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_RunDB_connType" data-uid="SDBCS.dbwork.RunDB.connType">connType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int connType</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_RunDB_DATAFILEPATH" data-uid="SDBCS.dbwork.RunDB.DATAFILEPATH">DATAFILEPATH</h4>
+  <div class="markdown level1 summary"><p>This integer represent of DB  connection file path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DATAFILEPATH = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_RunDB_DATE" data-uid="SDBCS.dbwork.RunDB.DATE">DATE</h4>
+  <div class="markdown level1 summary"><p>This integer represent of data type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DATE = 2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_RunDB_DB2" data-uid="SDBCS.dbwork.RunDB.DB2">DB2</h4>
+  <div class="markdown level1 summary"><p>This integer represent of DB2 RDBMS type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DB2 = 4</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_RunDB_dbSystem" data-uid="SDBCS.dbwork.RunDB.dbSystem">dbSystem</h4>
+  <div class="markdown level1 summary"><p>Database system selection integer representation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int dbSystem</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_RunDB_errorString" data-uid="SDBCS.dbwork.RunDB.errorString">errorString</h4>
+  <div class="markdown level1 summary"><p>String for error messages.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string errorString</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_RunDB_execCount" data-uid="SDBCS.dbwork.RunDB.execCount">execCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int execCount</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_RunDB_EXECUTENONQUERY" data-uid="SDBCS.dbwork.RunDB.EXECUTENONQUERY">EXECUTENONQUERY</h4>
+  <div class="markdown level1 summary"><p>This integer represent of execute non query execution type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int EXECUTENONQUERY = 2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_RunDB_EXECUTEREADER" data-uid="SDBCS.dbwork.RunDB.EXECUTEREADER">EXECUTEREADER</h4>
+  <div class="markdown level1 summary"><p>This integer represent of execute query execution type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int EXECUTEREADER = 3</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_RunDB_EXECUTESCALAR" data-uid="SDBCS.dbwork.RunDB.EXECUTESCALAR">EXECUTESCALAR</h4>
+  <div class="markdown level1 summary"><p>This integer represent of execute scalar execution type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int EXECUTESCALAR = 4</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_RunDB_INTEGER" data-uid="SDBCS.dbwork.RunDB.INTEGER">INTEGER</h4>
+  <div class="markdown level1 summary"><p>This integer represent of data type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int INTEGER = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_RunDB_maxRecord" data-uid="SDBCS.dbwork.RunDB.maxRecord">maxRecord</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int maxRecord</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_RunDB_messageScript" data-uid="SDBCS.dbwork.RunDB.messageScript">messageScript</h4>
+  <div class="markdown level1 summary"><p>String for general messages.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string messageScript</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_RunDB_MYSQL" data-uid="SDBCS.dbwork.RunDB.MYSQL">MYSQL</h4>
+  <div class="markdown level1 summary"><p>This integer represent of MySQL RDBMS type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MYSQL = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_RunDB_NUMBER" data-uid="SDBCS.dbwork.RunDB.NUMBER">NUMBER</h4>
+  <div class="markdown level1 summary"><p>This integer represent of data type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int NUMBER = 3</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_RunDB_ORACLE" data-uid="SDBCS.dbwork.RunDB.ORACLE">ORACLE</h4>
+  <div class="markdown level1 summary"><p>This integer represent of ORACLE RDBMS type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int ORACLE = 2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_RunDB_POSTGRESQL" data-uid="SDBCS.dbwork.RunDB.POSTGRESQL">POSTGRESQL</h4>
+  <div class="markdown level1 summary"><p>This integer represent of POSTGRESQL RDBMS type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int POSTGRESQL = 3</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_RunDB_recordNumber" data-uid="SDBCS.dbwork.RunDB.recordNumber">recordNumber</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int recordNumber</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_RunDB_resultMessage" data-uid="SDBCS.dbwork.RunDB.resultMessage">resultMessage</h4>
+  <div class="markdown level1 summary"><p>String for DB process results.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string resultMessage</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_RunDB_SQLSERVER" data-uid="SDBCS.dbwork.RunDB.SQLSERVER">SQLSERVER</h4>
+  <div class="markdown level1 summary"><p>This integer represent of SQL SERVER RDBMS type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SQLSERVER = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SDBCS_dbwork_RunDB_STRING" data-uid="SDBCS.dbwork.RunDB.STRING">STRING</h4>
+  <div class="markdown level1 summary"><p>This integer represent of data type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int STRING = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_command_" data-uid="SDBCS.dbwork.RunDB.command*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_command" data-uid="SDBCS.dbwork.RunDB.command">command</h4>
+  <div class="markdown level1 summary"><p>System.Data.Common.DbCommand class instance for getting or setting publicly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbCommand command { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.Common.DbCommand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_connDB_" data-uid="SDBCS.dbwork.RunDB.connDB*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_connDB" data-uid="SDBCS.dbwork.RunDB.connDB">connDB</h4>
+  <div class="markdown level1 summary"><p>Connection name at json config file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string connDB { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_connection_" data-uid="SDBCS.dbwork.RunDB.connection*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_connection" data-uid="SDBCS.dbwork.RunDB.connection">connection</h4>
+  <div class="markdown level1 summary"><p>System.Data.Common.DBConnection class instance for getting or setting publicly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbConnection connection { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.Common.DbConnection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_connString_" data-uid="SDBCS.dbwork.RunDB.connString*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_connString" data-uid="SDBCS.dbwork.RunDB.connString">connString</h4>
+  <div class="markdown level1 summary"><p>Database connection string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string connString { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_dataFilePath_" data-uid="SDBCS.dbwork.RunDB.dataFilePath*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_dataFilePath" data-uid="SDBCS.dbwork.RunDB.dataFilePath">dataFilePath</h4>
+  <div class="markdown level1 summary"><p>Connection string's file path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string dataFilePath { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_dataReader_" data-uid="SDBCS.dbwork.RunDB.dataReader*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_dataReader" data-uid="SDBCS.dbwork.RunDB.dataReader">dataReader</h4>
+  <div class="markdown level1 summary"><p>System.Data.Common.DbDataReader class instance for getting or setting publicly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbDataReader dataReader { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.Common.DbDataReader</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_isJson_" data-uid="SDBCS.dbwork.RunDB.isJson*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_isJson" data-uid="SDBCS.dbwork.RunDB.isJson">isJson</h4>
+  <div class="markdown level1 summary"><p>The connection file is json if true or text if false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isJson { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_isLocale_" data-uid="SDBCS.dbwork.RunDB.isLocale*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_isLocale" data-uid="SDBCS.dbwork.RunDB.isLocale">isLocale</h4>
+  <div class="markdown level1 summary"><p>Locale language or English</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isLocale { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_retObject_" data-uid="SDBCS.dbwork.RunDB.retObject*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_retObject" data-uid="SDBCS.dbwork.RunDB.retObject">retObject</h4>
+  <div class="markdown level1 summary"><p>Object for EXECUTESCALAR query type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object retObject { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_closeAll_" data-uid="SDBCS.dbwork.RunDB.closeAll*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_closeAll" data-uid="SDBCS.dbwork.RunDB.closeAll">closeAll()</h4>
+  <div class="markdown level1 summary"><p>This method is useful for closing dataReader, command.Connection instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void closeAll()</code></pre>
+  </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlException</span></td>
+        <td><p>The error message (errorString) will occur if the SQL error occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_closeDataReader_" data-uid="SDBCS.dbwork.RunDB.closeDataReader*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_closeDataReader" data-uid="SDBCS.dbwork.RunDB.closeDataReader">closeDataReader()</h4>
+  <div class="markdown level1 summary"><p>If DataReader is not null, it will close.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void closeDataReader()</code></pre>
+  </div>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_getData_" data-uid="SDBCS.dbwork.RunDB.getData*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_getData_System_Int32_System_Int32_" data-uid="SDBCS.dbwork.RunDB.getData(System.Int32,System.Int32)">getData(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>The number of records that have been executed before, the type of data, and retrieves the data according to
+the number of fields to be drawn from the table (or view).
+Data as a set of standard data types derived from the string type will return.
+Returns the array.An error message(errorString) will occur if there is no data return.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[][] getData(int rowCount, int fieldCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rowCount</span></td>
+        <td><p>The specified number of data to retrieve.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">fieldCount</span></td>
+        <td><p>Number of fields to withdraw from tables (or views).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[][]</td>
+        <td><p>Returns in the form of string [number of records] [number of fields].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlException</span></td>
+        <td><p>The error message (errorString) will occur if the SQL error occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_getDateData_" data-uid="SDBCS.dbwork.RunDB.getDateData*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_getDateData_System_Int32_System_Int32_" data-uid="SDBCS.dbwork.RunDB.getDateData(System.Int32,System.Int32)">getDateData(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>The number of records that have been executed before, the type of data, and retrieves the data according to
+the number of fields to be drawn from the table (or view).
+Data as a set of standard data types derived from the DateTime type will return.
+Returns the array.An error message(errorString) will occur if there is no data return.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime[][] getDateData(int rowCount, int fieldCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rowCount</span></td>
+        <td><p>The specified number of data to retrieve.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">fieldCount</span></td>
+        <td><p>Number of fields to withdraw from tables (or views).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span>[][]</td>
+        <td><p>Returns in the form of DateTime [number of records] [number of fields].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlException</span></td>
+        <td><p>The error message (errorString) will occur if the SQL error occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_getdComm_" data-uid="SDBCS.dbwork.RunDB.getdComm*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_getdComm" data-uid="SDBCS.dbwork.RunDB.getdComm">getdComm()</h4>
+  <div class="markdown level1 summary"><p>For getting dComm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DB2Command getdComm()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IBM.Data.DB2.Core.DB2Command</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_getDoubleData_" data-uid="SDBCS.dbwork.RunDB.getDoubleData*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_getDoubleData_System_Int32_System_Int32_" data-uid="SDBCS.dbwork.RunDB.getDoubleData(System.Int32,System.Int32)">getDoubleData(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>The number of records that have been executed before, the type of data, and retrieves the data according to
+the number of fields to be drawn from the table (or view).
+Data as a set of standard data types derived from the double type will return.
+Returns the array.An error message(errorString) will occur if there is no data return.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double[][] getDoubleData(int rowCount, int fieldCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rowCount</span></td>
+        <td><p>The specified number of data to retrieve.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">fieldCount</span></td>
+        <td><p>Number of fields to withdraw from tables (or views).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span>[][]</td>
+        <td><p>Returns in the form of double [number of records] [number of fields].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlException</span></td>
+        <td><p>The error message (errorString) will occur if the SQL error occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_getExecCount_" data-uid="SDBCS.dbwork.RunDB.getExecCount*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_getExecCount" data-uid="SDBCS.dbwork.RunDB.getExecCount">getExecCount()</h4>
+  <div class="markdown level1 summary"><p>For getting execCount.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int getExecCount()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_getInt32Data_" data-uid="SDBCS.dbwork.RunDB.getInt32Data*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_getInt32Data_System_Int32_System_Int32_" data-uid="SDBCS.dbwork.RunDB.getInt32Data(System.Int32,System.Int32)">getInt32Data(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>The number of records that have been executed before, the type of data, and retrieves the data according to
+the number of fields to be drawn from the table (or view).
+Data as a set of standard data types derived from the Int32 type will return.
+Returns the array.An error message(errorString) will occur if there is no data return.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[][] getInt32Data(int rowCount, int fieldCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rowCount</span></td>
+        <td><p>The specified number of data to retrieve.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">fieldCount</span></td>
+        <td><p>Number of fields to withdraw from tables (or views).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[][]</td>
+        <td><p>Returns in the form of Int32 [number of records] [number of fields].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlException</span></td>
+        <td><p>The error message (errorString) will occur if the SQL error occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_getmComm_" data-uid="SDBCS.dbwork.RunDB.getmComm*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_getmComm" data-uid="SDBCS.dbwork.RunDB.getmComm">getmComm()</h4>
+  <div class="markdown level1 summary"><p>For getting mComm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MySqlCommand getmComm()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MySql.Data.MySqlClient.MySqlCommand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_getoComm_" data-uid="SDBCS.dbwork.RunDB.getoComm*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_getoComm" data-uid="SDBCS.dbwork.RunDB.getoComm">getoComm()</h4>
+  <div class="markdown level1 summary"><p>For getting oComm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OracleCommand getoComm()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Oracle.ManagedDataAccess.Client.OracleCommand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_getpComm_" data-uid="SDBCS.dbwork.RunDB.getpComm*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_getpComm" data-uid="SDBCS.dbwork.RunDB.getpComm">getpComm()</h4>
+  <div class="markdown level1 summary"><p>For getting pComm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NpgsqlCommand getpComm()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Npgsql.NpgsqlCommand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_getRefData_" data-uid="SDBCS.dbwork.RunDB.getRefData*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_getRefData_System_Int32_" data-uid="SDBCS.dbwork.RunDB.getRefData(System.Int32)">getRefData(Int32)</h4>
+  <div class="markdown level1 summary"><p>Retrieves data, based on the previously executed reference data query<br>
+and the number of fields to be taken from the table(or views).
+Error message(errorString) will occur if there is no data return.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] getRefData(int fieldCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">fieldCount</span></td>
+        <td><p>Number of fields to withdraw from tables (or views).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p>Returns in the form of string [number of fields].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlException</span></td>
+        <td><p>The error message (errorString) will occur if the SQL error occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_getRowCount_" data-uid="SDBCS.dbwork.RunDB.getRowCount*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_getRowCount" data-uid="SDBCS.dbwork.RunDB.getRowCount">getRowCount()</h4>
+  <div class="markdown level1 summary"><p>After the query is created to calculate the number of records, the number of records returned from the query result.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int getRowCount()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Returns the number of records in integer type. An error message will be written to errorString if an error occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlException</span></td>
+        <td><p>The error message (errorString) will occur if the SQL error occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_getsComm_" data-uid="SDBCS.dbwork.RunDB.getsComm*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_getsComm" data-uid="SDBCS.dbwork.RunDB.getsComm">getsComm()</h4>
+  <div class="markdown level1 summary"><p>For getting sComm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SqlCommand getsComm()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlCommand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_initMessages_" data-uid="SDBCS.dbwork.RunDB.initMessages*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_initMessages" data-uid="SDBCS.dbwork.RunDB.initMessages">initMessages()</h4>
+  <div class="markdown level1 summary"><p>For initializing default values.
+By default, messages is locale messages.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void initMessages()</code></pre>
+  </div>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_runQuery_" data-uid="SDBCS.dbwork.RunDB.runQuery*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_runQuery_System_String___System_Int32_System_Int32_" data-uid="SDBCS.dbwork.RunDB.runQuery(System.String[],System.Int32,System.Int32)">runQuery(String[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Runs the query based on the query type and the order in the query array.
+An error message(errorString) will occur if False is returning.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool runQuery(string[] queryString, int arrayNo, int queryType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">queryString</span></td>
+        <td><p>A set of query clauses.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">arrayNo</span></td>
+        <td><p>The order of the query to be executed in the array. The sequence number starts at 0.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">queryType</span></td>
+        <td><p>This integer represent of execution type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Returns true if the query ran and returns false if it didn't run.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlException</span></td>
+        <td><p>The error message (errorString) will occur if the SQL error occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_setCommand_" data-uid="SDBCS.dbwork.RunDB.setCommand*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_setCommand_System_String___System_Int32_" data-uid="SDBCS.dbwork.RunDB.setCommand(System.String[],System.Int32)">setCommand(String[], Int32)</h4>
+  <div class="markdown level1 summary"><p>Set DBCommand for DB query or non query processes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool setCommand(string[] queryString, int arrayNo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">queryString</span></td>
+        <td><p>A set of query clauses.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">arrayNo</span></td>
+        <td><p>The order of the query to be executed in the array. The sequence number starts at 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Return true if command generated, else false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlException</span></td>
+        <td><p>The error message (errorString) will occur if the SQL error occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_setConnection_" data-uid="SDBCS.dbwork.RunDB.setConnection*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_setConnection" data-uid="SDBCS.dbwork.RunDB.setConnection">setConnection()</h4>
+  <div class="markdown level1 summary"><p>Database connection method. if connType is CONNECTIONSTRING, Connects to the database by using the connString.
+Else(DATAFILEPATH), read file from dataFilePath for connecting to the database by using the connString at dataFilePath.
+This method will call connectDB() for connecting DB.
+An error message(errorString) will occur if False is returning.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool setConnection()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Returns true if the connection is provided, and false if it is not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_setDB_" data-uid="SDBCS.dbwork.RunDB.setDB*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_setDB_System_Int32_System_String_" data-uid="SDBCS.dbwork.RunDB.setDB(System.Int32,System.String)">setDB(Int32, String)</h4>
+  <div class="markdown level1 summary"><p>This method set DB connection info with dbSystem and forData parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setDB(int dbSystem, string forData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">dbSystem</span></td>
+        <td><p>Database system selection integer representation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">forData</span></td>
+        <td><p>Connection string or file path for text/json file</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_setDB_" data-uid="SDBCS.dbwork.RunDB.setDB*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_setDB_System_String_" data-uid="SDBCS.dbwork.RunDB.setDB(System.String)">setDB(String)</h4>
+  <div class="markdown level1 summary"><p>This method set DB connection info with forData parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setDB(string forData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">forData</span></td>
+        <td><p>Connection string or file path for text/json file</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_setMaxRecord_" data-uid="SDBCS.dbwork.RunDB.setMaxRecord*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_setMaxRecord_System_Int32_" data-uid="SDBCS.dbwork.RunDB.setMaxRecord(System.Int32)">setMaxRecord(Int32)</h4>
+  <div class="markdown level1 summary"><p>For setting max record number. Default is 100000.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setMaxRecord(int maxRecord)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxRecord</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_RunDB_setMessageBean_" data-uid="SDBCS.dbwork.RunDB.setMessageBean*"></a>
+  <h4 id="SDBCS_dbwork_RunDB_setMessageBean_System_Boolean_" data-uid="SDBCS.dbwork.RunDB.setMessageBean(System.Boolean)">setMessageBean(Boolean)</h4>
+  <div class="markdown level1 summary"><p>For setting messageBean.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setMessageBean(bool isLocale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isLocale</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

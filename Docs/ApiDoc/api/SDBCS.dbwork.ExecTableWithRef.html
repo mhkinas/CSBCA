@@ -1,0 +1,668 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ExecTableWithRef
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ExecTableWithRef
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="SDBCS.dbwork.ExecTableWithRef">
+  
+  
+  <h1 id="SDBCS_dbwork_ExecTableWithRef" data-uid="SDBCS.dbwork.ExecTableWithRef" class="text-break">Class ExecTableWithRef
+  </h1>
+  <div class="markdown level0 summary"><p>ExecuteTableAdvanced is the class that automates database operations. With this class, database queries are automatically generated and
+the process is completed by executing queries.
+<br> For the creation of a sample;
+<code>p.execTableWithRef = new ExecTableWithRef(runDB, tableNames, fieldNames, fieldTypes, orderBy, selectFields, selectFTs,
+dateFormatter, refTableNames, refFieldNames, refFieldMatchs, messageBean);</code>
+<br> It is enough to write like this code.
+<br> Next action;
+<example><p>
+<pre><code>dbQuery = p.execTableWR.tableActionWR(p.action, p.formData, p.prepQueryWR);
+
+if(dbQuery)
+{
+	p.tableData = p.execTableWR.selectData(p.dataType);
+}
+else
+	p.tableData = null;</code></pre>
+</example>
+ to run the method.
+The important thing to consider here is to determine the variables in both the binding and the method correctly.
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="SDBCS.dbwork.ExecuteTable.html">ExecuteTable</a></div>
+    <div class="level2"><span class="xref">ExecTableWithRef</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_STRING">ExecuteTable.STRING</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_INTEGER">ExecuteTable.INTEGER</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_DATE">ExecuteTable.DATE</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_NUMBER">ExecuteTable.NUMBER</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_BEGINEXECUTENONQUERY">ExecuteTable.BEGINEXECUTENONQUERY</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_BEGINEXECUTEREADER">ExecuteTable.BEGINEXECUTEREADER</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_EXECUTENONQUERY">ExecuteTable.EXECUTENONQUERY</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_EXECUTEREADER">ExecuteTable.EXECUTEREADER</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_EXECUTESCALAR">ExecuteTable.EXECUTESCALAR</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_DATAFILEPATH">ExecuteTable.DATAFILEPATH</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_CONNECTIONSTRING">ExecuteTable.CONNECTIONSTRING</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_tableNames">ExecuteTable.tableNames</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_fieldNames">ExecuteTable.fieldNames</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_selectFields">ExecuteTable.selectFields</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_fieldTypes">ExecuteTable.fieldTypes</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_selectFTs">ExecuteTable.selectFTs</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_keyField">ExecuteTable.keyField</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_orderBy">ExecuteTable.orderBy</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_queryString">ExecuteTable.queryString</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_fieldCount">ExecuteTable.fieldCount</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_rowCount">ExecuteTable.rowCount</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_stringData">ExecuteTable.stringData</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_integerData">ExecuteTable.integerData</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_dateData">ExecuteTable.dateData</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_doubleData">ExecuteTable.doubleData</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_runDB">ExecuteTable.runDB</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_messageBean">ExecuteTable.messageBean</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_errorString">ExecuteTable.errorString</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_messageScript">ExecuteTable.messageScript</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_resultMessage">ExecuteTable.resultMessage</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_messages">ExecuteTable.messages</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_dbQuery">ExecuteTable.dbQuery</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_isDebug">ExecuteTable.isDebug</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_isAfterCommit">ExecuteTable.isAfterCommit</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_dateFormatter">ExecuteTable.dateFormatter</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_selectQuery">ExecuteTable.selectQuery</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_initMessages">ExecuteTable.initMessages()</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_selectData_System_Int32_">ExecuteTable.selectData(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_getNewRecord_System_String___System_String___System_Int32___SDBCS_dbwork_PrepareQuery_">ExecuteTable.getNewRecord(String[], String[], Int32[], PrepareQuery)</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_setEmptyMessage">ExecuteTable.setEmptyMessage()</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_tableAction_System_String_System_String___SDBCS_dbwork_PrepareQuery_">ExecuteTable.tableAction(String, String[], PrepareQuery)</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_closeAll">ExecuteTable.closeAll()</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_getQueryString">ExecuteTable.getQueryString()</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_getErrorString">ExecuteTable.getErrorString()</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_setQueryString_System_String_">ExecuteTable.setQueryString(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_getMessageScript">ExecuteTable.getMessageScript()</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_getResultMessage">ExecuteTable.getResultMessage()</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_getMessages">ExecuteTable.getMessages()</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_setMessages_System_String___">ExecuteTable.setMessages(String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_getMessageBean">ExecuteTable.getMessageBean()</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_setMessageBean_SDBCS_bean_MessageBean_">ExecuteTable.setMessageBean(MessageBean)</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_getDefErrStr">ExecuteTable.getDefErrStr()</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_setDefErrStr_System_String_">ExecuteTable.setDefErrStr(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_getDefMsgScr">ExecuteTable.getDefMsgScr()</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_setDefMsgScr_System_String_">ExecuteTable.setDefMsgScr(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_getDefResMsg">ExecuteTable.getDefResMsg()</a>
+    </div>
+    <div>
+      <a class="xref" href="SDBCS.dbwork.ExecuteTable.html#SDBCS_dbwork_ExecuteTable_setDefResMsg_System_String_">ExecuteTable.setDefResMsg(String)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="SDBCS.dbwork.html">SDBCS.dbwork</a></h6>
+  <h6><strong>Assembly</strong>: SDBCS.dll</h6>
+  <h5 id="SDBCS_dbwork_ExecTableWithRef_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ExecTableWithRef : ExecuteTable</code></pre>
+  </div>
+  <h5 id="SDBCS_dbwork_ExecTableWithRef_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>
+Author Mehmet Hayati KINAŞ
+</p>
+<p>
+Version 1.0
+</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="SDBCS_dbwork_ExecTableWithRef__ctor_" data-uid="SDBCS.dbwork.ExecTableWithRef.#ctor*"></a>
+  <h4 id="SDBCS_dbwork_ExecTableWithRef__ctor_SDBCS_dbwork_RunDB_System_String___System_String___System_Int32___System_String_System_String___System_Int32___SDBCS_utility_DateFormatter_System_String___System_String___System_Int32___SDBCS_bean_MessageBean_" data-uid="SDBCS.dbwork.ExecTableWithRef.#ctor(SDBCS.dbwork.RunDB,System.String[],System.String[],System.Int32[],System.String,System.String[],System.Int32[],SDBCS.utility.DateFormatter,System.String[],System.String[],System.Int32[],SDBCS.bean.MessageBean)">ExecTableWithRef(RunDB, String[], String[], Int32[], String, String[], Int32[], DateFormatter, String[], String[], Int32[], MessageBean)</h4>
+  <div class="markdown level1 summary"><p>The basic variables of the constructor include database, table, form, and field information.
+In this way, the connection between the database and form is established and transactions are automated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExecTableWithRef(RunDB runDB, string[] tableNames, string[] fieldNames, int[] fieldTypes, string orderBy, string[] selectFields, int[] selectFTs, DateFormatter dateFormatter, string[] refTableNames, string[] refFieldNames, int[] refFieldMatchs, MessageBean messageBean)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SDBCS.dbwork.RunDB.html">RunDB</a></td>
+        <td><span class="parametername">runDB</span></td>
+        <td><p>RunDB instance for DB processes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">tableNames</span></td>
+        <td><p>Table names string array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">fieldNames</span></td>
+        <td><p>Field names string array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">fieldTypes</span></td>
+        <td><p>Field types integer array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">orderBy</span></td>
+        <td><p>Order by string value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">selectFields</span></td>
+        <td><p>Select fields string array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">selectFTs</span></td>
+        <td><p>Select field types integer array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SDBCS.utility.DateFormatter.html">DateFormatter</a></td>
+        <td><span class="parametername">dateFormatter</span></td>
+        <td><p>DateFormatter class instance for formatting dates.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">refTableNames</span></td>
+        <td><p>Reference table names string array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">refFieldNames</span></td>
+        <td><p>Reference field names string array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">refFieldMatchs</span></td>
+        <td><p>Reference field matchs integer array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SDBCS.bean.MessageBean.html">MessageBean</a></td>
+        <td><span class="parametername">messageBean</span></td>
+        <td><p>MessageBean instance for getting general messages.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="SDBCS_dbwork_ExecTableWithRef_getRefData_" data-uid="SDBCS.dbwork.ExecTableWithRef.getRefData*"></a>
+  <h4 id="SDBCS_dbwork_ExecTableWithRef_getRefData" data-uid="SDBCS.dbwork.ExecTableWithRef.getRefData">getRefData()</h4>
+  <div class="markdown level1 summary"><p>For getting reference data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] getRefData()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p>refData</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_ExecTableWithRef_getRefDataQuery_" data-uid="SDBCS.dbwork.ExecTableWithRef.getRefDataQuery*"></a>
+  <h4 id="SDBCS_dbwork_ExecTableWithRef_getRefDataQuery" data-uid="SDBCS.dbwork.ExecTableWithRef.getRefDataQuery">getRefDataQuery()</h4>
+  <div class="markdown level1 summary"><p>For getting refDataQuery.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] getRefDataQuery()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p>refDataQuery</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_ExecTableWithRef_getRefFieldMatchs_" data-uid="SDBCS.dbwork.ExecTableWithRef.getRefFieldMatchs*"></a>
+  <h4 id="SDBCS_dbwork_ExecTableWithRef_getRefFieldMatchs" data-uid="SDBCS.dbwork.ExecTableWithRef.getRefFieldMatchs">getRefFieldMatchs()</h4>
+  <div class="markdown level1 summary"><p>For getting refFieldMatchs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] getRefFieldMatchs()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><p>refFieldMatchs</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_ExecTableWithRef_getRefFieldNames_" data-uid="SDBCS.dbwork.ExecTableWithRef.getRefFieldNames*"></a>
+  <h4 id="SDBCS_dbwork_ExecTableWithRef_getRefFieldNames" data-uid="SDBCS.dbwork.ExecTableWithRef.getRefFieldNames">getRefFieldNames()</h4>
+  <div class="markdown level1 summary"><p>For getting refFieldNames.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] getRefFieldNames()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p>refFieldNames</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_ExecTableWithRef_getRefTableNames_" data-uid="SDBCS.dbwork.ExecTableWithRef.getRefTableNames*"></a>
+  <h4 id="SDBCS_dbwork_ExecTableWithRef_getRefTableNames" data-uid="SDBCS.dbwork.ExecTableWithRef.getRefTableNames">getRefTableNames()</h4>
+  <div class="markdown level1 summary"><p>For getting refTableNames.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] getRefTableNames()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p>refTableNames</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_ExecTableWithRef_selectRefData_" data-uid="SDBCS.dbwork.ExecTableWithRef.selectRefData*"></a>
+  <h4 id="SDBCS_dbwork_ExecTableWithRef_selectRefData" data-uid="SDBCS.dbwork.ExecTableWithRef.selectRefData">selectRefData()</h4>
+  <div class="markdown level1 summary"><p>Returns the reference table data as a String type array.
+Error message (errorString) will occur if there is no data return.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] selectRefData()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p>Returns the object array in the String type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SDBCS_dbwork_ExecTableWithRef_tableActionWR_" data-uid="SDBCS.dbwork.ExecTableWithRef.tableActionWR*"></a>
+  <h4 id="SDBCS_dbwork_ExecTableWithRef_tableActionWR_System_String_System_String___SDBCS_dbwork_PrepQueryWithRef_" data-uid="SDBCS.dbwork.ExecTableWithRef.tableActionWR(System.String,System.String[],SDBCS.dbwork.PrepQueryWithRef)">tableActionWR(String, String[], PrepQueryWithRef)</h4>
+  <div class="markdown level1 summary"><p>Perform table movements (select, insert, update, or delete) with reference data  and return result data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool tableActionWR(string action, string[] formData, PrepQueryWithRef pqAdvanced)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">action</span></td>
+        <td><p>The action variable determines which action will take.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">formData</span></td>
+        <td><p>Taken data from the form in String array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SDBCS.dbwork.PrepQueryWithRef.html">PrepQueryWithRef</a></td>
+        <td><span class="parametername">pqAdvanced</span></td>
+        <td><p>Represent of The PrepQueryWithRef instance for setting queries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>If the DB action succeeds, it returns true, otherwise returns false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
